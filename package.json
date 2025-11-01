@@ -1,22 +1,26 @@
 {
+    "name": "equinans",
     "private": true,
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "preview": "vite preview"
     },
     "dependencies": {
-        "@tailwindcss/vite": "^4.1.11",
-        "autoprefixer": "^10.4.20",
+        "@fortawesome/fontawesome-free": "^7.1.0",
+        "@popperjs/core": "^2.11.8",
+        "animate.css": "^4.1.1",
         "axios": "^1.7.4",
+        "bootstrap": "5.3.3",
         "concurrently": "^9.0.1",
+        "gsap": "3.13.0",
+        "jquery": "3.7.1",
         "laravel-vite-plugin": "^2.0",
-        "tailwindcss": "^4.0.7",
-        "vite": "^7.0.4"
+        "swiper": "11.0.5",
+        "vite": "7.1.11"
     },
     "optionalDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "4.9.5",
-        "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
-        "lightningcss-linux-x64-gnu": "^1.29.1"
+        "@rollup/rollup-linux-x64-gnu": "4.9.5"
     }
 }
