@@ -7,6 +7,10 @@
     {{-- Le nom ('menu', 'mobile-menu') doit être unique pour chaque bloc @persist. --}}
 
     @persist('menu')
+     <livewire:partials.topbar />
+    @endpersist
+
+    @persist('menu')
      <livewire:partials.menu />
     @endpersist
 
@@ -47,5 +51,11 @@
                 markNav() { window.__lwNav = true },
             }
         }
+
+        // Initialiser Alpine sur les composants persistés après le chargement
+        document.addEventListener('livewire:init', () => {
+            // Alpine est fourni par Livewire 3, il est automatiquement disponible
+            // Pas besoin de Alpine.start(), Livewire le gère
+        });
     </script>
 @endsection

@@ -14,8 +14,8 @@
 /* Magnific Popup 1.1.0 (local file) */
 @import './magnific-popup.css';
 
-/* SlickNav 1.0.10 (local file) */
-@import './slicknav.min.css';
+/* Mobile Menu with Alpine.js */
+@import './mobile-menu.css';
 
 /* Font Awesome 6.x (from node_modules) */
 @import '@fortawesome/fontawesome-free/css/all.min.css';

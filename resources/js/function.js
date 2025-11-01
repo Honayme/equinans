@@ -26,13 +26,9 @@
 			$("header .header-sticky").toggleClass("hide", (fromTop > headerHeight + 100));
 			$("header .header-sticky").toggleClass("active", (fromTop > 600));
 		});
-	}	
-	
-	/* Slick Menu JS */
-	$('#menu').slicknav({
-		label : '',
-		prependTo : '.responsive-menu'
-	});
+	}
+
+	/* Mobile Menu now handled by Alpine.js in menu.blade.php */
 
 	if($("a[href='#top']").length){
 		$(document).on("click", "a[href='#top']", function() {

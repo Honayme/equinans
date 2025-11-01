@@ -2,6 +2,9 @@
    Equinans - JavaScript Configuration
    ======================================== */
 
+// Alpine.js est déjà fourni par Livewire 3 via @livewireScriptConfig
+// Aucune installation manuelle nécessaire
+
 // jQuery 3.7.1 - Must be loaded first
 import $ from 'jquery';
 window.$ = window.jQuery = $;
@@ -24,17 +27,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 window.gsap = gsap;
 window.ScrollTrigger = ScrollTrigger;
 
-// SlickNav 1.0.10 (local file)
-import './jquery.slicknav.js';
 
-// WOW.js 1.3.0 (local file)
-import './wow.min.js';
-
-// Waypoints 4.0.1 (local file)
-import './jquery.waypoints.min.js';
-
-// CounterUp 1.0 (local file - requires Waypoints)
-import './jquery.counterup.min.js';
 
 // Custom JavaScript Files from resources/js
 import './parallaxie.js';
@@ -45,6 +38,15 @@ import './validator.min.js';
 
 // Magnific Popup 1.1.0 (local file) - Loaded after jQuery is ready
 import './jquery.magnific-popup.min.js';
+
+// WOW.js 1.3.0 (local file)
+import './wow.min.js';
+
+// Waypoints 4.0.1 (local file)
+import './jquery.waypoints.min.js';
+
+// CounterUp 1.0 (local file - requires Waypoints)
+import './jquery.counterup.min.js';
 
 // Main initialization function - Must be loaded last
 import './function.js';

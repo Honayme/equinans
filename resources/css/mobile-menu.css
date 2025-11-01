@@ -1,0 +1,223 @@
+/* ========================================
+   Mobile Menu with Alpine.js
+   Styles adapted from SlickNav template
+   ======================================== */
+
+/* Hide responsive menu and toggle by default */
+.responsive-menu,
+.navbar-toggle {
+    display: none;
+}
+
+.responsive-menu {
+    top: 0;
+    position: relative;
+}
+
+/* Mobile Toggle Button (Hamburger) - Template styles */
+.navbar-toggle {
+    background: var(--accent-color);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Icon bars - Template styles */
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: var(--white-color);
+    border-radius: 6px;
+    margin: 4px auto;
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-toggle .icon-bar:first-child {
+    margin-top: 0;
+}
+
+.navbar-toggle .icon-bar:last-child {
+    margin-bottom: 0;
+}
+
+/* Hamburger → X Animation when menu is open */
+.navbar-toggle.active .icon-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.navbar-toggle.active .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .icon-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Mobile Menu Container - Template styles */
+.mobile-menu {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    background: var(--accent-color);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    max-height: 1000px;
+}
+
+/* Mobile Menu Navigation */
+.mobile-menu-nav {
+    padding: 0;
+    margin: 5px 0;
+    list-style: none;
+}
+
+.mobile-menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-nav ul ul {
+    margin: 0;
+}
+
+/* Navigation items - Template styles */
+.mobile-menu-nav .submenu-toggle,
+.mobile-menu-nav a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 7px 20px;
+    color: var(--white-color);
+    line-height: normal;
+    margin: 0;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    text-decoration: none;
+}
+
+/* Submenu toggle button specific styles */
+.mobile-menu-nav .submenu-toggle {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Hover states - Template styles */
+.mobile-menu-nav a:hover,
+.mobile-menu-nav a:focus,
+.mobile-menu-nav .submenu-toggle:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Submenu items indentation */
+.mobile-menu-nav ul ul li a {
+    padding: 7px 20px 7px 30px;
+}
+
+/* Submenu arrow - Template styles with :after pseudo-element */
+.mobile-menu-nav .submenu-arrow {
+    font-size: 0;
+}
+
+.mobile-menu-nav .submenu-arrow:after {
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 8px;
+    color: var(--white-color);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-out;
+}
+
+/* Submenu arrow when open */
+.mobile-menu-nav .submenu.active > .submenu-toggle .submenu-arrow:after {
+    transform: translateY(-50%) rotate(-180deg);
+    color: var(--primary-color);
+}
+
+/* Submenu container */
+.mobile-menu-nav .submenu ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu-nav .submenu.active ul {
+    max-height: 500px;
+}
+
+/* Mobile header button in menu */
+.mobile-menu .mobile-header-btn {
+    padding: 10px 20px 20px;
+}
+
+.mobile-menu .mobile-header-btn .btn-default {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 991px) {
+    /* Hide desktop menu */
+    .main-menu {
+        display: none !important;
+    }
+
+    /* Show mobile toggle and responsive-menu container */
+    .responsive-menu,
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* Make navbar-toggle flex for icon bars */
+    .navbar-toggle {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Ensure mobile menu is hidden on desktop */
+    .mobile-menu,
+    .responsive-menu,
+    .navbar-toggle {
+        display: none !important;
+    }
+}
+
+/* Alpine.js Transitions */
+[x-cloak] {
+    display: none !important;
+}
+
+/* Prevent body scroll when menu is open */
+body.mobile-menu-open {
+    overflow: hidden;
+}
