@@ -11,8 +11,8 @@
 /* Swiper 11.0.5 */
 @import 'swiper/css/bundle';
 
-/* Magnific Popup 1.1.0 (local file) */
-@import './magnific-popup.css';
+/* Magnific Popup 1.1.0 (from npm) */
+@import 'magnific-popup/dist/magnific-popup.css';
 
 /* Mobile Menu with Alpine.js */
 @import './mobile-menu.css';

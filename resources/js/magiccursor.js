@@ -123,5 +123,8 @@ class Cursor {
         this.visibleInt = setTimeout(() => this.visible = false, this.options.visibleTimeout);
     }
 }
-// Init cursor
-const cursor = new Cursor();
+
+// Init cursor when DOM is ready
+$(document).ready(function() {
+    const cursor = new Cursor();
+});

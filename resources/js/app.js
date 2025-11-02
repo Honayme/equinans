@@ -26,8 +26,7 @@ import { SplitText } from 'gsap/SplitText';
 gsap.registerPlugin(ScrollTrigger, SplitText);
 window.gsap = gsap;
 window.ScrollTrigger = ScrollTrigger;
-
-
+window.SplitText = SplitText;
 
 // Custom JavaScript Files from resources/js
 import './parallaxie.js';
@@ -36,17 +35,21 @@ import './SmoothScroll.js';
 // import './jquery.mb.YTPlayer.min.js';
 import './validator.min.js';
 
-// Magnific Popup 1.1.0 (local file) - Loaded after jQuery is ready
-import './jquery.magnific-popup.min.js';
+// Magnific Popup 1.1.0 - Loaded via npm
+import 'magnific-popup/dist/jquery.magnific-popup.js';
 
-// WOW.js 1.3.0 (local file)
-import './wow.min.js';
+// WOW.js - Loaded via npm
+import WOW from 'wow.js';
+window.WOW = WOW;
 
-// Waypoints 4.0.1 (local file)
-import './jquery.waypoints.min.js';
+// Load jQuery-dependent plugins and initialize
+(async function() {
+    // Waypoints - Loaded via npm (requires jQuery to be global first)
+    await import('waypoints/lib/jquery.waypoints.js');
 
-// CounterUp 1.0 (local file - requires Waypoints)
-import './jquery.counterup.min.js';
+    // CounterUp 1.0 (local file - requires Waypoints)
+    await import('./jquery.counterup.min.js');
 
-// Main initialization function - Must be loaded last
-import './function.js';
+    // Main initialization function - Must be loaded last
+    await import('./function.js');
+})();

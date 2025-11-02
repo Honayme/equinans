@@ -6,18 +6,27 @@ import inject from '@rollup/plugin-inject';
 
 export default defineConfig({
     plugins: [
-        inject({
-            $: 'jquery',
-            jQuery: 'jquery',
-            include: '**/*.js',
-            exclude: 'node_modules/**',
-        }),
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
+        inject({
+            $: 'jquery',
+            jQuery: 'jquery',
+            gsap: 'gsap',
+            include: ['**/*.js'],
+            exclude: ['node_modules/**', '**/*.css'],
+        }),
     ],
     server: {
         cors: true,
+    },
+    optimizeDeps: {
+        include: ['jquery', 'waypoints/lib/jquery.waypoints.js'],
+    },
+    resolve: {
+        alias: {
+            jquery: 'jquery/dist/jquery.js',
+        },
     },
 });

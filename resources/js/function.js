@@ -143,13 +143,13 @@
             });
             tl.from(container, 1, {
                 xPercent: -100,
-                ease: Power2.out
+                ease: "power2.out"
             });
             tl.from(image, 1, {
                 xPercent: 100,
                 scale: 1,
                 delay: -1,
-                ease: Power2.out
+                ease: "power2.out"
             });
         });
     }
@@ -223,7 +223,7 @@
 				rotateX: "0",
 				opacity: 1,
 				duration: 1,
-				ease: Back.easeOut,
+				ease: "back.out",
 				stagger: 0.02,
 			});
 		});		

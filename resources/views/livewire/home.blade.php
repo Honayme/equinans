@@ -1184,22 +1184,22 @@
                             <div class="satisfy-client-images">
                                 <div class="satisfy-client-image">
                                     <figure class="image-anime">
-                                        <img src="images/author-1.jpg" alt="">
+                                        <img src="{{ asset('storage/images/author-1.jpg') }}" alt="">
                                     </figure>
                                 </div>
                                 <div class="satisfy-client-image">
                                     <figure class="image-anime">
-                                        <img src="images/author-2.jpg" alt="">
+                                        <img src="{{ asset('storage/images/author-2.jpg') }}" alt="">
                                     </figure>
                                 </div>
                                 <div class="satisfy-client-image">
                                     <figure class="image-anime">
-                                        <img src="images/author-3.jpg" alt="">
+                                        <img src="{{ asset('storage/images/author-3.jpg') }}" alt="">
                                     </figure>
                                 </div>
                                 <div class="satisfy-client-image">
                                     <figure class="image-anime">
-                                        <img src="images/author-4.jpg" alt="">
+                                        <img src="{{ asset('storage/images/author-4.jpg') }}" alt="">
                                     </figure>
                                 </div>
                                 <div class="satisfy-client-image add-more">
@@ -1254,7 +1254,7 @@
                                             <div class="testimonial-author">
                                                 <div class="author-image">
                                                     <figure class="image-anime">
-                                                        <img src="images/author-1.jpg" alt="">
+                                                        <img src="{{ asset('storage/images/author-1.jpg') }}" alt="">
                                                     </figure>
                                                 </div>
                                                 <div class="author-content">
@@ -1286,7 +1286,7 @@
                                             <div class="testimonial-author">
                                                 <div class="author-image">
                                                     <figure class="image-anime">
-                                                        <img src="images/author-2.jpg" alt="">
+                                                        <img src="{{ asset('storage/images/author-2.jpg') }}" alt="">
                                                     </figure>
                                                 </div>
                                                 <div class="author-content">
@@ -1318,7 +1318,7 @@
                                             <div class="testimonial-author">
                                                 <div class="author-image">
                                                     <figure class="image-anime">
-                                                        <img src="images/author-3.jpg" alt="">
+                                                        <img src="{{ asset('storage/images/author-3.jpg') }}" alt="">
                                                     </figure>
                                                 </div>
                                                 <div class="author-content">
@@ -1376,22 +1376,22 @@
                                 <div class="satisfy-client-images">
                                     <div class="satisfy-client-image">
                                         <figure class="image-anime">
-                                            <img src="images/author-1.jpg" alt="">
+                                            <img src="{{ asset('storage/images/author-1.jpg') }}" alt="">
                                         </figure>
                                     </div>
                                     <div class="satisfy-client-image">
                                         <figure class="image-anime">
-                                            <img src="images/author-2.jpg" alt="">
+                                            <img src="{{ asset('storage/images/author-2.jpg') }}" alt="">
                                         </figure>
                                     </div>
                                     <div class="satisfy-client-image">
                                         <figure class="image-anime">
-                                            <img src="images/author-3.jpg" alt="">
+                                            <img src="{{ asset('storage/images/author-3.jpg') }}" alt="">
                                         </figure>
                                     </div>
                                     <div class="satisfy-client-image">
                                         <figure class="image-anime">
-                                            <img src="images/author-4.jpg" alt="">
+                                            <img src="{{ asset('storage/images/author-4.jpg') }}" alt="">
                                         </figure>
                                     </div>
                                     <div class="satisfy-client-image add-more">
