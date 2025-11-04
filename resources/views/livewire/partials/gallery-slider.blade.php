@@ -5,8 +5,8 @@
                 <div class="col-lg-6">
                     <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Gallery</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">See the beauty and passion of our horse <span>club in action</span></h2>
+                        <h3 class="wow fadeInUp">Notre Galerie</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez la beauté et la passion de notre <span>centre équestre</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -14,7 +14,7 @@
                 <div class="col-lg-6">
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="gallery.html" class="btn-default">View Our Gallery</a>
+                        <a href="{{ route('home') }}#gallery" class="btn-default">Voir la Galerie</a>
                     </div>
                     <!-- Section Button End -->
                 </div>
@@ -26,42 +26,50 @@
                 <div class="col-lg-12">
                     <!-- Gallery Ticker Box Start -->
                     <div class="gallery-ticker-box">
-                        <!-- Scrolling Ticker Item Start -->
+                        <!-- Scrolling Ticker Item Start (First Row) -->
                         <div class="scrolling-ticker-item gallery-items">
                             <div class="scrolling-content">
-                                <a href="{{ asset('storage/images/gallery-1.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-1.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-2.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-2.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-3.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-3.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-4.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-4.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-5.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-5.jpg') }}" alt=""></a>
+                                @foreach($firstRow as $image)
+                                    <a href="{{ $image['url'] }}" data-cursor-text="Voir">
+                                        <img src="{{ $image['thumbnail'] }}"
+                                             alt="{{ $image['alt'] }}"
+                                             loading="lazy">
+                                    </a>
+                                @endforeach
                             </div>
 
                             <div class="scrolling-content">
-                                <a href="{{ asset('storage/images/gallery-1.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-1.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-2.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-2.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-3.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-3.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-4.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-4.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-5.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-5.jpg') }}" alt=""></a>
+                                @foreach($firstRow as $image)
+                                    <a href="{{ $image['url'] }}" data-cursor-text="Voir">
+                                        <img src="{{ $image['thumbnail'] }}"
+                                             alt="{{ $image['alt'] }}"
+                                             loading="lazy">
+                                    </a>
+                                @endforeach
                             </div>
                         </div>
                         <!-- Scrolling Ticker Item End -->
 
-                        <!-- Scrolling Ticker Item Start -->
+                        <!-- Scrolling Ticker Item Start (Second Row - Reverse) -->
                         <div class="scrolling-ticker-item gallery-items scroll-reverse">
                             <div class="scrolling-content">
-                                <a href="{{ asset('storage/images/gallery-6.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-6.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-7.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-7.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-8.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-8.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-9.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-9.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-1.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-1.jpg') }}" alt=""></a>
+                                @foreach($secondRow as $image)
+                                    <a href="{{ $image['url'] }}" data-cursor-text="Voir">
+                                        <img src="{{ $image['thumbnail'] }}"
+                                             alt="{{ $image['alt'] }}"
+                                             loading="lazy">
+                                    </a>
+                                @endforeach
                             </div>
 
                             <div class="scrolling-content">
-                                <a href="{{ asset('storage/images/gallery-6.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-6.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-7.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-7.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-8.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-8.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-9.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-9.jpg') }}" alt=""></a>
-                                <a href="{{ asset('storage/images/gallery-1.jpg') }}" data-cursor-text="View"><img src="{{ asset('storage/images/gallery-1.jpg') }}" alt=""></a>
+                                @foreach($secondRow as $image)
+                                    <a href="{{ $image['url'] }}" data-cursor-text="Voir">
+                                        <img src="{{ $image['thumbnail'] }}"
+                                             alt="{{ $image['alt'] }}"
+                                             loading="lazy">
+                                    </a>
+                                @endforeach
                             </div>
                         </div>
                         <!-- Scrolling Ticker Item End -->

@@ -776,7 +776,7 @@
     <!-- Our Fact Section End -->
 
     <!-- Our Gallery Section Start -->
-    {{-- livewire.gallery-slider.blade.php--}}
+    <livewire:partials.gallery-slider />
     <!-- Our Gallery Section End -->
 
     <!-- Our Pricing Section Start -->

@@ -89,7 +89,7 @@
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
+                            src="https://maps.google.com/maps?q={{ urlencode(settings()->address) }}&output=embed"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
@@ -101,12 +101,11 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item wow fadeInUp">
                             <div class="icon-box">
-                                <img src="images/icon-phone-white.svg" alt="">
+                                <img src="{{ asset('storage/images/icon-phone-white.svg') }}" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>contact us</h3>
-                                <p><a href="tel:+123254963">(+00) 123-254-963</a></p>
-                                <p><a href="tel:+761852339">(+12) 761 852 339</a></p>
+                                <h3>Téléphone</h3>
+                                <p><a href="tel:{{ settings()->phone }}">{{ settings()->phone }}</a></p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -114,12 +113,11 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon-box">
-                                <img src="images/icon-mail-white.svg" alt="">
+                                <img src="{{ asset('storage/images/icon-mail-white.svg') }}" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>email us</h3>
-                                <p><a href="mailto:info@domain.com">info@domainname.com</a></p>
-                                <p><a href="mailto:support@domain.com">support@domain.com</a></p>
+                                <h3>Email</h3>
+                                <p><a href="mailto:{{ settings()->email }}">{{ settings()->email }}</a></p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -127,12 +125,11 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
                             <div class="icon-box">
-                                <img src="images/icon-location-white.svg" alt="">
+                                <img src="{{ asset('storage/images/icon-location-white.svg') }}" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>location</h3>
-                                <p>2715 Ash San Jose, USA</p>
-                                <p>2715 Ash San Jose, USA</p>
+                                <h3>Adresse</h3>
+                                <p>{{ settings()->address }}</p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -140,12 +137,11 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item wow fadeInUp" data-wow-delay="0.6s">
                             <div class="icon-box">
-                                <img src="images/icon-clock-white.svg" alt="">
+                                <img src="{{ asset('storage/images/icon-clock-white.svg') }}" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>Working hours</h3>
-                                <p>Mon - Fri : 08AM - 05PM</p>
-                                <p>sat - sun : close</p>
+                                <h3>Horaires d'ouverture</h3>
+                                <p>{!! nl2br(e(settings()->opening_hours)) !!}</p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->

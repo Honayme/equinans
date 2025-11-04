@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(composer dump-autoload:*)",
+      "Bash(composer require:*)",
+      "Bash(php artisan vendor:publish:*)",
+      "Bash(php artisan make:migration:*)",
+      "Bash(php artisan:*)"
     ],
     "deny": [],
     "ask": []

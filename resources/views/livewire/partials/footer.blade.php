@@ -69,8 +69,8 @@
                                     <img src="{{ asset('storage/images/icon-phone-white.svg') }}" alt="">
                                 </div>
                                 <div class="footer-contact-content">
-                                    <h3>Phone Number</h3>
-                                    <p><a href="tel:+123456789">+ (123) 456-789</a></p>
+                                    <h3>Téléphone</h3>
+                                    <p><a href="tel:{{ settings()->phone }}">{{ settings()->phone }}</a></p>
                                 </div>
                             </div>
                             <!-- Footer Contact Item End -->
@@ -81,8 +81,8 @@
                                     <img src="{{ asset('storage/images/icon-mail-white.svg') }}" alt="">
                                 </div>
                                 <div class="footer-contact-content">
-                                    <h3>Email Address</h3>
-                                    <p><a href="mailto:info@domainname.com">info@domainname.com</a></p>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:{{ settings()->email }}">{{ settings()->email }}</a></p>
                                 </div>
                             </div>
                             <!-- Footer Contact Item End -->
@@ -104,10 +104,9 @@
                         <!-- Footer Social Link Start -->
                         <div class="footer-social-links">
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                @if(settings()->facebook_url)
+                                    <li><a href="{{ settings()->facebook_url }}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                @endif
                             </ul>
                         </div>
                         <!-- Footer Social Link End -->
