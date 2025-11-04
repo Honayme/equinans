@@ -1,5 +1,15 @@
+<style>
+    .navbar-nav .nav-link {
+        font-weight: 700 !important;
+    }
+    .mobile-menu-nav a {
+        font-weight: 700 !important;
+    }
+</style>
+
 <div x-data="{ mobileMenuOpen: false, openSubmenus: {} }">
     <header class="main-header">
+{{--    <header class="main-header active-sticky-header">--}}
         <div class="header-sticky bg-section">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -15,9 +25,9 @@
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Accueil</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Le centre équestre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('teaching') }}">Notre Méthode pédagogique</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Activités & Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('prices') }}">Tarifs</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Nous Contacter</a></li>
                             </ul>
                         </div>
 
@@ -58,14 +68,14 @@
                         <!-- Le centre équestre -->
                         <li><a href="{{ route('about') }}" @click="mobileMenuOpen = false">Le centre équestre</a></li>
 
+                        <!-- Méthode pédagogique -->
+                        <li><a href="{{ route('teaching') }}" @click="mobileMenuOpen = false">Méthode pédagogique</a></li>
+
                         <!-- Activités & Services -->
                         <li><a href="{{ route('services') }}" @click="mobileMenuOpen = false">Activités & Services</a></li>
 
                         <!-- Tarifs -->
                         <li><a href="{{ route('prices') }}" @click="mobileMenuOpen = false">Tarifs</a></li>
-
-                        <!-- Nous Contacter -->
-                        <li><a href="{{ route('contact') }}" @click="mobileMenuOpen = false">Nous Contacter</a></li>
                     </ul>
 
                     <!-- Mobile Header Button -->

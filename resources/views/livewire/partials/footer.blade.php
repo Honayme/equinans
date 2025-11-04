@@ -40,6 +40,7 @@
                             <ul>
                                 <li><a href="{{ route('home') }}">Accueil</a></li>
                                 <li><a href="{{ route('about') }}">Le centre équestre</a></li>
+                                <li><a href="{{ route('teaching') }}">Méthode pédagogique</a></li>
                                 <li><a href="{{ route('services') }}">Activités & Services</a></li>
                                 <li><a href="{{ route('prices') }}">Tarifs</a></li>
                                 <li><a href="{{ route('contact') }}">Nous Contacter</a></li>
