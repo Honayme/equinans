@@ -36,12 +36,13 @@
                     <div class="footer-links-box">
                         <!-- Footer Links Start -->
                         <div class="footer-links quick-links">
-                            <h3>quick links</h3>
+                            <h3>Liens rapides</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="{{ route('home') }}">Accueil</a></li>
+                                <li><a href="{{ route('about') }}">Le centre équestre</a></li>
+                                <li><a href="{{ route('services') }}">Activités & Services</a></li>
+                                <li><a href="{{ route('prices') }}">Tarifs</a></li>
+                                <li><a href="{{ route('contact') }}">Nous Contacter</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
