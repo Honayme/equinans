@@ -9,6 +9,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
 use Filament\Resources\Resource;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\BulkActionGroup;
 use Filament\Tables;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -57,10 +61,6 @@ class GalleryResource extends Resource
                     ->helperText('Vous pouvez uploader plusieurs images à la fois')
                     ->customProperties(fn () => [
                         'alt' => '',
-                    ])
-                    ->manipulations([
-                        'thumbnail' => ['width' => 300, 'height' => 300],
-                        'large' => ['width' => 1200, 'height' => 800],
                     ])
                     ->columnSpanFull(),
             ]);
@@ -114,13 +114,13 @@ class GalleryResource extends Resource
                     ->trueLabel('Visibles')
                     ->falseLabel('Cachées'),
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+            ->recordActions([
+                EditAction::make(),
+                DeleteAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ])
             ->reorderable('order');

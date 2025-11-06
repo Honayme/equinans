@@ -26,7 +26,7 @@
                                 <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Accueil</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Le centre équestre</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('teaching') }}">Notre Méthode pédagogique</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Activités & Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Activités & Galops</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('prices') }}">Tarifs</a></li>
                             </ul>
                         </div>

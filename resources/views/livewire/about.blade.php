@@ -6,11 +6,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-2" data-cursor="-opaque">About <span>us</span></h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque">Le centre <span>équestre</span></h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About us</li>
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Accueil</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Le centre équestre</li>
                             </ol>
                         </nav>
                     </div>
@@ -44,7 +44,7 @@
                         <div class="about-image-box-2">
                             <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                                <a href="{{ route('contact') }}"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
                             <!-- Contact Us Circle End -->
 
@@ -56,13 +56,13 @@
                             </div>
                             <!-- About Us Image 2 End -->
 
-                            <!-- About Us Image 2 Start -->
+                            <!-- About Us Image 3 Start -->
                             <div class="about-us-img-3">
                                 <figure class="image-anime reveal">
                                     <img src="{{ asset('storage/images/about-us-img-3.jpg') }}" alt="">
                                 </figure>
                             </div>
-                            <!-- About Us Image 2 End -->
+                            <!-- About Us Image 3 End -->
                         </div>
                         <!-- About Image Box 2 End -->
                     </div>
@@ -74,13 +74,9 @@
                     <div class="about-us-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">Tradition. Trust. Together.</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Nurturing the bond between horse and rider
-                                <span>through passion, patience</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our horse club was founded on the belief that
-                                riding should be accessible, enjoyable, & empowering. With a supportive environment, expert
-                                trainers, and a herd of well-cared-for horses, we help every rider create their own
-                                unforgettable journey.</p>
+                            <h3 class="wow fadeInUp">Centre Équestre de Nans-les-Pins</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">L'équitation plaisir pour <span>petits et grands</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Equinans est le nom du Centre Équestre et Poney-Club de Nans-les-Pins, situé dans le département du Var (83). Il est niché dans un cadre naturel, au pied du massif de la Sainte-Baume, ce qui en fait un lieu privilégié pour les activités de plein air.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -92,8 +88,8 @@
                                     <img src="{{ asset('storage/images/icon-about-body-item-1.svg') }}" alt="">
                                 </div>
                                 <div class="about-body-item-content">
-                                    <h3>Friendly Atmosphere</h3>
-                                    <p>A place where every rider feels welcome, supported.</p>
+                                    <h3>Club Affilié FFE</h3>
+                                    <p>Club affilié à la Fédération Française d'Équitation (FFE) et détenant le label "École Française d'Équitation".</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -104,8 +100,8 @@
                                     <img src="{{ asset('storage/images/icon-about-body-item-2.svg') }}" alt="">
                                 </div>
                                 <div class="about-body-item-content">
-                                    <h3>Trusted Horses</h3>
-                                    <p>Professional guidance with well-trained, gentle horses.</p>
+                                    <h3>Cadre Naturel Exceptionnel</h3>
+                                    <p>Au pied du massif de la Sainte-Baume, idéal pour les balades et activités de plein air.</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -114,7 +110,7 @@
 
                         <!-- About Us Button Start -->
                         <div class="about-us-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">contact now</a>
+                            <a href="{{ route('contact') }}" class="btn-default">Nous Contacter</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -125,6 +121,101 @@
     </div>
     <!-- About Us Section End -->
 
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us" style="margin-bottom: -12px; position: relative;">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">Nos Activités</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Une grande diversité d'activités pour tous les <span>âges et tous les niveaux</span></h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Why Choose Box Start -->
+                    <div class="why-choose-box">
+                        <!-- Why Choose Item List Start -->
+                        <div class="why-choose-item-list order-lg-1 order-1">
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="icon-box">
+                                    <img src="{{ asset('storage/images/icon-why-choose-1.svg') }}" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>🦄 Le Poney-Club (Enfants)</h3>
+                                    <p><strong>Baby-Poney :</strong> Des séances de découverte et des "baptêmes poney aventure" sont proposés pour les tout-petits.</p>
+                                    <p><strong>Cours et Stages :</strong> Le club suit le plan de formation officiel des Galops® Poneys.</p>
+                                    <p><strong>Anniversaires :</strong> Le centre organise des fêtes d'anniversaire pour les enfants sur le thème des poneys.</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon-box">
+                                    <img src="{{ asset('storage/images/icon-why-choose-2.svg') }}" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>🐎 Le Centre Équestre (Ados et Adultes)</h3>
+                                    <p><strong>Cours tous niveaux :</strong> Du débutant au cavalier confirmé.</p>
+                                    <p><strong>Disciplines variées :</strong> CSO, Dressage, Éthologie, Voltige, Horseball et Tir à l'arc à cheval.</p>
+                                    <p><strong>Compétition :</strong> Coaching et encadrement pour les cavaliers souhaitant sortir en compétition.</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+                        </div>
+                        <!-- Why Choose Item List End -->
+
+                        <!-- Why Choose image Start -->
+                        <div class="why-choose-image order-lg-1 order-3">
+                            <figure>
+                                <img src="{{ asset('storage/images/why-choose-image.png') }}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Why Choose image End -->
+
+                        <!-- Why Choose Item List Start -->
+                        <div class="why-choose-item-list order-lg-1 order-2">
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="icon-box">
+                                    <img src="{{ asset('storage/images/icon-why-choose-3.svg') }}" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>🌲 Les Balades et Randonnées</h3>
+                                    <p><strong>Balades :</strong> Des sorties d'une heure ou plus sont proposées.</p>
+                                    <p><strong>Randonnées à thème :</strong> Randonnées P'tit Déj, Randonnées frisson (de nuit) et Bivouacs équestres (randonnées sur plusieurs jours avec nuit en gîte).</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+
+                            <!-- Why Choose Item Start -->
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon-box">
+                                    <img src="{{ asset('storage/images/icon-why-choose-4.svg') }}" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>🏠 Les Services aux Propriétaires</h3>
+                                    <p><strong>Pension :</strong> Le centre fonctionne aussi comme une écurie de propriétaires, proposant des pensions en box ou en paddock.</p>
+                                    <p><strong>Installations :</strong> Le club est équipé d'installations complètes (manège couvert, carrière, rond de longe, paddocks).</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Item End -->
+                        </div>
+                        <!-- Why Choose Item List End -->
+                    </div>
+                    <!-- Why Choose Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
     <!-- Our Approach Section Start -->
     <div class="our-approach bg-section">
         <div class="container-fluid">
@@ -134,54 +225,25 @@
                     <div class="approach-content">
                         <!-- Section Title Start -->
                         <div class="section-title section-title-center">
-                            <h3 class="wow fadeInUp">Our approach</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Respecting tradition,and <span>embracing growth</span>
-                            </h2>
+                            <h3 class="wow fadeInUp">Centre de loisirs Équestres</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Un hébergement de qualité à <span>proximité</span></h2>
                         </div>
                         <!-- Section Title End -->
-
-                        <!-- Approach Body Start -->
-                        <div class="approach-body wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- Mission Vision Item Start -->
-                            <div class="mission-vision-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-mission.svg') }}" alt="">
-                                </div>
-                                <div class="mission-vision-content">
-                                    <h3>Our Mission</h3>
-                                    <p>Our dedicated team of certified professionals brings decades of combined.</p>
-                                </div>
-                            </div>
-                            <!-- Mission Vision Item End -->
-
-                            <!-- Mission Vision Item Start -->
-                            <div class="mission-vision-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-vision.svg') }}" alt="">
-                                </div>
-                                <div class="mission-vision-content">
-                                    <h3>Our vision</h3>
-                                    <p>Our dedicated team of certified professionals brings decades of combined.</p>
-                                </div>
-                            </div>
-                            <!-- Mission Vision Item End -->
-                        </div>
-                        <!-- Approach Body End -->
 
                         <!-- Approach Footer Start -->
                         <div class="approach-footer">
                             <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                                <a href="{{ route('contact') }}"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
                             <!-- Contact Us Circle End -->
 
                             <!-- Approach Footer Content Start -->
                             <div class="approach-footer-content wow fadeInUp" data-wow-delay="0.4s">
-                                <p>At Rideup, we honor the timeless values of horsemanship while continuously evolving our
-                                    techniques to meet modern equestrian standards. Our approach blends deep-rooted
-                                    tradition with innovative training, ensuring every rider and horse grows with
-                                    confidence, grace, and mutual respect.</p>
+                                <p>Le centre équestre dispose d'un hébergement de qualité avec un camping 4 **** : Le Domaine de la Sainte Baume, disposant d'un accès direct à pieds en moins d'une minute !</p>
+                                <div style="margin-top: 20px;">
+                                    <a href="http://www.saintebaume.com/fr/presentation-sp1.php" target="_blank" class="btn-default">Découvrir l'hébergement</a>
+                                </div>
                             </div>
                             <!-- Approach Footer Content End -->
                         </div>
@@ -204,623 +266,122 @@
     </div>
     <!-- Our Approach Section End -->
 
-    <!-- Our Benefits Section Start -->
-    <div class="our-benefits">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Club Benefits</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Exceptional benefits that set our <span>horse club apart</span>
-                        </h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Enjoy hands-on training, gentle horses, and an environment designed to help you relax, grow, and
-                            fall in love with riding - whether it's your first time or your fiftieth.</p>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Our Benefits Content Start -->
-                    <div class="our-benefit-content">
-                        <!-- FAQ Accordion Start -->
-                        <div class="faq-accordion" id="benefit_accordion">
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp">
-                                <h2 class="accordion-header" id="benefit_heading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#benefit_collapse1" aria-expanded="true"
-                                            aria-controls="benefit_collapse1">
-                                        Personalized Rider Development
-                                    </button>
-                                </h2>
-                                <div id="benefit_collapse1" class="accordion-collapse collapse show"
-                                     aria-labelledby="benefit_heading1" data-bs-parent="#benefit_accordion">
-                                    <div class="accordion-body">
-                                        <p>Each rider receives individual attention to grow their confidence, refine their
-                                            technique, and reach their full potential.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                <h2 class="accordion-header" id="benefit_heading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#benefit_collapse2" aria-expanded="false"
-                                            aria-controls="benefit_collapse2">
-                                        Well-Trained & Gentle Horses
-                                    </button>
-                                </h2>
-                                <div id="benefit_collapse2" class="accordion-collapse collapse"
-                                     aria-labelledby="benefit_heading2" data-bs-parent="#benefit_accordion">
-                                    <div class="accordion-body">
-                                        <p>We track key performance indicators(KPIs) such as website, conversion,
-                                            click-through rates (CTR), ROI.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                <h2 class="accordion-header" id="benefit_heading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#benefit_collapse3" aria-expanded="false"
-                                            aria-controls="benefit_collapse3">
-                                        Peaceful Countryside Setting
-                                    </button>
-                                </h2>
-                                <div id="benefit_collapse3" class="accordion-collapse collapse"
-                                     aria-labelledby="benefit_heading3" data-bs-parent="#benefit_accordion">
-                                    <div class="accordion-body">
-                                        <p>We track key performance indicators(KPIs) such as website, conversion,
-                                            click-through rates (CTR), ROI.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FAQ Item End -->
-                        </div>
-                        <!-- FAQ Accordion End -->
-
-                        <!-- Our Benefits Button Start -->
-                        <div class="our-benefit-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Contact Us Today!</a>
-                        </div>
-                        <!-- Our Benefits Button End -->
-                    </div>
-                    <!-- Our Benefits Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Benefits images Start -->
-                    <div class="benefits-images">
-                        <!-- Benefits image Box Start -->
-                        <div class="benefits-image-box-1">
-                            <div class="benefits-image">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-1.jpg') }}" alt="">
-                                </figure>
-                            </div>
-
-                            <!-- Benefits image Counter Start -->
-                            <div class="benefits-image-counter">
-                                <h2><span class="counter">98</span>%</h2>
-                                <p>Events, Shows & Rides Hosted</p>
-                            </div>
-                            <!-- Benefits image Counter End -->
-                        </div>
-                        <!-- Benefits image Box End -->
-
-                        <!-- Benefits image Box Start -->
-                        <div class="benefits-image-box-2">
-                            <div class="benefits-image">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-2.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- Contact Us Circle Start -->
-                            <div class="contact-us-circle">
-                                <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
-                            </div>
-                            <!-- Contact Us Circle End -->
-                        </div>
-                        <!-- Benefits image Box End -->
-                    </div>
-                    <!-- What We Do images End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Benefits Section End -->
-
-    <!-- Our Essence Section Start -->
-    <div class="our-essence bg-section dark-section parallaxie">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Essence</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">A place where riders and horses <span>thrive together</span>
-                        </h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Enjoy hands-on training, gentle horses, and an environment designed to help you relax, grow, and
-                            fall in love with riding - whether it's your first time or your fiftieth.</p>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Essence Content Start -->
-                    <div class="essence-content">
-                        <!-- Essence Counter List Start -->
-                        <div class="essence-counter-list">
-                            <!-- Essence Counter Item Start -->
-                            <div class="essence-counter-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-essence-counter-1.svg') }}" alt="">
-                                </div>
-
-                                <div class="essence-counter-content">
-                                    <h2><span class="counter">20</span></h2>
-                                    <p>20 Years of Trusted Training</p>
-                                </div>
-                            </div>
-                            <!-- Essence Counter Item End -->
-
-                            <!-- Essence Counter Item Start -->
-                            <div class="essence-counter-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-essence-counter-2.svg') }}" alt="">
-                                </div>
-
-                                <div class="essence-counter-content">
-                                    <h2><span class="counter">840</span>+</h2>
-                                    <p>Trusted by Riders for Years</p>
-                                </div>
-                            </div>
-                            <!-- Essence Counter Item End -->
-
-                            <!-- Essence Counter Item Start -->
-                            <div class="essence-counter-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-essence-counter-3.svg') }}" alt="">
-                                </div>
-
-                                <div class="essence-counter-content">
-                                    <h2><span class="counter">20</span>+</h2>
-                                    <p>20 Years of Trusted Training</p>
-                                </div>
-                            </div>
-                            <!-- Essence Counter Item End -->
-
-                            <!-- Essence Counter Item Start -->
-                            <div class="essence-counter-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-essence-counter-4.svg') }}" alt="">
-                                </div>
-
-                                <div class="essence-counter-content">
-                                    <h2><span class="counter">35</span>%</h2>
-                                    <p>20 Years of Trusted Training</p>
-                                </div>
-                            </div>
-                            <!-- Essence Counter Item End -->
-                        </div>
-                        <!-- Essence Counter List End -->
-                    </div>
-                    <!-- Essence Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Essence Image Start -->
-                    <div class="essence-image">
-                        <figure class="image-anime reveal">
-                            <img src="{{ asset('storage/images/essence-image.jpg') }}" alt="">
-                        </figure>
-                    </div>
-                    <!-- Essence Image End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Essence Section End -->
-
-    <!-- The Rideup way Section Start -->
-    <div class="rideup-way">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Rideup Way Image Start -->
-                    <div class="rideup-way-image">
-                        <!-- Rideup Way CTA Box Start -->
-                        <div class="rideup-way-cta-box">
-                            <p>Lorem Ipsum</p>
-                            <h2>$29.99<sub>/ month</sub></h2>
-                        </div>
-                        <!-- Rideup Way CTA Box End -->
-
-                        <!-- Rideup Way Image Start -->
-                        <div class="rideup-way-img">
-                            <figure>
-                                <img src="{{ asset('storage/images/rideup-way-image.png') }}" alt="">
-                            </figure>
-                        </div>
-                        <!-- Rideup Way Image End -->
-                    </div>
-                    <!-- Rideup Way Image End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Rideup Way Content Start -->
-                    <div class="rideup-way-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">The Rideup way</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Experience the spirit <span>horsema every ride</span>
-                            </h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Discover heartfelt stories and honest feedback
-                                from our riders who've experienced growth, joy, and unforgettable moments.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Rideup Way Body Start -->
-                        <div class="rideup-way-body wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- Rideup Way Body Item Start -->
-                            <div class="rideup-body-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-rideup-body-1.svg') }}" alt="">
-                                </div>
-                                <div class="rideup-body-content">
-                                    <h3>Skill Building</h3>
-                                    <p>Develop essential riding techniques with personalized guidance designed.</p>
-                                </div>
-                            </div>
-                            <!-- Rideup Way Body Item End -->
-
-                            <!-- Rideup Way Body Item Start -->
-                            <div class="rideup-body-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-rideup-body-2.svg') }}" alt="">
-                                </div>
-                                <div class="rideup-body-content">
-                                    <h3>Horse Bonding</h3>
-                                    <p>Create a deep, emotional connection with your horse through trust.</p>
-                                </div>
-                            </div>
-                            <!-- Rideup Way Body Item End -->
-                        </div>
-                        <!-- Rideup Way Body End -->
-
-                        <!-- Rideup Way Button Start -->
-                        <div class="rideup-way-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Contact Us Today</a>
-                        </div>
-                        <!-- Rideup Way Button End -->
-                    </div>
-                    <!-- Rideup Way Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- The Rideup way Section End -->
-
-    <!-- Our Fact Section Start -->
-    <div class="our-fact bg-section">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp">Our Fun Fact</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Dedicated to nurturing the
-                            rider-horse partnership <span><img src="{{ asset('storage/images/author-1.jpg') }}" alt=""><img
-                                    src="{{ asset('storage/images/author-2.jpg') }}" alt=""><img src="{{ asset('storage/images/author-3.jpg') }}" alt=""></span> with quality
-                            training, <span>care and memorable adventures</span></h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Fact Counter List Start -->
-                    <div class="fact-counter-list">
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">25</span>+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Years Equestrian Experience</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
-
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">1</span>K+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Events, Shows & Rides Hosted</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
-
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">60</span>+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Well-Cared For Horses</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
-
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">2</span>K+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Happy Riders Trainers</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
-                    </div>
-                    <!-- Fact Counter List End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Comapany Support Slider Start -->
-                    <div class="company-supports-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-1.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-2.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-3.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-4.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-5.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-6.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-2.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-3.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Comapany Support Slider End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Fact Section End -->
-
-    <!-- Our Team Section Start -->
+    <!-- Directors Section Start -->
     <div class="our-team">
         <div class="container">
             <div class="row section-row">
                 <div class="col-lg-12">
                     <!-- Section Title Start -->
                     <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp">Meet Experts</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Passionate professionals behind <span>every confident rider</span>
-                        </h2>
+                        <h3 class="wow fadeInUp">Nos Directeurs</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Loïc et Karine <span>Wulleman</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-item wow fadeInUp">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="{{ asset('storage/images/team-1.jpg') }}" alt="">
-                                </figure>
-                            </a>
-
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3><a href="team-single.html">James Walker</a></h3>
-                            <p>Head Trainer</p>
-                        </div>
-                        <!-- Team Content End -->
+            <!-- Loïc Wulleman Section Start -->
+            <div class="row align-items-start" style="margin-bottom: 60px;">
+                <div class="col-lg-4">
+                    <!-- Director Image Start -->
+                    <div class="team-single-image">
+                        <figure class="image-anime reveal">
+                            <img src="{{ asset('storage/images/team-1.jpg') }}" alt="Loïc Wulleman">
+                        </figure>
                     </div>
-                    <!-- Team Member Item End -->
+                    <!-- Director Image End -->
+
+                    <!-- Director Info Box Start -->
+                    <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s" style="margin-top: 20px;">
+                        <div class="team-content" style="text-align: center; padding: 20px;">
+                            <h3 style="color: var(--primary-color); margin-bottom: 5px;">Loïc Wulleman</h3>
+                            <p style="font-size: 16px; margin-bottom: 10px;">Directeur et Moniteur Diplômé d'État</p>
+                            <p style="font-size: 14px; color: #666;">Né le 29 mai 1976 à Marseille</p>
+                        </div>
+                    </div>
+                    <!-- Director Info Box End -->
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="{{ asset('storage/images/team-2.jpg') }}" alt="">
-                                </figure>
-                            </a>
+                <div class="col-lg-8">
+                    <!-- Director Biography Start -->
+                    <div class="team-single-content">
+                        <div class="team-member-about">
+                            <div class="section-title">
+                                <h3 class="wow fadeInUp">Parcours de Loïc</h3>
+                                <div class="wow fadeInUp" data-wow-delay="0.2s" style="line-height: 1.8;">
+                                    <p style="margin-bottom: 15px;">"Je débute l'équitation vers l'âge de 14 ans et je passe très vite toutes mes journées au club ! A 16 ans, j'ai la chance d'avoir mon premier cheval « NANO » un trotteur français avec qui je découvre les premiers concours.</p>
 
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                </ul>
+                                    <p style="margin-bottom: 15px;">Je m'oriente rapidement vers un brevet de technicien agricole afin de me spécialiser dans le monde équestre. Deux années de formation du Brevet d'état d'éducateur sportif me permettent d'obtenir en 1996 le diplôme de moniteur. En choisissant l'option « dressage », je découvre jusqu'en B2 une autre discipline de compétition que l'obstacle pratiqué jusque là.</p>
+
+                                    <p style="margin-bottom: 15px;">J'apprends à gérer un établissement équestre lors de mon service militaire en tant de Maréchal des Logis responsable de la Section Equestre Militaire de Carpiagnes. A ma sortie, j'entreprends la formation du Tronc commun 2° au CREPS d'Aix en Provence et obtiens mon diplôme en Mai 1998.</p>
+
+                                    <p style="margin-bottom: 15px;">Parallèlement, je participe à la création d'un Centre Equestre à Saint-Maximin où je découvre les différentes pédagogies en créant les sections « Baby poney » et « handi-cheval ».</p>
+
+                                    <p style="margin-bottom: 15px;">J'effectue par la suite des stages à l'Ecole Nationale d'Equitation de Saumur où l'on enseigne les principes de l'équitation Académique.</p>
+
+                                    <p style="margin-bottom: 15px;">Je continue avec ma jument « Glwadys » à sortir en compétitions et suis un stage d'une année chez M. Guy Martin marchand de chevaux à Bourg-en-Bresse, où j'ai la chance de monter quotidiennement une douzaine de chevaux dont certains ont participé à des olympiades.</p>
+
+                                    <p style="margin-bottom: 15px;">Je prends la succession de Karine à Vourles (Lyon) et c'est en juillet 2002 que nous nous installons à Nans les Pins où nous créons le CENTRE EQUESTRE DE NANS LES PINS. Depuis sa création, le Centre Equestre compte plus 350 adhérents et ne cesse d'évoluer."</p>
+                                </div>
                             </div>
-                            <!-- Team Social Icon End -->
                         </div>
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3><a href="team-single.html">Olivia Hayes</a></h3>
-                            <p>Riding Coach</p>
-                        </div>
-                        <!-- Team Content End -->
                     </div>
-                    <!-- Team Member Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="{{ asset('storage/images/team-3.jpg') }}" alt="">
-                                </figure>
-                            </a>
-
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3><a href="team-single.html">Ethan Brooks</a></h3>
-                            <p>Stable Manager</p>
-                        </div>
-                        <!-- Team Content End -->
-                    </div>
-                    <!-- Team Member Item End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="{{ asset('storage/images/team-4.jpg') }}" alt="">
-                                </figure>
-                            </a>
-
-                            <!-- Team Social Icon Start -->
-                            <div class="team-social-icon">
-                                <ul>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Team Social Icon End -->
-                        </div>
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3><a href="team-single.html">Sophie Turner</a></h3>
-                            <p>Horse Specialist</p>
-                        </div>
-                        <!-- Team Content End -->
-                    </div>
-                    <!-- Team Member Item End -->
+                    <!-- Director Biography End -->
                 </div>
             </div>
+            <!-- Loïc Wulleman Section End -->
+
+            <!-- Karine Wulleman Section Start -->
+            <div class="row align-items-start">
+                <div class="col-lg-4">
+                    <!-- Director Image Start -->
+                    <div class="team-single-image">
+                        <figure class="image-anime reveal">
+                            <img src="{{ asset('storage/images/team-2.jpg') }}" alt="Karine Wulleman">
+                        </figure>
+                    </div>
+                    <!-- Director Image End -->
+
+                    <!-- Director Info Box Start -->
+                    <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s" style="margin-top: 20px;">
+                        <div class="team-content" style="text-align: center; padding: 20px;">
+                            <h3 style="color: var(--primary-color); margin-bottom: 5px;">Karine Wulleman</h3>
+                            <p style="font-size: 16px; margin-bottom: 10px;">Directrice et Monitrice Diplômée d'État</p>
+                            <p style="font-size: 14px; color: #666;">Née le 2 janvier 1977 à Noisy le sec</p>
+                        </div>
+                    </div>
+                    <!-- Director Info Box End -->
+                </div>
+
+                <div class="col-lg-8">
+                    <!-- Director Biography Start -->
+                    <div class="team-single-content">
+                        <div class="team-member-about">
+                            <div class="section-title">
+                                <h3 class="wow fadeInUp">Parcours de Karine</h3>
+                                <div class="wow fadeInUp" data-wow-delay="0.2s" style="line-height: 1.8;">
+                                    <p style="margin-bottom: 15px;">"Née le 2 janvier 1977 à Noisy le sec, j'ai commencé l'équitation à l'âge de 8 ans à Paris. Passionnée dès mes débuts, je passe rapidement mes galops jusqu'au 7.</p>
+
+                                    <p style="margin-bottom: 15px;">Attirée par la discipline du Saut d'Obstacles, je sors dans un premier temps en concours d'entraînement puis en officiel avec mon cheval UN ORFEVRE avec lequel je gagne plusieurs épreuves jusqu'à 1m30.</p>
+
+                                    <p style="margin-bottom: 15px;">Très vite je m'oriente vers le monitorat d'équitation dans le but de transmettre ma passion. Mon cheval, UN ORFEVRE, m'accompagne durant les 2 années de formation passées à ROANNE et c'est avec lui que j'obtiens mon monitorat en sortant major de promotion en 1997.</p>
+
+                                    <p style="margin-bottom: 15px;">Passionnée d'enseignement et d'équitation, je travaille durant 5 ans dans différents centres équestres consciente que ce parcours m'apporterait l'expérience nécessaire à la bonne exploitation d'un futur Centre Equestre.</p>
+
+                                    <p style="margin-bottom: 15px;">En 1999, je participe à la création du centre équestre de VOURLES (LYON) et en deviens responsable aux côtés de M. ATTALI cavalier de 1ère catégorie. Je m'implique par la suite dans l'organisation de différentes manifestation, concours et autres ainsi que dans un projet d'équitation universitaire.</p>
+
+                                    <p style="margin-bottom: 15px;">C'est en juillet 2002 que nous reprenons avec Loïc ces écuries rebaptisées CENTRE EQUESTRE DE NANS LES PINS. Grâce à une forte motivation et à nos expériences, le club qui ne comptait qu'une trentaine de cavaliers et dont les infrastructures étaient quasiment à l'abandon héberge aujourd'hui plus de 60 chevaux et poneys pour plus de 350 adhérents."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Director Biography End -->
+                </div>
+            </div>
+            <!-- Karine Wulleman Section End -->
         </div>
     </div>
-    <!-- Our Team Section End -->
+    <!-- Directors Section End -->
 
     <!-- CTA Box Section Start -->
     <div class="cta-box-section bg-section dark-section parallaxie">
@@ -833,26 +394,23 @@
                         <div class="cta-box-content">
                             <!-- Section Title Start -->
                             <div class="section-title">
-                                <h3 class="wow fadeInUp">Ready to Ride? Contact Us Today!</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Connect with us and experience <span>personalized guidance</span>
-                                </h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're a first-time rider or a
-                                    seasoned equestrian, our dedicated team is here to provide personalized guidance
-                                    tailored to your goals.</p>
+                                <h3 class="wow fadeInUp">Rejoignez-nous !</h3>
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez l'équitation plaisir <span>pour petits et grands</span></h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Que vous soyez débutant ou cavalier confirmé, notre équipe passionnée est là pour vous accompagner dans votre pratique de l'équitation.</p>
                             </div>
                             <!-- Section Title End -->
 
                             <!-- CTA Box Body Start -->
                             <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="contact.html" class="btn-default btn-highlighted">Contact us today</a>
+                                <a href="{{ route('contact') }}" class="btn-default btn-highlighted">Nous Contacter</a>
                             </div>
                             <!-- CTA Box Body End -->
 
                             <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">
                                 <ul>
-                                    <li>Expert Riding Lessons</li>
-                                    <li>Trail Riding Adventures</li>
-                                    <li>Community & Events</li>
+                                    <li>Poney-Club</li>
+                                    <li>Centre Équestre</li>
+                                    <li>Balades & Randonnées</li>
                                 </ul>
                             </div>
                         </div>
@@ -874,7 +432,7 @@
     <!-- CTA Box Section End -->
 
     <!-- Our Testimonial Section Start -->
-    {{-- livewire.testimonial.blade.php--}}
+    @livewire('partials.testimonial')
     <!-- Our Testimonial Section End -->
 
 </div>

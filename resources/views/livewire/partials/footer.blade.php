@@ -44,6 +44,8 @@
                                 <li><a href="{{ route('services') }}">Activités & Services</a></li>
                                 <li><a href="{{ route('prices') }}">Tarifs</a></li>
                                 <li><a href="{{ route('contact') }}">Nous Contacter</a></li>
+                                <li><a href="{{ route('legal.reglement') }}">Règlement intérieur</a></li>
+                                <li><a href="{{ route('legal.informations') }}">Informations légales</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

@@ -6,11 +6,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-2" data-cursor="-opaque">Our <span>services</span></h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque">Activités & <span>Services</span></h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About us</li>
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Accueil</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Activités & Services</li>
                             </ol>
                         </nav>
                     </div>
@@ -25,209 +25,45 @@
     <div class="page-services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>01</p>
-                                <h3><a href="service-single.html">Horse Riding Lessons</a></h3>
+                @foreach($services as $index => $service)
+                    @php
+                        $iconIndex = (($index % 6) + 1);
+                        $delay = $index * 0.1;
+                    @endphp
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Service Item Start -->
+                        <div class="service-item wow fadeInUp" data-wow-delay="{{ $delay }}s">
+                            <!-- Service Item Header Start -->
+                            <div class="service-item-header">
+                                <div class="service-item-title">
+                                    <p>{{ str_pad($service->order, 2, '0', STR_PAD_LEFT) }}</p>
+                                    <h3><a href="{{ route('services.show', $service->slug) }}">{{ $service->title }}</a></h3>
+                                </div>
+                                <div class="icon-box">
+                                    <img src="{{ asset('storage/images/icon-service-' . $iconIndex . '.svg') }}" alt="">
+                                </div>
                             </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-1.svg') }}" alt="">
+                            <!-- Service Item Header End -->
+
+                            <!-- Service Item Content Start -->
+                            <div class="service-item-content">
+                                <p>{{ $service->introduction ?? 'Découvrez nos services équestres de qualité.' }}</p>
                             </div>
-                        </div>
-                        <!-- Service Item Header End -->
+                            <!-- Service Item Content End -->
 
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Master the fundamentals or refine your technique with expert.</p>
+                            <!-- Service Image Start -->
+                            <div class="service-image">
+                                <a href="{{ route('services.show', $service->slug) }}" data-cursor-text="View">
+                                    <figure class="image-anime">
+                                        <img src="{{ asset('storage/images/service-' . $iconIndex . '.jpg') }}" alt="{{ $service->title }}">
+                                    </figure>
+                                </a>
+                            </div>
+                            <!-- Service Image End -->
                         </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-1.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
+                        <!-- Service Item End -->
                     </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>02</p>
-                                <h3><a href="service-single.html">Horse Training Services</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-2.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Host unforgettable birthdays, team-building events.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-2.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>03</p>
-                                <h3><a href="service-single.html">Grooming & Horse Care</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-3.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Hands-on classes teaching essential expert horse care.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-3.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>04</p>
-                                <h3><a href="service-single.html">Beginner Riding Programs</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-4.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Hands-on classes teaching essential expert horse care.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-4.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>05</p>
-                                <h3><a href="service-single.html">Stable Management Training</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-5.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Hands-on classes teaching essential expert horse care.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-5.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="1s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>06</p>
-                                <h3><a href="service-single.html">Grooming & Horse Care</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-6.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Hands-on classes teaching essential expert horse care.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-6.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

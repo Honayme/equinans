@@ -6,7 +6,9 @@
       "Bash(composer require:*)",
       "Bash(php artisan vendor:publish:*)",
       "Bash(php artisan make:migration:*)",
-      "Bash(php artisan:*)"
+      "Bash(php artisan:*)",
+      "Bash(php -r:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
