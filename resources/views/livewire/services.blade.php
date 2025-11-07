@@ -163,6 +163,20 @@
                                 <!-- What We Item End -->
                             </div>
                             <!-- What We Item List End -->
+
+                            <!-- Passage de Galop CTA Start -->
+                            <div class="passage-galop-cta wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="alert alert-primary d-flex align-items-center" role="alert" style="background-color: #E5B566; border-color: #E5B566;">
+                                    <div class="flex-grow-1">
+                                        <h4 class="alert-heading mb-2 text-white">
+                                            <i class="fa-solid fa-trophy me-2"></i>Passage de Galop
+                                        </h4>
+                                        <p class="mb-0 text-white">Découvrez nos programmes de préparation aux Galops® de la FFE, du niveau 1 au niveau 7.</p>
+                                    </div>
+                                    <a href="{{ url('/galop-1') }}" class="btn btn-light ms-3">En savoir plus</a>
+                                </div>
+                            </div>
+                            <!-- Passage de Galop CTA End -->
                         </div>
                         <!-- What We Do Body End -->
                     </div>
@@ -314,6 +328,54 @@
     <!-- Our Benefits Section End -->
 
     <!-- CTA Box Section Start -->
+{{--    <div class="cta-box-section bg-section dark-section parallaxie">--}}
+{{--        <div class="container-fluid">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <!-- CTA Box Start -->--}}
+{{--                    <div class="cta-box">--}}
+{{--                        <!-- CTA Box Content Start -->--}}
+{{--                        <div class="cta-box-content">--}}
+{{--                            <!-- Section Title Start -->--}}
+{{--                            <div class="section-title">--}}
+{{--                                <h3 class="wow fadeInUp">Ready to Ride? Contact Us Today!</h3>--}}
+{{--                                <h2 class="text-anime-style-2" data-cursor="-opaque">Connect with us and experience <span>personalized guidance</span>--}}
+{{--                                </h2>--}}
+{{--                                <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're a first-time rider or a--}}
+{{--                                    seasoned equestrian, our dedicated team is here to provide personalized guidance--}}
+{{--                                    tailored to your goals.</p>--}}
+{{--                            </div>--}}
+{{--                            <!-- Section Title End -->--}}
+
+{{--                            <!-- CTA Box Body Start -->--}}
+{{--                            <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">--}}
+{{--                                <a href="contact.html" class="btn-default btn-highlighted">Contact us today</a>--}}
+{{--                            </div>--}}
+{{--                            <!-- CTA Box Body End -->--}}
+
+{{--                            <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">--}}
+{{--                                <ul>--}}
+{{--                                    <li>Expert Riding Lessons</li>--}}
+{{--                                    <li>Trail Riding Adventures</li>--}}
+{{--                                    <li>Community & Events</li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- CTA Box Content End -->--}}
+
+{{--                        <!-- CTA Box Image Start -->--}}
+{{--                        <div class="cta-box-image">--}}
+{{--                            <figure>--}}
+{{--                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="">--}}
+{{--                            </figure>--}}
+{{--                        </div>--}}
+{{--                        <!-- CTA Box Image End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- CTA Box End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <div class="cta-box-section bg-section dark-section parallaxie">
         <div class="container-fluid">
             <div class="row">
@@ -324,35 +386,33 @@
                         <div class="cta-box-content">
                             <!-- Section Title Start -->
                             <div class="section-title">
-                                <h3 class="wow fadeInUp">Ready to Ride? Contact Us Today!</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Connect with us and experience <span>personalized guidance</span>
-                                </h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're a first-time rider or a
-                                    seasoned equestrian, our dedicated team is here to provide personalized guidance
-                                    tailored to your goals.</p>
+                                <h3 class="wow fadeInUp">Plongez dans le monde magique des poneys et chevaux</h3>
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Organisez un anniversaire génial à <span>Equinans ?</span></h2>
                             </div>
                             <!-- Section Title End -->
 
                             <!-- CTA Box Body Start -->
                             <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="contact.html" class="btn-default btn-highlighted">Contact us today</a>
+                                <a href="{{ route('contact') }}" class="btn-default btn-highlighted">Contactez-nous !</a>
                             </div>
                             <!-- CTA Box Body End -->
 
                             <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">
-                                <ul>
-                                    <li>Expert Riding Lessons</li>
-                                    <li>Trail Riding Adventures</li>
-                                    <li>Community & Events</li>
+                                <ul style="display: block;">
+                                    <li class="mb-3" style="display: block; width: 100%;"><i class="fa-solid fa-music me-2"></i>Accueil en musique des invités</li>
+                                    <li class="mb-3" style="display: block; width: 100%;"><i class="fa-solid fa-mask me-2"></i>Déguisement (fourni par Equinans) : princesses, chevaliers...</li>
+                                    <li class="mb-3" style="display: block; width: 100%;"><i class="fa-solid fa-gamepad me-2"></i>Séance de jeux en musique</li>
+                                    <li style="display: block; width: 100%;"><i class="fa-solid fa-cake-candles me-2"></i>Goûter et cadeaux dans le parc ou le club house</li>
                                 </ul>
                             </div>
                         </div>
+
                         <!-- CTA Box Content End -->
 
                         <!-- CTA Box Image Start -->
                         <div class="cta-box-image">
                             <figure>
-                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="">
+                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="Anniversaire à Equinans">
                             </figure>
                         </div>
                         <!-- CTA Box Image End -->
@@ -362,6 +422,7 @@
             </div>
         </div>
     </div>
+
     <!-- CTA Box Section End -->
 
     <!-- Our Testimonial Section Start -->
