@@ -1,6 +1,6 @@
 <div>
     <!-- Hero Start -->
-    <div class="hero bg-section dark-section parallaxie">
+    <div id="hero-pres" class="hero bg-section dark-section parallaxie">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-9">
@@ -80,6 +80,7 @@
     </div>
     <!-- Hero End -->
 
+{{--    TODO Faire un rappel des choses dites dans la page about avec le bouton more about us qui redirige vers, insister sur le bien être animal '/le-centre-equestre' --}}
     <!-- About Us Section Start -->
     <div class="about-us">
         <div class="container">
@@ -103,7 +104,7 @@
                         <div class="about-image-box-2">
                             <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                                <a href="{{ route('contact') }}"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
                             <!-- Contact Us Circle End -->
 
@@ -115,13 +116,13 @@
                             </div>
                             <!-- About Us Image 2 End -->
 
-                            <!-- About Us Image 2 Start -->
+                            <!-- About Us Image 3 Start -->
                             <div class="about-us-img-3">
                                 <figure class="image-anime reveal">
                                     <img src="{{ asset('storage/images/about-us-img-3.jpg') }}" alt="">
                                 </figure>
                             </div>
-                            <!-- About Us Image 2 End -->
+                            <!-- About Us Image 3 End -->
                         </div>
                         <!-- About Image Box 2 End -->
                     </div>
@@ -133,9 +134,9 @@
                     <div class="about-us-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">Tradition. Trust. Together.</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Nurturing the bond between horse and rider <span>through passion, patience</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our horse club was founded on the belief that riding should be accessible, enjoyable, & empowering. With a supportive environment, expert trainers, and a herd of well-cared-for horses, we help every rider create their own unforgettable journey.</p>
+                            <h3 class="wow fadeInUp">Centre Équestre de Nans-les-Pins</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">L'équitation plaisir pour <span>petits et grands</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Equinans est le nom du Centre Équestre et Poney-Club de Nans-les-Pins, situé dans le département du Var (83). Il est niché dans un cadre naturel, au pied du massif de la Sainte-Baume, ce qui en fait un lieu privilégié pour les activités de plein air.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -147,8 +148,8 @@
                                     <img src="{{ asset('storage/images/icon-about-body-item-1.svg') }}" alt="">
                                 </div>
                                 <div class="about-body-item-content">
-                                    <h3>Friendly Atmosphere</h3>
-                                    <p>A place where every rider feels welcome, supported.</p>
+                                    <h3>Club Affilié FFE</h3>
+                                    <p>Club affilié à la Fédération Française d'Équitation (FFE) et détenant le label "École Française d'Équitation".</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -159,8 +160,8 @@
                                     <img src="{{ asset('storage/images/icon-about-body-item-2.svg') }}" alt="">
                                 </div>
                                 <div class="about-body-item-content">
-                                    <h3>Trusted Horses</h3>
-                                    <p>Professional guidance with well-trained, gentle horses.</p>
+                                    <h3>Cadre Naturel Exceptionnel</h3>
+                                    <p>Au pied du massif de la Sainte-Baume, idéal pour les balades et activités de plein air.</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -169,7 +170,7 @@
 
                         <!-- About Us Button Start -->
                         <div class="about-us-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="about.html" class="btn-default">More About Us</a>
+                            <a href="{{ route('contact') }}" class="btn-default">Nous Contacter</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -196,127 +197,19 @@
                 <div class="col-lg-6">
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="services.html" class="btn-default">View All Services</a>
+                        <a class="btn-default" href="{{ route('services') }}">Activités & Galops</a>
                     </div>
                     <!-- Section Button End -->
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>01</p>
-                                <h3><a href="service-single.html">Horse Riding Lessons</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-1.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
+            <livewire:partials.services-cards :limit="3" />
 
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Master the fundamentals or refine your technique with expert.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-1.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>02</p>
-                                <h3><a href="service-single.html">Horse Training Services</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-2.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Host unforgettable birthdays, team-building events.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-2.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!--  Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Service Item Header Start -->
-                        <div class="service-item-header">
-                            <div class="service-item-title">
-                                <p>03</p>
-                                <h3><a href="service-single.html">Grooming & Horse Care</a></h3>
-                            </div>
-                            <div class="icon-box">
-                                <img src="{{ asset('storage/images/icon-service-3.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <!-- Service Item Header End -->
-
-                        <!-- Service Item Content Start -->
-                        <div class="service-item-content">
-                            <p>Hands-on classes teaching essential expert horse care.</p>
-                        </div>
-                        <!-- Service Item Content End -->
-
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="service-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/service-3.jpg') }}" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Section Footer Text Start -->
-                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.6s">
-                        <p><span>Free</span>Feel the freedom, live the moment -  <a href="contact.html">join the excitement today!</a></p>
-                    </div>
-                    <!-- Section Footer Text End -->
-                </div>
-            </div>
         </div>
     </div>
     <!-- Our Services Section End -->
 
+{{--    TODO PARLER DE EQUIDRIVE et rediriger vers la page equidrive --}}
     <!-- Our Benefits Section Start -->
     <div class="our-benefits">
         <div class="container">
@@ -633,146 +526,146 @@
     <!-- Why Choose Us Section End -->
 
     <!-- Our Fact Section Start -->
-    <div class="our-fact bg-section">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp">Our Fun Fact</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Dedicated to nurturing the rider-horse partnership <span><img src="{{ asset('storage/images/author-1.jpg') }}" alt=""><img src="{{ asset('storage/images/author-2.jpg') }}" alt=""><img src="{{ asset('storage/images/author-3.jpg') }}" alt=""></span> with quality training, <span>care and memorable adventures</span></h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
+{{--    <div class="our-fact bg-section">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row section-row">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <!-- Section Title Start -->--}}
+{{--                    <div class="section-title section-title-center">--}}
+{{--                        <h3 class="wow fadeInUp">Our Fun Fact</h3>--}}
+{{--                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Dedicated to nurturing the rider-horse partnership <span><img src="{{ asset('storage/images/author-1.jpg') }}" alt=""><img src="{{ asset('storage/images/author-2.jpg') }}" alt=""><img src="{{ asset('storage/images/author-3.jpg') }}" alt=""></span> with quality training, <span>care and memorable adventures</span></h2>--}}
+{{--                    </div>--}}
+{{--                    <!-- Section Title End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Fact Counter List Start -->
-                    <div class="fact-counter-list">
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">25</span>+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Years Equestrian Experience</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <!-- Fact Counter List Start -->--}}
+{{--                    <div class="fact-counter-list">--}}
+{{--                        <!-- Fact Item Start -->--}}
+{{--                        <div class="fact-item">--}}
+{{--                            <div class="fact-item-title">--}}
+{{--                                <h2><span class="counter">25</span>+</h2>--}}
+{{--                            </div>--}}
+{{--                            <div class="fact-item-content">--}}
+{{--                                <p>Years Equestrian Experience</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- Fact Item End -->--}}
 
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">1</span>K+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Events, Shows & Rides Hosted</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
+{{--                        <!-- Fact Item Start -->--}}
+{{--                        <div class="fact-item">--}}
+{{--                            <div class="fact-item-title">--}}
+{{--                                <h2><span class="counter">1</span>K+</h2>--}}
+{{--                            </div>--}}
+{{--                            <div class="fact-item-content">--}}
+{{--                                <p>Events, Shows & Rides Hosted</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- Fact Item End -->--}}
 
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">60</span>+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Well-Cared For Horses</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
+{{--                        <!-- Fact Item Start -->--}}
+{{--                        <div class="fact-item">--}}
+{{--                            <div class="fact-item-title">--}}
+{{--                                <h2><span class="counter">60</span>+</h2>--}}
+{{--                            </div>--}}
+{{--                            <div class="fact-item-content">--}}
+{{--                                <p>Well-Cared For Horses</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- Fact Item End -->--}}
 
-                        <!-- Fact Item Start -->
-                        <div class="fact-item">
-                            <div class="fact-item-title">
-                                <h2><span class="counter">2</span>K+</h2>
-                            </div>
-                            <div class="fact-item-content">
-                                <p>Happy Riders Trainers</p>
-                            </div>
-                        </div>
-                        <!-- Fact Item End -->
-                    </div>
-                    <!-- Fact Counter List End -->
-                </div>
+{{--                        <!-- Fact Item Start -->--}}
+{{--                        <div class="fact-item">--}}
+{{--                            <div class="fact-item-title">--}}
+{{--                                <h2><span class="counter">2</span>K+</h2>--}}
+{{--                            </div>--}}
+{{--                            <div class="fact-item-content">--}}
+{{--                                <p>Happy Riders Trainers</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- Fact Item End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Fact Counter List End -->--}}
+{{--                </div>--}}
 
-                <div class="col-lg-12">
-                    <!-- Comapany Support Slider Start -->
-                    <div class="company-supports-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-1.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                <div class="col-lg-12">--}}
+{{--                    <!-- Comapany Support Slider Start -->--}}
+{{--                    <div class="company-supports-slider">--}}
+{{--                        <div class="swiper">--}}
+{{--                            <div class="swiper-wrapper">--}}
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-1.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-2.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-2.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-3.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-3.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-4.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-4.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-5.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-5.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-6.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-6.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-2.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-2.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-supports-logo">
-                                        <img src="{{ asset('storage/images/company-supports-logo-3.svg') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Comapany Support Logo End -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Comapany Support Slider End -->
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                                <!-- Company Support Logo Start -->--}}
+{{--                                <div class="swiper-slide">--}}
+{{--                                    <div class="company-supports-logo">--}}
+{{--                                        <img src="{{ asset('storage/images/company-supports-logo-3.svg') }}" alt="">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <!-- Comapany Support Logo End -->--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Comapany Support Slider End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- Our Fact Section End -->
 
     <!-- Our Gallery Section Start -->
@@ -780,265 +673,266 @@
     <!-- Our Gallery Section End -->
 
     <!-- Our Pricing Section Start -->
-    <div class="our-pricing bg-section dark-section">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp">Pricing plan</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Every rider's path starts here - choose <span>your ride plan</span></h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
+{{--    <div class="our-pricing bg-section dark-section">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row section-row">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <!-- Section Title Start -->--}}
+{{--                    <div class="section-title section-title-center">--}}
+{{--                        <h3 class="wow fadeInUp">Pricing plan</h3>--}}
+{{--                        <h2 class="text-anime-style-2" data-cursor="-opaque">Every rider's path starts here - choose <span>your ride plan</span></h2>--}}
+{{--                        <p class="wow fadeInUp" data-wow-delay="0.2s">We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety.</p>--}}
+{{--                    </div>--}}
+{{--                    <!-- Section Title End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Box Start -->
-                    <div class="pricing-box wow fadeInUp">
-                        <!-- Pricing Header Start -->
-                        <div class="pricing-header">
-                            <h3>Basic Plan</h3>
-                        </div>
-                        <!-- Pricing Header End -->
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-4 col-md-6">--}}
+{{--                    <!-- Pricing Box Start -->--}}
+{{--                    <div class="pricing-box wow fadeInUp">--}}
+{{--                        <!-- Pricing Header Start -->--}}
+{{--                        <div class="pricing-header">--}}
+{{--                            <h3>Basic Plan</h3>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Header End -->--}}
 
-                        <!-- Pricing Price Start -->
-                        <div class="pricing-price">
-                            <h2>$29.00<sub>/Monthly</sub></h2>
-                            <p>Ideal for beginners, this plan includes 4 riding lessons per monthly.</p>
-                        </div>
-                        <!-- Pricing Price End -->
+{{--                        <!-- Pricing Price Start -->--}}
+{{--                        <div class="pricing-price">--}}
+{{--                            <h2>$29.00<sub>/Monthly</sub></h2>--}}
+{{--                            <p>Ideal for beginners, this plan includes 4 riding lessons per monthly.</p>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Price End -->--}}
 
-                        <!-- Pricing Button Start -->
-                        <div class="pricing-btn">
-                            <a href="contact.html" class="btn-default">Get Started Now</a>
-                        </div>
-                        <!-- Pricing Button End -->
+{{--                        <!-- Pricing Button Start -->--}}
+{{--                        <div class="pricing-btn">--}}
+{{--                            <a href="contact.html" class="btn-default">Get Started Now</a>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Button End -->--}}
 
-                        <!-- Pricing Body Start -->
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Use of Riding Equipment</li>
-                                <li>Basic Horse Care Introduction</li>
-                            </ul>
-                        </div>
-                        <!-- Pricing Body End -->
-                    </div>
-                    <!-- Pricing Box End -->
-                </div>
+{{--                        <!-- Pricing Body Start -->--}}
+{{--                        <div class="pricing-body">--}}
+{{--                            <ul>--}}
+{{--                                <li>Use of Riding Equipment</li>--}}
+{{--                                <li>Basic Horse Care Introduction</li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Body End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Pricing Box End -->--}}
+{{--                </div>--}}
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Box Start -->
-                    <div class="pricing-box wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Pricing Header Start -->
-                        <div class="pricing-header">
-                            <h3>Standard Plan</h3>
-                        </div>
-                        <!-- Pricing Header End -->
+{{--                <div class="col-lg-4 col-md-6">--}}
+{{--                    <!-- Pricing Box Start -->--}}
+{{--                    <div class="pricing-box wow fadeInUp" data-wow-delay="0.2s">--}}
+{{--                        <!-- Pricing Header Start -->--}}
+{{--                        <div class="pricing-header">--}}
+{{--                            <h3>Standard Plan</h3>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Header End -->--}}
 
-                        <!-- Pricing Price Start -->
-                        <div class="pricing-price">
-                            <h2>$79.00<sub>/Monthly</sub></h2>
-                            <p>Perfect for riders looking to improve, offering 8 lessons monthly.</p>
-                        </div>
-                        <!-- Pricing Price End -->
+{{--                        <!-- Pricing Price Start -->--}}
+{{--                        <div class="pricing-price">--}}
+{{--                            <h2>$79.00<sub>/Monthly</sub></h2>--}}
+{{--                            <p>Perfect for riders looking to improve, offering 8 lessons monthly.</p>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Price End -->--}}
 
-                        <!-- Pricing Button Start -->
-                        <div class="pricing-btn">
-                            <a href="contact.html" class="btn-default">Get Started Now</a>
-                        </div>
-                        <!-- Pricing Button End -->
+{{--                        <!-- Pricing Button Start -->--}}
+{{--                        <div class="pricing-btn">--}}
+{{--                            <a href="contact.html" class="btn-default">Get Started Now</a>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Button End -->--}}
 
-                        <!-- Pricing Body Start -->
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Horse Training Workshops</li>
-                                <li>Priority Booking for Events</li>
-                            </ul>
-                        </div>
-                        <!-- Pricing Body End -->
-                    </div>
-                    <!-- Pricing Box End -->
-                </div>
+{{--                        <!-- Pricing Body Start -->--}}
+{{--                        <div class="pricing-body">--}}
+{{--                            <ul>--}}
+{{--                                <li>Horse Training Workshops</li>--}}
+{{--                                <li>Priority Booking for Events</li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Body End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Pricing Box End -->--}}
+{{--                </div>--}}
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Box Start -->
-                    <div class="pricing-box wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Pricing Header Start -->
-                        <div class="pricing-header">
-                            <h3>Premium Plan</h3>
-                        </div>
-                        <!-- Pricing Header End -->
+{{--                <div class="col-lg-4 col-md-6">--}}
+{{--                    <!-- Pricing Box Start -->--}}
+{{--                    <div class="pricing-box wow fadeInUp" data-wow-delay="0.4s">--}}
+{{--                        <!-- Pricing Header Start -->--}}
+{{--                        <div class="pricing-header">--}}
+{{--                            <h3>Premium Plan</h3>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Header End -->--}}
 
-                        <!-- Pricing Price Start -->
-                        <div class="pricing-price">
-                            <h2>$299.00<sub>/Monthly</sub></h2>
-                            <p>For experienced riders, enjoy unlimited lessons, private coaching sessions.</p>
-                        </div>
-                        <!-- Pricing Price End -->
+{{--                        <!-- Pricing Price Start -->--}}
+{{--                        <div class="pricing-price">--}}
+{{--                            <h2>$299.00<sub>/Monthly</sub></h2>--}}
+{{--                            <p>For experienced riders, enjoy unlimited lessons, private coaching sessions.</p>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Price End -->--}}
 
-                        <!-- Pricing Button Start -->
-                        <div class="pricing-btn">
-                            <a href="contact.html" class="btn-default">Get Started Now</a>
-                        </div>
-                        <!-- Pricing Button End -->
+{{--                        <!-- Pricing Button Start -->--}}
+{{--                        <div class="pricing-btn">--}}
+{{--                            <a href="contact.html" class="btn-default">Get Started Now</a>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Button End -->--}}
 
-                        <!-- Pricing Body Start -->
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Unlimited Riding Lessons</li>
-                                <li>Advanced Training Programs</li>
-                            </ul>
-                        </div>
-                        <!-- Pricing Body End -->
-                    </div>
-                    <!-- Pricing Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                        <!-- Pricing Body Start -->--}}
+{{--                        <div class="pricing-body">--}}
+{{--                            <ul>--}}
+{{--                                <li>Unlimited Riding Lessons</li>--}}
+{{--                                <li>Advanced Training Programs</li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                        <!-- Pricing Body End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Pricing Box End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- Our Pricing Section End -->
 
     <!-- Our Features Section Start -->
-    <div class="our-features">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <!-- Feature Item Start -->
-                    <div class="feature-images">
-                        <!-- Feature images Box Start -->
-                        <div class="feature-images-box">
-                            <!-- Feature image Start -->
-                            <div class="feature-image-1">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/features-image-1.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- Feature image End -->
+{{--    <div class="our-features">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-xl-6">--}}
+{{--                    <!-- Feature Item Start -->--}}
+{{--                    <div class="feature-images">--}}
+{{--                        <!-- Feature images Box Start -->--}}
+{{--                        <div class="feature-images-box">--}}
+{{--                            <!-- Feature image Start -->--}}
+{{--                            <div class="feature-image-1">--}}
+{{--                                <figure class="image-anime reveal">--}}
+{{--                                    <img src="{{ asset('storage/images/features-image-1.jpg') }}" alt="">--}}
+{{--                                </figure>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature image End -->--}}
 
-                            <!-- Feature Counter Box Start -->
-                            <div class="feature-counter-box">
-                                <h2><span class="counter">25</span>+</h2>
-                                <p>Years Equestrian Experience</p>
-                            </div>
-                            <!-- Feature Counter Box End -->
-                        </div>
-                        <!-- Feature images Box End -->
+{{--                            <!-- Feature Counter Box Start -->--}}
+{{--                            <div class="feature-counter-box">--}}
+{{--                                <h2><span class="counter">25</span>+</h2>--}}
+{{--                                <p>Years Equestrian Experience</p>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature Counter Box End -->--}}
+{{--                        </div>--}}
+{{--                        <!-- Feature images Box End -->--}}
 
-                        <!-- Feature images Box Start -->
-                        <div class="feature-images-box">
-                            <!-- Feature image Start -->
-                            <div class="feature-image-2">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/features-image-2.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- Feature image End -->
+{{--                        <!-- Feature images Box Start -->--}}
+{{--                        <div class="feature-images-box">--}}
+{{--                            <!-- Feature image Start -->--}}
+{{--                            <div class="feature-image-2">--}}
+{{--                                <figure class="image-anime reveal">--}}
+{{--                                    <img src="{{ asset('storage/images/features-image-2.jpg') }}" alt="">--}}
+{{--                                </figure>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature image End -->--}}
 
-                            <!-- Feature image Start -->
-                            <div class="feature-image-3">
-                                <figure class="image-anime">
-                                    <img src="{{ asset('storage/images/features-image-3.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- Feature image End -->
-                        </div>
-                        <!-- Feature images Box End -->
-                    </div>
-                    <!-- Feature Item End -->
-                </div>
+{{--                            <!-- Feature image Start -->--}}
+{{--                            <div class="feature-image-3">--}}
+{{--                                <figure class="image-anime">--}}
+{{--                                    <img src="{{ asset('storage/images/features-image-3.jpg') }}" alt="">--}}
+{{--                                </figure>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature image End -->--}}
+{{--                        </div>--}}
+{{--                        <!-- Feature images Box End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Feature Item End -->--}}
+{{--                </div>--}}
 
-                <div class="col-xl-6">
-                    <!-- Feature Content Start -->
-                    <div class="feature-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Plan Your Ride with Confidence</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">A rider's journey: learn, grow & <span>ride with purpose</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">We've designed a simple yet effective process that nurtures your skills, ensures safety, and deepens your passion for riding with every session.</p>
-                        </div>
-                        <!-- Section Title End -->
+{{--                <div class="col-xl-6">--}}
+{{--                    <!-- Feature Content Start -->--}}
+{{--                    <div class="feature-content">--}}
+{{--                        <!-- Section Title Start -->--}}
+{{--                        <div class="section-title">--}}
+{{--                            <h3 class="wow fadeInUp">Plan Your Ride with Confidence</h3>--}}
+{{--                            <h2 class="text-anime-style-2" data-cursor="-opaque">A rider's journey: learn, grow & <span>ride with purpose</span></h2>--}}
+{{--                            <p class="wow fadeInUp" data-wow-delay="0.2s">We've designed a simple yet effective process that nurtures your skills, ensures safety, and deepens your passion for riding with every session.</p>--}}
+{{--                        </div>--}}
+{{--                        <!-- Section Title End -->--}}
 
-                        <!-- Feature Item List Start -->
-                        <div class="feature-item-list">
-                            <!-- Feature Item Start -->
-                            <div class="feature-item wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="feature-item-title">
-                                    <h3>Horses Presentations</h3>
-                                </div>
-                                <div class="feature-item-body">
-                                    <div class="feature-item-content">
-                                        <p>Get up close with our majestic horses as we showcase different breeds.<p>
-                                    </div>
-                                    <div class="feature-btn">
-                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Feature Item End -->
+{{--                        <!-- Feature Item List Start -->--}}
+{{--                        <div class="feature-item-list">--}}
+{{--                            <!-- Feature Item Start -->--}}
+{{--                            <div class="feature-item wow fadeInUp" data-wow-delay="0.4s">--}}
+{{--                                <div class="feature-item-title">--}}
+{{--                                    <h3>Horses Presentations</h3>--}}
+{{--                                </div>--}}
+{{--                                <div class="feature-item-body">--}}
+{{--                                    <div class="feature-item-content">--}}
+{{--                                        <p>Get up close with our majestic horses as we showcase different breeds.<p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="feature-btn">--}}
+{{--                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature Item End -->--}}
 
-                            <!-- Feature Item Start -->
-                            <div class="feature-item wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="feature-item-title">
-                                    <h3>Horse Stunt Show</h3>
-                                </div>
-                                <div class="feature-item-body">
-                                    <div class="feature-item-content">
-                                        <p>An action-packed show that highlights the agility and bond between<p>
-                                    </div>
-                                    <div class="feature-btn">
-                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Feature Item End -->
+{{--                            <!-- Feature Item Start -->--}}
+{{--                            <div class="feature-item wow fadeInUp" data-wow-delay="0.6s">--}}
+{{--                                <div class="feature-item-title">--}}
+{{--                                    <h3>Horse Stunt Show</h3>--}}
+{{--                                </div>--}}
+{{--                                <div class="feature-item-body">--}}
+{{--                                    <div class="feature-item-content">--}}
+{{--                                        <p>An action-packed show that highlights the agility and bond between<p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="feature-btn">--}}
+{{--                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature Item End -->--}}
 
-                            <!-- Feature Item Start -->
-                            <div class="feature-item wow fadeInUp" data-wow-delay="0.8s">
-                                <div class="feature-item-title">
-                                    <h3>Qualification Round</h3>
-                                </div>
-                                <div class="feature-item-body">
-                                    <div class="feature-item-content">
-                                        <p>The opening stage where riders display their skills to secure a place.<p>
-                                    </div>
-                                    <div class="feature-btn">
-                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Feature Item End -->
+{{--                            <!-- Feature Item Start -->--}}
+{{--                            <div class="feature-item wow fadeInUp" data-wow-delay="0.8s">--}}
+{{--                                <div class="feature-item-title">--}}
+{{--                                    <h3>Qualification Round</h3>--}}
+{{--                                </div>--}}
+{{--                                <div class="feature-item-body">--}}
+{{--                                    <div class="feature-item-content">--}}
+{{--                                        <p>The opening stage where riders display their skills to secure a place.<p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="feature-btn">--}}
+{{--                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature Item End -->--}}
 
-                            <!-- Feature Item Start -->
-                            <div class="feature-item wow fadeInUp" data-wow-delay="1s">
-                                <div class="feature-item-title">
-                                    <h3>Semi-Final Horse Ride</h3>
-                                </div>
-                                <div class="feature-item-body">
-                                    <div class="feature-item-content">
-                                        <p>A high-energy competition where skilled riders compete for a spot<p>
-                                    </div>
-                                    <div class="feature-btn">
-                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Feature Item End -->
-                        </div>
-                        <!-- Feature Item List End -->
-                    </div>
-                    <!-- Feature Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                            <!-- Feature Item Start -->--}}
+{{--                            <div class="feature-item wow fadeInUp" data-wow-delay="1s">--}}
+{{--                                <div class="feature-item-title">--}}
+{{--                                    <h3>Semi-Final Horse Ride</h3>--}}
+{{--                                </div>--}}
+{{--                                <div class="feature-item-body">--}}
+{{--                                    <div class="feature-item-content">--}}
+{{--                                        <p>A high-energy competition where skilled riders compete for a spot<p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="feature-btn">--}}
+{{--                                        <a href="contact.html"><img src="{{ asset('storage/images/arrow-primary.svg') }}" alt=""></a>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Feature Item End -->--}}
+{{--                        </div>--}}
+{{--                        <!-- Feature Item List End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Feature Content End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- Our Features Section End -->
+
 
     <!-- CTA Box Section Start -->
     <div class="cta-box-section bg-section dark-section parallaxie">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <!-- CTA Box Start -->
@@ -1047,34 +941,30 @@
                         <div class="cta-box-content">
                             <!-- Section Title Start -->
                             <div class="section-title">
-                                <h3 class="wow fadeInUp">Ready to Ride? Contact Us Today!</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Connect with us and experience <span>personalized guidance</span></h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're a first-time rider or a seasoned equestrian, our dedicated team is here to provide personalized guidance tailored to your goals.</p>
+                                <h3 class="wow fadeInUp">Rejoignez-nous !</h3>
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez l'équitation plaisir <span>pour petits et grands</span></h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Que vous soyez débutant ou cavalier confirmé, notre équipe passionnée est là pour vous accompagner dans votre pratique de l'équitation.</p>
                             </div>
                             <!-- Section Title End -->
 
                             <!-- CTA Box Body Start -->
                             <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="contact.html" class="btn-default btn-highlighted">Contact us today</a>
+                                <a href="{{ route('contact') }}" class="btn-default btn-highlighted">Nous Contacter</a>
                             </div>
                             <!-- CTA Box Body End -->
 
                             <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">
                                 <ul>
-                                    <li>Expert Riding Lessons</li>
-                                    <li>Trail Riding Adventures</li>
-                                    <li>Community & Events</li>
+                                    <li>Centre Équestre</li>
+                                    <li>Poney-Club</li>
+                                    <li>Balades & Randonnées</li>
                                 </ul>
                             </div>
                         </div>
                         <!-- CTA Box Content End -->
 
                         <!-- CTA Box Image Start -->
-                        <div class="cta-box-image">
-                            <figure>
-                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="">
-                            </figure>
-                        </div>
+
                         <!-- CTA Box Image End -->
                     </div>
                     <!-- CTA Box End -->
@@ -1085,179 +975,8 @@
     <!-- CTA Box Section End -->
 
     <!-- Our Testimonial Section Start -->
-    {{-- livewire.testimonial.blade.php--}}
+    <livewire:partials.testimonial />
     <!-- Our Testimonial Section End -->
 
-    <!-- Our FAQs Section Start -->
-    <div class="our-faqs bg-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- FAQs Content Start -->
-                    <div class="faqs-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Frequently Asked Questions</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Helping you understand our <span>equestrian services</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">We know starting or continuing your riding journey can bring lots of questions. That's why we've compiled clear answers to the most common inquiries.</p>
-                        </div>
-                        <!-- Section Title End -->
 
-                        <!-- FAQs Contact Box Start -->
-                        <div class="faqs-contact-box wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- FAQs Contact Item Start -->
-                            <div class="faqs-contact-header">
-                                <!-- Satisfy Client Images Start -->
-                                <div class="satisfy-client-images">
-                                    <div class="satisfy-client-image">
-                                        <figure class="image-anime">
-                                            <img src="{{ asset('storage/images/author-1.jpg') }}" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="satisfy-client-image">
-                                        <figure class="image-anime">
-                                            <img src="{{ asset('storage/images/author-2.jpg') }}" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="satisfy-client-image">
-                                        <figure class="image-anime">
-                                            <img src="{{ asset('storage/images/author-3.jpg') }}" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="satisfy-client-image">
-                                        <figure class="image-anime">
-                                            <img src="{{ asset('storage/images/author-4.jpg') }}" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="satisfy-client-image add-more">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </div>
-                                </div>
-                                <!-- Satisfy Client Images End -->
-
-                                <div class="faqs-header-content">
-                                    <p>Over 15k+ riders strong & growing.!</p>
-                                </div>
-                            </div>
-                            <!-- FAQs Contact Item End -->
-
-                            <!-- FAQs Contact List Start -->
-                            <div class="faqs-contact-list">
-                                <!-- Faqs Contact Item Start -->
-                                <div class="faqs-contact-item">
-                                    <div class="icon-box">
-                                        <img src="{{ asset('storage/images/icon-phone-primary.svg') }}" alt="">
-                                    </div>
-
-                                    <div class="faqs-contact-content">
-                                        <p>Call Us At:</p>
-                                        <h3><a href="tel:+123456789">+(123) 456-7890</a></h3>
-                                    </div>
-                                </div>
-                                <!-- Faqs Contact Item End -->
-
-                                <!-- Faqs Contact Item Start -->
-                                <div class="faqs-contact-item">
-                                    <div class="icon-box">
-                                        <img src="{{ asset('storage/images/icon-mail-primary.svg') }}" alt="">
-                                    </div>
-
-                                    <div class="faqs-contact-content">
-                                        <p>Email Us:</p>
-                                        <h3><a href="mailto:info@domain.com">info@domain.com</a></h3>
-                                    </div>
-                                </div>
-                                <!-- Faqs Contact Item End -->
-                            </div>
-                            <!-- FAQs Contact List End -->
-                        </div>
-                        <!-- FAQs Contact Box End -->
-                    </div>
-                    <!-- FAQs Content End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- FAQ Accordion Start -->
-                    <div class="faq-accordion our-faq-accordion" id="accordion">
-                        <!-- FAQ Item Start -->
-                        <div class="accordion-item wow fadeInUp">
-                            <h2 class="accordion-header" id="heading1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    Q1. What types of riding lessons do you offer?
-                                </button>
-                            </h2>
-                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety, and horsemanship.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FAQ Item End -->
-
-                        <!-- FAQ Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="heading2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    Q2: Do I need prior experience to join your riding programs?
-                                </button>
-                            </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety, and horsemanship.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FAQ Item End -->
-
-                        <!-- FAQ Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                            <h2 class="accordion-header" id="heading3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    Q3: What safety measures do you have in place?
-                                </button>
-                            </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety, and horsemanship.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FAQ Item End -->
-
-                        <!-- FAQ Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                            <h2 class="accordion-header" id="heading4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    Q4: Can I board my horse at your facility?
-                                </button>
-                            </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety, and horsemanship.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FAQ Item End -->
-
-                        <!-- FAQ Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                            <h2 class="accordion-header" id="heading5">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    Q5: How do I book a lesson or trail ride?
-                                </button>
-                            </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>We offer beginner, intermediate, and advanced riding lessons tailored to all ages. Lessons include English and Western styles, focusing on skill development, safety, and horsemanship.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- FAQ Item End -->
-                    </div>
-                    <!-- FAQ Accordion End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our FAQs Section End -->
 </div>

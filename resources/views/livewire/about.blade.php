@@ -21,106 +21,6 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- About Us Section Start -->
-    <div class="about-us">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- About Us Image Start -->
-                    <div class="about-us-image">
-                        <!-- About Image Box 1 Start -->
-                        <div class="about-image-box-1">
-                            <!-- About Us Image 1 Start -->
-                            <div class="about-us-img-1">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-1.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- About Us Image 1 End -->
-                        </div>
-                        <!-- About Image Box 1 End -->
-
-                        <!-- About Image Box 2 Start -->
-                        <div class="about-image-box-2">
-                            <!-- Contact Us Circle Start -->
-                            <div class="contact-us-circle">
-                                <a href="{{ route('contact') }}"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
-                            </div>
-                            <!-- Contact Us Circle End -->
-
-                            <!-- About Us Image 2 Start -->
-                            <div class="about-us-img-2">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-2.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- About Us Image 2 End -->
-
-                            <!-- About Us Image 3 Start -->
-                            <div class="about-us-img-3">
-                                <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-3.jpg') }}" alt="">
-                                </figure>
-                            </div>
-                            <!-- About Us Image 3 End -->
-                        </div>
-                        <!-- About Image Box 2 End -->
-                    </div>
-                </div>
-                <!-- About Us Image End -->
-
-                <div class="col-lg-6">
-                    <!-- About Us Content Start -->
-                    <div class="about-us-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Centre Équestre de Nans-les-Pins</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">L'équitation plaisir pour <span>petits et grands</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Equinans est le nom du Centre Équestre et Poney-Club de Nans-les-Pins, situé dans le département du Var (83). Il est niché dans un cadre naturel, au pied du massif de la Sainte-Baume, ce qui en fait un lieu privilégié pour les activités de plein air.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- About Us Body Start -->
-                        <div class="about-us-body wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- About Us Body Item Start -->
-                            <div class="about-us-body-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-about-body-item-1.svg') }}" alt="">
-                                </div>
-                                <div class="about-body-item-content">
-                                    <h3>Club Affilié FFE</h3>
-                                    <p>Club affilié à la Fédération Française d'Équitation (FFE) et détenant le label "École Française d'Équitation".</p>
-                                </div>
-                            </div>
-                            <!-- About Us Body Item End -->
-
-                            <!-- About Us Body Item Start -->
-                            <div class="about-us-body-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-about-body-item-2.svg') }}" alt="">
-                                </div>
-                                <div class="about-body-item-content">
-                                    <h3>Cadre Naturel Exceptionnel</h3>
-                                    <p>Au pied du massif de la Sainte-Baume, idéal pour les balades et activités de plein air.</p>
-                                </div>
-                            </div>
-                            <!-- About Us Body Item End -->
-                        </div>
-                        <!-- About Us Body End -->
-
-                        <!-- About Us Button Start -->
-                        <div class="about-us-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="{{ route('contact') }}" class="btn-default">Nous Contacter</a>
-                        </div>
-                        <!-- About Us Button End -->
-                    </div>
-                    <!-- About Us Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Us Section End -->
-
     <!-- Why Choose Us Section Start -->
     <div class="why-choose-us" style="margin-bottom: -12px; position: relative;">
         <div class="container">
@@ -174,7 +74,7 @@
                         <!-- Why Choose image Start -->
                         <div class="why-choose-image order-lg-1 order-3">
                             <figure>
-                                <img src="{{ asset('storage/images/why-choose-image.png') }}" alt="">
+                                <img src="{{ asset('storage/images_gallery/gallery-15.jpg') }}" alt="">
                             </figure>
                         </div>
                         <!-- Why Choose image End -->
@@ -256,7 +156,7 @@
                     <!-- Approach Image Start -->
                     <div class="approach-image">
                         <figure class="image-anime">
-                            <img src="{{ asset('storage/images/approach-image.jpg') }}" alt="">
+                            <img src="{{ asset('storage/images_gallery/gallery41.jpg') }}" alt="">
                         </figure>
                     </div>
                     <!-- Approach Image End -->
@@ -385,7 +285,7 @@
 
     <!-- CTA Box Section Start -->
     <div class="cta-box-section bg-section dark-section parallaxie">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <!-- CTA Box Start -->

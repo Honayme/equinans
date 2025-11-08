@@ -1953,7 +1953,7 @@ header.main-header .container{
 
 .cta-box-section .container-fluid{
 	position: relative;
-	padding-left: calc(((100vw - 1300px) / 2) - 35px);
+	/* padding-left: calc(((100vw - 1300px) / 2) - 35px); */
 	z-index: 1;
 }
 

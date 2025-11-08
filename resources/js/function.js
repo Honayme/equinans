@@ -242,26 +242,40 @@
 	}
 
 	/* Zoom Gallery screenshot */
-	$('.gallery-items').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom',
-		image: {
-			verticalFit: true,
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-			  return element.find('img');
-			}
+	function initMagnificPopup() {
+		if ($.fn.magnificPopup && $('.gallery-items').length) {
+			$('.gallery-items').magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				closeOnContentClick: false,
+				closeBtnInside: false,
+				mainClass: 'mfp-with-zoom',
+				image: {
+					verticalFit: true,
+				},
+				gallery: {
+					enabled: true
+				},
+				zoom: {
+					enabled: true,
+					duration: 300, // don't foget to change the duration also in CSS
+					opener: function(element) {
+					  return element.find('img');
+					}
+				}
+			});
 		}
-	});
+	}
+
+	// Initialize on page load
+	initMagnificPopup();
+
+	// Re-initialize when Livewire updates the page
+	if (window.Livewire) {
+		Livewire.on('navigated', function() {
+			initMagnificPopup();
+		});
+	}
 
 	/* Contact form validation */
 	var $contactform = $("#contactForm");
