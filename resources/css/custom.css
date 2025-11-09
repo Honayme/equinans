@@ -2363,7 +2363,7 @@ header.main-header .container{
 
 .footer-logo img{
 	width: 100%;
-	max-width: 158px;
+	max-width: 100px;
 }
 
 .about-footer-content{
@@ -2595,6 +2595,42 @@ header.main-header .container{
 	font-size: 20px;
 	color: inherit;
 }
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espace entre le logo et le texte */
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer-title {
+    font-family: var(--default-font);
+    font-size: 18px;
+    font-weight: 600; /* Semi-bold */
+    margin: 0 0 0 -10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.footer-location {
+    font-family: var(--default-font);
+    font-size: 13px;
+    font-weight: 700; /* Bold */
+    color: #EDA92A; /* Couleur dorée/beige */
+    margin: 7px 0 0 -8px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
 
 /************************************/
 /***     19. About Us Page css    ***/

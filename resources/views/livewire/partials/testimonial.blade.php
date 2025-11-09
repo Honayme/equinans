@@ -22,8 +22,6 @@
                                 <img src="{{ asset('storage/images_gallery/gallery-34.jpg') }}" alt="Logo">
                             </figure>
                         </div>
-
-
                     </div>
                     <!-- Testimonial Image End -->
                 </div>

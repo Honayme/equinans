@@ -6,8 +6,14 @@
                     <!-- About Footer Start -->
                     <div class="about-footer">
                         <!-- Footer Logo Start -->
-                        <div class="footer-logo">
-                            <img src="{{ asset('storage/images/footer-logo.svg') }}" alt="">
+                        <div class="footer-logo footer-logo-container" style="">
+                            <img src="{{ asset('storage/images/logo-medaillon.png') }}"
+                                 alt="Logo">
+
+                            <div class="footer-text">
+                                <p class="footer-title">Centre Equestre</p>
+                                <p class="footer-location">NANS LES PINS</p>
+                            </div>
                         </div>
                         <!-- Footer Logo End -->
 

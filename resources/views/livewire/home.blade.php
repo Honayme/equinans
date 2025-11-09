@@ -254,7 +254,7 @@
                             </div>
                         </div>
                         <div class="our-benefit-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="methode-equidrive.html" class="btn-default">Découvrir la méthode</a>
+                            <a href="methode-equidrive.html" class="btn-default">Découvrir notre méthode</a>
                         </div>
                     </div>
                 </div>
