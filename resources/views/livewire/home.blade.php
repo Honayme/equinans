@@ -8,9 +8,9 @@
                     <div class="hero-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">Nans les pins</h3>
-                            <h1 class="text-anime-style-2" data-cursor="-opaque">Equinans <span>Ecole Française d'Equitation</span></h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Centre de Loisirs Equestres</p>
+                            <h3 class="wow fadeInUp">Nans-les-Pins</h3>
+                            <h1 class="text-anime-style-2" data-cursor="-opaque">Equinans <span>Ecole Française d'Equitation & centre de loisirs equestres</span></h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Que vous soyez débutant ou cavalier confirmé, notre équipe passionnée est là pour vous accompagner dans votre pratique de l'équitation.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -118,7 +118,7 @@
                         <div class="section-title">
                             <h3 class="wow fadeInUp">Centre Équestre de Nans-les-Pins</h3>
                             <h2 class="text-anime-style-2" data-cursor="-opaque">L'équitation plaisir pour <span>petits et grands</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Equinans est le nom du Centre Équestre et Poney-Club de Nans-les-Pins, situé dans le département du Var (83). Il est niché dans un cadre naturel, au pied du massif de la Sainte-Baume, ce qui en fait un lieu privilégié pour les activités de plein air.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Bienvenue à Equinans, votre Centre Équestre et Poney-Club à Nans-les-Pins (83). Niché au pied du massif de la Sainte-Baume, notre centre offre un cadre naturel privilégié pour s'évader à cheval comme à poney.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -131,7 +131,7 @@
                                 </div>
                                 <div class="about-body-item-content">
                                     <h3>Club Affilié FFE</h3>
-                                    <p>Club affilié à la Fédération Française d'Équitation (FFE) et détenant le label "École Française d'Équitation".</p>
+                                    <p>Notre club est affilié à la Fédération Française d'Équitation (FFE) et fier de détenir le label "École Française d'Équitation", garantissant un enseignement pédagogique et sécurisé.</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -143,7 +143,7 @@
                                 </div>
                                 <div class="about-body-item-content">
                                     <h3>Cadre Naturel Exceptionnel</h3>
-                                    <p>Au pied du massif de la Sainte-Baume, idéal pour les balades et activités de plein air.</p>
+                                    <p>Profitez d'un environnement unique au pied du massif de la Sainte-Baume, le point de départ idéal pour des balades inoubliables et des activités en pleine nature.</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -152,7 +152,7 @@
 
                         <!-- About Us Button Start -->
                         <div class="about-us-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="{{ route('contact') }}" class="btn-default">Nous Contacter</a>
+                            <a href="{{ route('about') }}" class="btn-default">Le Centre Equestre</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -170,8 +170,8 @@
                 <div class="col-lg-6">
                     <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Your Equestrian Journey Starts Here</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Helping you connect, learn, and <span>grow through ride</span></h2>
+                        <h3 class="wow fadeInUp">Votre aventure équestre commence ici</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">S'initier, progresser et s'amuser <span>à cheval comme à poney</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -185,7 +185,9 @@
                 </div>
             </div>
 
-            <livewire:partials.services-cards :limit="3" />
+            <div style="margin-top: -100px;">
+                <livewire:partials.services-cards :limit="3" />
+            </div>
 
         </div>
     </div>
@@ -197,360 +199,237 @@
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-6">
-                    <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Club Benefits</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Exceptional benefits that set our <span>horse club apart</span></h2>
+                        <h3 class="wow fadeInUp">Une pédagogie unique</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Equidrive : L'innovation au service <span>de l'apprentissage</span></h2>
                     </div>
-                    <!-- Section Title End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
                     <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Enjoy hands-on training, gentle horses, and an environment designed to help you relax, grow, and fall in love with riding - whether it's your first time or your fiftieth.</p>
+                        <p>Nous avons conçu et développé Equidrive, notre propre concept pédagogique. C'est une méthode ludique et intuitive qui facilite la progression et change la façon d'apprendre, du baby-poney au cavalier confirmé.</p>
                     </div>
-                    <!-- Section Title Content End -->
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <!-- Our Benefits Content Start -->
                     <div class="our-benefit-content">
-                        <!-- FAQ Accordion Start -->
                         <div class="faq-accordion" id="benefit_accordion">
-                            <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp">
                                 <h2 class="accordion-header" id="benefit_heading1">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#benefit_collapse1" aria-expanded="true" aria-controls="benefit_collapse1">
-                                        Personalized Rider Development
+                                        Apprentissage Intuitif et Ludique
                                     </button>
                                 </h2>
                                 <div id="benefit_collapse1" class="accordion-collapse collapse show" aria-labelledby="benefit_heading1" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>Each rider receives individual attention to grow their confidence, refine their technique, and reach their full potential.</p>
+                                        <p>Grâce à des outils visuels et colorés (Equidrive Color, One, Touch), l'apprentissage devient un jeu. Les cavaliers comprennent et appliquent les aides plus rapidement.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                                 <h2 class="accordion-header" id="benefit_heading2">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#benefit_collapse2" aria-expanded="false" aria-controls="benefit_collapse2">
-                                        Well-Trained & Gentle Horses
+                                        Efficacité Prouvée et Reconnue
                                     </button>
                                 </h2>
                                 <div id="benefit_collapse2" class="accordion-collapse collapse" aria-labelledby="benefit_heading2" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>We track key performance indicators(KPIs) such as website, conversion, click-through rates (CTR), ROI.</p>
+                                        <p>Une méthode testée et approuvée, qui a prouvé son efficacité ("un changement radical" selon les témoignages) et qui est désormais adoptée par de nombreux clubs labellisés.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                                 <h2 class="accordion-header" id="benefit_heading3">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#benefit_collapse3" aria-expanded="false" aria-controls="benefit_collapse3">
-                                        Peaceful Countryside Setting
+                                        Respect du Poney et du Cavalier
                                     </button>
                                 </h2>
                                 <div id="benefit_collapse3" class="accordion-collapse collapse" aria-labelledby="benefit_heading3" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>We track key performance indicators(KPIs) such as website, conversion, click-through rates (CTR), ROI.</p>
+                                        <p>Le concept favorise une communication claire et positive, rendant l'équitation plus juste et plus agréable, tant pour l'élève que pour le poney.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- FAQ Item End -->
                         </div>
-                        <!-- FAQ Accordion End -->
-
-                        <!-- Our Benefits Button Start -->
                         <div class="our-benefit-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Contact Us Today!</a>
+                            <a href="methode-equidrive.html" class="btn-default">Découvrir la méthode</a>
                         </div>
-                        <!-- Our Benefits Button End -->
                     </div>
-                    <!-- Our Benefits Content End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- Benefits images Start -->
                     <div class="benefits-images">
-                        <!-- Benefits image Box Start -->
                         <div class="benefits-image-box-1">
                             <div class="benefits-image">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-1.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/equidrive.jpg') }}" alt="">
                                 </figure>
                             </div>
 
-                            <!-- Benefits image Counter Start -->
                             <div class="benefits-image-counter">
-                                <h2><span class="counter">98</span>%</h2>
-                                <p>Events, Shows & Rides Hosted</p>
+                                <h2>+<span class="counter">50</span></h2>
+                                <p>Clubs Labellisés Equidrive</p>
                             </div>
-                            <!-- Benefits image Counter End -->
                         </div>
-                        <!-- Benefits image Box End -->
-
-                        <!-- Benefits image Box Start -->
                         <div class="benefits-image-box-2">
                             <div class="benefits-image">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-2.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/equidrive-enfant-poney.jpg') }}" alt="">
                                 </figure>
                             </div>
-                            <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                                <a href="methode-equidrive.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
-                            <!-- Contact Us Circle End -->
                         </div>
-                        <!-- Benefits image Box End -->
                     </div>
-                    <!-- What We Do images End -->
                 </div>
             </div>
         </div>
-    </div><!----><!---->
+    </div>
     <!-- Our Benefits Section End -->
 
-    <!-- What We Do Section Start -->
     <div class="what-we-do bg-section dark-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <!-- What We Do images Start -->
                     <div class="what-we-do-images wow fadeInUp">
-                        <!-- What Do image 1 Start -->
                         <div class="what-do-image-1">
                             <figure class="image-anime">
-                                <img src="{{ asset('storage/images/what-do-image-1.jpg') }}" alt="">
+                                <img src="{{ asset('storage/equilike/ekilike-chevaux-gratte.webp') }}" alt="">
                             </figure>
                         </div>
-                        <!-- What Do image 1 End -->
-
-                        <!-- What Do image 2 Start -->
                         <div class="what-do-image-2">
                             <figure class="image-anime">
-                                <img src="{{ asset('storage/images/what-do-image-2.jpg') }}" alt="">
+                                <img src="{{ asset('storage/equilike/ekilike.webp') }}" alt="">
                             </figure>
                         </div>
-                        <!-- What Do image 2 End -->
-
-                        <!-- Contact Us Circle Start -->
                         <div class="contact-us-circle">
-                            <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                            <a style="border: none !important;" href="ekilike.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                         </div>
-                        <!-- Contact Us Circle End -->
                     </div>
-                    <!-- What We Do images End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- What We Do Content Start -->
                     <div class="what-we-do-content">
-                        <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">What we do</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Inspiring every rider to build trust, <span>skill & lifelong passion</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're saddling up for the first time or preparing for your next competition, we offer the tools, training, and encouragement you need to ride.</p>
+                            <h3 class="wow fadeInUp">Notre innovation : Ekilike</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">"Parler la langue" de votre cheval <span>grâce à Ekilike</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Découvrez Ekilike, le "générateur de bonheur" qui vous permet de communiquer avec votre cheval en reproduisant son langage naturel : l'allogrooming. Oubliez la tape, passez au grat-grat !</p>
                         </div>
-                        <!-- Section Title End -->
-
-                        <!-- What We Do Body Start -->
                         <div class="what-we-do-body">
-                            <!-- What We Item List Title Start -->
                             <div class="what-we-item-list-title wow fadeInUp" data-wow-delay="0.4s">
-                                <h3>What you'll find here:</h3>
+                                <h3>Les bienfaits prouvés :</h3>
                             </div>
-                            <!-- What We Item List Title End -->
-
-                            <!-- What We Item List Start -->
                             <div class="what-we-item-list wow fadeInUp" data-wow-delay="0.6s">
-                                <!-- What We Item Start -->
                                 <div class="what-we-item">
                                     <div class="icon-box">
                                         <img src="{{ asset('storage/images/icon-what-we-item-1.svg') }}" alt="">
                                     </div>
                                     <div class="what-we-item-content">
-                                        <h3>Youth Riding Camps</h3>
-                                        <p>Our camps offer young riders a fun and educational.</p>
+                                        <h3>Créer un lien unique</h3>
+                                        <p>Renforcez votre complicité en lui montrant votre affection dans sa langue.</p>
                                     </div>
                                 </div>
-                                <!-- What We Item End -->
-
-                                <!-- What We Item Start -->
                                 <div class="what-we-item">
                                     <div class="icon-box">
                                         <img src="{{ asset('storage/images/icon-what-we-item-2.svg') }}" alt="">
                                     </div>
                                     <div class="what-we-item-content">
-                                        <h3>Family-Friendly Events</h3>
-                                        <p>Join us for exciting days filled with pony rides, interactive.</p>
+                                        <h3>Effet apaisant immédiat</h3>
+                                        <p>Scientifiquement prouvé, il stimule les endorphines (hormones du bonheur).</p>
                                     </div>
                                 </div>
-                                <!-- What We Item End -->
-
-                                <!-- What We Item Start -->
                                 <div class="what-we-item">
                                     <div class="icon-box">
                                         <img src="{{ asset('storage/images/icon-what-we-item-3.svg') }}" alt="">
                                     </div>
                                     <div class="what-we-item-content">
-                                        <h3>Experience Trainers & Instructors</h3>
-                                        <p>Our dedicated team of certified professionals brings decades of combine experience in a wide range of disciplines.</p>
+                                        <h3>Création Française</h3>
+                                        <p>Un design breveté, fabriqué en Provence et validé par les professionnels.</p>
                                     </div>
                                 </div>
-                                <!-- What We Item End -->
                             </div>
-                            <!-- What We Item List End -->
                         </div>
-                        <!-- What We Do Body End -->
                     </div>
-                    <!-- What We Do Content End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- What We Do Section End -->
 
-    <!-- Why Choose Us Section Start -->
-    <div class="why-choose-us">
+    <!-- Our Gallery Section Start -->
+    <livewire:partials.gallery-slider />
+    <!-- Our Gallery Section End -->
+
+    <!-- Documents et Programmes Section Start -->
+    <div class="our-documents bg-section">
         <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-6">
                     <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp">Why choose us</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Creating lifelong memories in and out <span>of the saddle</span></h2>
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Nos Programmes</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez nos formations <span>et documents officiels</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- Why Choose Box Start -->
-                    <div class="why-choose-box">
-                        <!-- Why Choose Item List Start -->
-                        <div class="why-choose-item-list order-lg-1 order-1">
-                            <!-- Why Choose Item Start -->
-                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-1.svg') }}" alt="">
-                                </div>
-                                <div class="why-choose-item-content">
-                                    <h3>1. Experienced Trainers & Instructors</h3>
-                                    <p>Our dedicated team of certified professionals brings decades of combined experience in a wide range of disciplines.</p>
-                                </div>
-                            </div>
-                            <!-- Why Choose Item End -->
-
-                            <!-- Why Choose Item Start -->
-                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-2.svg') }}" alt="">
-                                </div>
-                                <div class="why-choose-item-content">
-                                    <h3>2. remium Care for Every Horse</h3>
-                                    <p>We treat every horse like family, ensuring top-tier boarding, nutrition, and medical attention in a clean, safe environment.</p>
-                                </div>
-                            </div>
-                            <!-- Why Choose Item End -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="document-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="document-icon">
+                            <i class="fa-solid fa-horse fa-3x"></i>
                         </div>
-                        <!-- Why Choose Item List End -->
-
-                        <!-- Why Choose image Start -->
-                        <div class="why-choose-image order-lg-1 order-3">
-                            <figure>
-                                <img src="{{ asset('storage/images/why-choose-image.png') }}" alt="">
-                            </figure>
+                        <h3>Programme Galops 1 à 7</h3>
+                        <p>Découvrez le programme complet des Galops de cavalier, du niveau débutant jusqu'au Galop 7.</p>
+                        <div class="mt-3">
+                            <livewire:pdf-viewer
+                                :pdfPath="'pdf/Galops-1+7.pdf'"
+                                buttonText="Consulter le programme"
+                                title="Programme Galops 1 à 7" />
                         </div>
-                        <!-- Why Choose image End -->
-
-                        <!-- Why Choose Item List Start -->
-                        <div class="why-choose-item-list order-lg-1 order-2">
-                            <!-- Why Choose Item Start -->
-                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-3.svg') }}" alt="">
-                                </div>
-                                <div class="why-choose-item-content">
-                                    <h3>3. Welcoming Equestrian Community</h3>
-                                    <p>Join a vibrant, supportive community of riders who share your passion and celebrate every milestone together.</p>
-                                </div>
-                            </div>
-                            <!-- Why Choose Item End -->
-
-                            <!-- Why Choose Item Start -->
-                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-4.svg') }}" alt="">
-                                </div>
-                                <div class="why-choose-item-content">
-                                    <h3>4. Diverse Programs for All Ages</h3>
-                                    <p>From kids' pony rides to advanced dressage, we offer engaging, age-appropriate programs to spark a lifelong love of riding.</p>
-                                </div>
-                            </div>
-                            <!-- Why Choose Item End -->
-                        </div>
-                        <!-- Why Choose Item List End -->
                     </div>
-                    <!-- Why Choose Box End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="document-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="document-icon">
+                            <i class="fa-solid fa-book fa-3x"></i>
+                        </div>
+                        <h3>Programme Officiel Synthétique</h3>
+                        <p>Le programme officiel des Galops cavalier en version synthétique et facile à consulter.</p>
+                        <div class="mt-3">
+                            <livewire:pdf-viewer
+                                :pdfPath="'pdf/PROGRAMME_OFFICIEL_GALOPS_CAVALIER_1a7_SYNTHETIQUE.pdf'"
+                                buttonText="Voir le document"
+                                title="Programme Officiel Synthétique" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="document-card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="document-icon">
+                            <i class="fa-solid fa-file-lines fa-3x"></i>
+                        </div>
+                        <h3>Règlement Intérieur</h3>
+                        <p>Consultez le règlement intérieur du centre équestre pour connaître les règles et consignes de sécurité.</p>
+                        <div class="mt-3">
+                            <livewire:pdf-viewer
+                                :pdfPath="'pdf/réglement intérieur 2018.pdf'"
+                                buttonText="Lire le règlement"
+                                title="Règlement Intérieur 2018" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Why Choose Us Section End -->
+    <!-- Documents et Programmes Section End -->
 
-    <!-- CTA Box Section Start -->
-    <div class="cta-box-section bg-section dark-section parallaxie">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- CTA Box Start -->
-                    <div class="cta-box">
-                        <!-- CTA Box Content Start -->
-                        <div class="cta-box-content">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h3 class="wow fadeInUp">Rejoignez-nous !</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez l'équitation plaisir <span>pour petits et grands</span></h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Que vous soyez débutant ou cavalier confirmé, notre équipe passionnée est là pour vous accompagner dans votre pratique de l'équitation.</p>
-                            </div>
-                            <!-- Section Title End -->
-
-                            <!-- CTA Box Body Start -->
-                            <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="{{ route('contact') }}" class="btn-default btn-highlighted">Nous Contacter</a>
-                            </div>
-                            <!-- CTA Box Body End -->
-
-                            <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">
-                                <ul>
-                                    <li>Centre Équestre</li>
-                                    <li>Poney-Club</li>
-                                    <li>Balades & Randonnées</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CTA Box Content End -->
-
-                        <!-- CTA Box Image Start -->
-
-                        <!-- CTA Box Image End -->
-                    </div>
-                    <!-- CTA Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CTA Box Section End -->
-
+{{--    TODO Mettre photo de groupes avec deux témoignages version demo3--}}
     <!-- Our Testimonial Section Start -->
     <livewire:partials.testimonial />
     <!-- Our Testimonial Section End -->

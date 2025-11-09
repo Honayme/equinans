@@ -13,8 +13,21 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Testimonial Image Start -->
+                    <div class="testimonial-image-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="testimonial-image">
+                            <figure class="image-anime">
+                                <img src="{{ asset('storage/images_gallery/gallery-34.jpg') }}" alt="Logo">
+                            </figure>
+                        </div>
+
+
+                    </div>
+                    <!-- Testimonial Image End -->
+                </div>
+                <div class="col-lg-6">
                     <!-- Our Testimonials Content Start -->
                     <div class="our-testimonials-content">
                         <!-- Section Title Start -->

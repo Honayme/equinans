@@ -47,10 +47,11 @@
 
 :root{
 	--primary-color				: #061619;
+	/*--primary-color				: #182968;*/
 	--secondary-color			: #DBECFF;
 	--bg-color					: #F6F9F1;
 	--text-color				: #70737A;
-	--accent-color				: #F8553C;
+	--accent-color				: #EDA92A;
 	--accent-secondary-color	: #CEF5A4;
 	--white-color				: #FFFFFF;
 	--divider-color				: #0616191A;
@@ -426,7 +427,7 @@ a:focus{
 }
 
 .section-title-content p:last-child{
-	margin-bottom: 0;	
+	margin-bottom: 0;
 }
 
 .section-title{
@@ -1662,7 +1663,7 @@ header.main-header .container{
 	display: flex;
 	gap: var(--gap);
 	min-width: 100%;
-	animation: scroll 30s linear infinite;
+	animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll{
@@ -1690,7 +1691,7 @@ header.main-header .container{
 
 .gallery-ticker-box .scrolling-ticker-item .scrolling-content a img{
 	max-width: 465px;
-	aspect-ratio: 1 / 0.753;
+	aspect-ratio: 4 / 3;
 	object-fit: cover;
 	border-radius: 20px;
 }
@@ -2444,7 +2445,7 @@ header.main-header .container{
 	max-width: 40%;
 }
 
-.footer-links h3{ 
+.footer-links h3{
 	font-size: 20px;
 	text-transform: capitalize;
 	color: var(--white-color);
@@ -3523,7 +3524,7 @@ header.main-header .container{
     transition: all 0.3s ease-in-out;
 }
 
-.page-pagination ul li.active a, 
+.page-pagination ul li.active a,
 .page-pagination ul li a:hover{
     background: var(--accent-color);
     color: var(--white-color);
@@ -3563,7 +3564,7 @@ header.main-header .container{
 }
 
 .post-image figure{
-	display: block;	
+	display: block;
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -4334,12 +4335,12 @@ header.main-header .container{
 /************************************/
 
 @media only screen and (max-width: 1820px){
-	
+
 	.bg-section{
 		width: calc(100% - 40px);
 		margin: 0 20px;
 	}
-	
+
 	.main-footer{
 		margin-bottom: 20px;
 	}
@@ -4455,7 +4456,7 @@ header.main-header .container{
 	.bg-section .container-fluid{
 		padding: 0 15px;
 	}
-	
+
 	.section-row{
 		margin-bottom: 40px;
 	}
@@ -4467,7 +4468,7 @@ header.main-header .container{
 	.section-content-btn .section-btn{
 		margin-top: 20px;
 	}
-	
+
 	.section-title{
 		margin-bottom: 30px;
 	}
@@ -4509,7 +4510,7 @@ header.main-header .container{
 	.hero.hero-slider-layout .hero-slide{
 		padding: 50px 0;
 	}
-	
+
 	.Hero-review-box{
 		gap: 15px;
 		margin-top: 30px;
@@ -4737,11 +4738,11 @@ header.main-header .container{
 	.our-features{
 		padding: 50px 0;
 	}
-	
+
 	.feature-counter-box{
 		padding: 15px;
 	}
-	
+
 	.feature-counter-box h2{
 		font-size: 36px;
 	}
@@ -4767,7 +4768,7 @@ header.main-header .container{
 	.cta-box{
 		padding: 50px 0 0;
 	}
-	
+
 	.cta-box-content{
 		width: 100%;
 		padding: 0;
@@ -4787,11 +4788,11 @@ header.main-header .container{
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.cta-box-image img{
 		max-width: 580px;
 	}
-	
+
 	.our-testimonial{
 		padding: 50px 0;
 	}
@@ -5029,7 +5030,7 @@ header.main-header .container{
 	.page-category-list h3{
 		padding: 15px 20px;
 	}
-	
+
 	.page-category-list ul{
 		padding: 20px;
 	}
@@ -5041,7 +5042,7 @@ header.main-header .container{
 	.page-category-list ul li a::before{
 		right: 15px;
 	}
-	
+
 	.sidebar-cta-header,
 	.sidebar-contact-list{
 		padding: 20px;
@@ -5136,11 +5137,11 @@ header.main-header .container{
 	.page-single-post{
         padding: 50px 0;
     }
-    
+
     .post-image{
         margin-bottom: 20px;
     }
-    
+
     .post-entry h1,
     .post-entry h2,
     .post-entry h3,
@@ -5149,40 +5150,40 @@ header.main-header .container{
     .post-entry h6{
         margin: 0 0 0.42em;
     }
-    
+
     .post-entry h2{
         font-size: 36px;
     }
-    
+
     .post-entry p{
         margin-bottom: 15px;
     }
-    
+
     .post-entry ol li,
     .post-entry ul li{
 		font-size: 16px;
         margin-bottom: 10px;
     }
-    
+
     .post-entry blockquote{
         background-position: 20px 20px;
         background-size: 40px;
         padding: 20px 20px 20px 70px;
         margin-bottom: 20px;
     }
-    
+
     .post-entry blockquote p{
         font-size: 18px;
     }
-    
+
     .post-tags{
         margin-bottom: 20px;
     }
-    
+
     .post-tags .tag-links a{
         padding: 10px 15px;
     }
-    
+
     .post-social-sharing ul{
         text-align: left;
     }
@@ -5301,7 +5302,7 @@ header.main-header .container{
 	.error-page{
 		padding: 50px 0;
 	}
-	
+
 	.error-page-image{
 		margin-bottom: 20px;
 	}
@@ -5866,7 +5867,7 @@ header.main-header .container{
 		margin-bottom: 15px;
         padding-bottom: 15px;
 	}
-	
+
 	.member-experience-item-content h3{
 		font-size: 18px;
 	}

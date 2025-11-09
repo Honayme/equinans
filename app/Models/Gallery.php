@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Image\Enums\CropPosition;
 
 class Gallery extends Model implements HasMedia
 {
@@ -28,13 +29,11 @@ class Gallery extends Model implements HasMedia
     public function registerMediaConversions(?Media $media = null): void
     {
         $this->addMediaConversion('thumbnail')
-            ->width(300)
-            ->height(300)
+            ->crop(400, 300, CropPosition::Center)
             ->sharpen(10);
 
         $this->addMediaConversion('large')
-            ->width(1200)
-            ->height(800)
+            ->crop(1600, 1200, CropPosition::Center)
             ->sharpen(10);
     }
 

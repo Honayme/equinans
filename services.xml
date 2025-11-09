@@ -3,100 +3,100 @@
     <services>
 
         <service id="1" title="L'ÉCOLE PONEY (DÈS 2 ANS)">
-            <introduction>Cette section regroupe tout ce qui concerne le "Baby poney" et les "Cours poneys".</introduction>
+            <introduction>Découvrez nos programmes ludiques et adaptés aux enfants dès 2 ans.</introduction>
 
             <description>
-                <paragraph>L'équitation à poney La pratique sportive en elle-même, ainsi que le lien entre l'enfant et ce gros animal, participent à son équilibre physique et psychique. Petit à petit, l'enfant développe des qualités, telles que la patience, le calme, le respect et la confiance. Mais, loin d'être uniquement une activité de «loisirs», comme elle est souvent considérée, l'équitation est un sport à part entière.</paragraph>
-                <paragraph>Du Shetland au double-poney, il y a une monture pour chaque enfant à Equinans, le centre équestre de Nans les Pins !</paragraph>
+                <paragraph>L'équitation à poney est une véritable école de la vie. Au-delà du sport, le lien unique avec l'animal participe à l'équilibre physique et psychique de l'enfant. Il y développe patience, calme, respect et confiance. C'est bien plus qu'un simple loisir, c'est un sport formateur.</paragraph>
+                <paragraph>Du Shetland au double-poney, il y a une monture pour chaque enfant à Equinans, votre centre équestre à Nans-les-Pins !</paragraph>
             </description>
 
             <sub_section title="Nos formules Poney">
-                <formula name="Baptème Poney (Dès 2 ans)">
+                <formula name="Baptême Poney (Dès 2 ans)">
                     <detail>Venez découvrir notre circuit aventure Equidrive !</detail>
-                    <detail>Accessible dès 2 ans</detail>
+                    <detail>Une première rencontre magique, accessible dès 2 ans.</detail>
                 </formula>
-                <formula name="Cours « kids » (Dès 3 ans)">
-                    <paragraph>En brevetant une méthode, ainsi que du matériel pédagogique adapté aux tout petits cavaliers, à Equinans vos enfants bénéficient de toutes nos attentions.</paragraph>
-                    <paragraph>Evoluant dans des espaces spécialement aménagés : sol en copeaux de caoutchouc, manège intérieur chauffé l'hiver, c'est en musique que vos petits découvriront le monde magique du poney !!</paragraph>
+                <formula name="Cours « Kids » (Dès 3 ans)">
+                    <paragraph>Grâce à notre méthode brevetée Equidrive et notre matériel pédagogique adapté, vos tout-petits cavaliers bénéficient d'une attention unique.</paragraph>
+                    <paragraph>Ils évoluent dans des espaces spécialement aménagés (sol en copeaux de caoutchouc, manège intérieur chauffé l'hiver) et c'est en musique qu'ils découvrent le monde magique du poney !</paragraph>
                 </formula>
                 <formula name="Cours poney (Progression)">
-                    <paragraph>De l'initiation à la compétition, de la randonnée aux jeux d'équipes, des spectacles équestres aux bivouacs dans notre gîte équestre, à Equinans chaque cavalier peut choisir sa pratique selon ces envies.</paragraph>
+                    <paragraph>De l'initiation à la compétition, de la randonnée aux jeux d'équipes, des spectacles équestres aux bivouacs dans notre gîte équestre... À Equinans, chaque cavalier choisit sa pratique selon ses envies.</paragraph>
                 </formula>
             </sub_section>
 
-            <sub_section title="Notre pédagogie">
-                <paragraph>L'équipe dynamique des enseignants diplômés d'État du centre équestre de Nans les Pins attache une grande importance à l'épanouissement de votre enfant. Sélectionnant ses poneys pour leur gentillesse, Equinans dépasse la réglementation en matière de sécurité en équipant toutes ses selles, d'étriers de sécurité.</paragraph>
-                <emphasis>Parce que le poney est le premier rêve des enfants, donnez aux vôtres la chance d'évoluer dans une véritable école d'équitation labélisée.</emphasis>
-                <note>(Suggestion : Placer ici le contenu "Vidéo Equidrive")</note>
+            <sub_section title="Notre pédagogie : la confiance avant tout">
+                <paragraph>L'équipe dynamique d'enseignants diplômés d'État du centre équestre de Nans-les-Pins attache une importance capitale à l'épanouissement de votre enfant. Nous sélectionnons nos poneys pour leur gentillesse et dépassons la réglementation en matière de sécurité en équipant toutes nos selles d'étriers de sécurité.</paragraph>
+                <emphasis>Parce que le poney est le premier rêve des enfants, donnez aux vôtres la chance d'évoluer dans une véritable école d'équitation labellisée.</emphasis>
             </sub_section>
         </service>
 
         <service id="2" title="L'ÉCOLE CHEVAL">
-            <introduction>Cette section reprend le contenu de "Cours chevaux". Elle s'adresse implicitement aux ados/adultes.</introduction>
+            <introduction>École à cheval pour ados et adultes. Tous niveaux.</introduction>
 
             <description>
-                <sub_title>Cours chevaux</sub_title>
-                <paragraph>Avec plus de 40 heures de cours par semaine, l'équipe de moniteurs vous accueille pour des séances adaptées à vos âge et niveau.</paragraph>
-                <paragraph>Vivez et faites vivre l'expérience équestre en toute sécurité, entouré d'un personnel qualifié et attentionné. Nous mettons à votre disposition des moniteurs équestres passionnés, dont la conception de l'enseignement vise à favoriser la progression de chacun dans les différentes disciplines.</paragraph>
-                <paragraph>De l'initiation à la compétition, à Equinans toutes les formes d'équitation vous sont proposées, en privilégiant le plaisir du cavalier, mais aussi celui du cheval.</paragraph>
+                <sub_title>Des cours pour tous les niveaux</sub_title>
+                <paragraph>Avec plus de 40 heures de cours par semaine, notre équipe de moniteurs vous accueille pour des séances adaptées à votre âge et à votre niveau.</paragraph>
+                <paragraph>Vivez et faites vivre l'expérience équestre en toute sécurité, entouré d'un personnel qualifié et attentionné. Nos moniteurs passionnés ont à cœur de favoriser votre progression dans les différentes disciplines.</paragraph>
+                <paragraph>De la simple mise en selle à la préparation aux compétitions, Equinans vous propose toutes les formes d'équitation, en privilégiant toujours le plaisir partagé entre le cavalier et son cheval.</paragraph>
             </description>
         </service>
 
         <service id="3" title="COMPÉTITION ET COACHING">
-            <description>(Cette section ("espace cavalier") reste telle quelle, prête à recevoir son contenu.)</description>
+            <introduction>Objectif compétition. Coaching et suivi.</introduction>
+
+            <description>Passez au niveau supérieur ! Equinans vous accompagne dans vos objectifs de compétition grâce à un coaching personnalisé et un suivi rigoureux. (Détails de notre programme de coaching à venir).</description>
         </service>
 
-        <service id="4" title="Stages">
-            <sub_section title="Stages • Activités">
-                <paragraph>À cheval ou à poney, le dimanche et pendant les vacances scolaires.</paragraph>
-                <paragraph>Véritables journées 100% plaisir destinées à tous les cavaliers et tous les niveaux : jeux équestres, balades, fête de Noël, fête de fin d'année, stages obstacles, examens fédéraux, tous les prétextes sont bons pour se retrouver avec son animal préféré.</paragraph>
+        <service id="4" title="Stages &amp; Activités">
+
+            <introduction>Stages 100% plaisir. Poneys et chevaux.</introduction>
+
+            <sub_section title="Stages Plaisir">
+                <paragraph>Vivez l'équitation autrement ! À cheval ou à poney, nos stages du dimanche et des vacances scolaires sont de véritables journées 100% plaisir.</paragraph>
+                <paragraph>Destinés à tous les cavaliers et tous les niveaux : jeux équestres, balades, fête de Noël, stages d'obstacles, examens fédéraux... tous les prétextes sont bons pour se retrouver avec son animal préféré.</paragraph>
             </sub_section>
 
-            <sub_section title="Les cours &amp; stages">
+            <sub_section title="Nos Formats de Cours">
                 <item>
                     <title>COURS COLLECTIFS ou PARTICULIERS</title>
-                    <detail>Séance d'une heure pour acquérir les bases de l'équitation ou vous perfectionner.</detail>
+                    <detail>La séance d'une heure pour acquérir les bases de l'équitation ou vous perfectionner.</detail>
                 </item>
                 <item>
                     <title>STAGES</title>
-                    <detail>Séances de divertissement et de perfectionnement</detail>
-                    <translation lang="en">Lessons : Courses intended for your entertainment and to improve your skills.</translation>
+                    <detail>Des séances thématiques pour le divertissement et le perfectionnement.</detail>
                 </item>
                 <item>
                     <title>COURS KID'S</title>
-                    <detail>Séances magiques pour les enfants ! « Devenez cavaliers en 15mn chrono grace à la méthode EQUIDRIVE® »</detail>
-                    <translation lang="en">Kid's lessons Session of riding in music for the kids from 3 to 5 years old with the incredible method EQUIDRIVE® : become a rider in 15 mn !</translation>
+                    <detail>Les séances magiques pour les enfants ! « Devenez cavalier en 15mn chrono grâce à la méthode EQUIDRIVE® »</detail>
                 </item>
             </sub_section>
 
-            <sub_section title="Autres activités">
+            <sub_section title="Autres activités à découvrir">
                 <item>
                     <title>CIRCUIT PONEY AVENTURE</title>
-                    <detail>Découvrez nos parcours de bâptemes poney, tenus par les parents. Avec le concept Equidrive®.</detail>
+                    <detail>Découvrez nos parcours de baptêmes poney, tenus par les parents. Une initiation ludique avec le concept Equidrive®.</detail>
                 </item>
                 <item>
-                    <title>LASER GAMES (NEW!)</title>
-                    <detail>Incroyable ! Découvrez le LASER GAMES à poney (accessible même aux débutants)</detail>
+                    <title>LASER GAME (NOUVEAU !)</title>
+                    <detail>Incroyable ! Découvrez le LASER GAME à poney, une exclusivité accessible même aux débutants.</detail>
                 </item>
             </sub_section>
 
             <center_info>
                 <sub_section title="Nous rejoindre">
-                    <detail>À 30 mn de Marseille et d'Aix en Provence</detail>
+                    <detail>À 30 mn de Marseille et d'Aix-en-Provence</detail>
                     <detail>GPS : 43°37' 51 N - 5°78'77 E</detail>
                 </sub_section>
 
                 <identity>
-                    <name>CENTRE EQUESTRE NANS LES PINS</name>
+                    <name>CENTRE ÉQUESTRE NANS-LES-PINS</name>
                     <tagline>CHEVAL PASSION &amp; AVENTURES</tagline>
-                    <summary>Au cœur de la Provence, rejoignez les chevaux et poneys du Centre équestre de Nans les Pins.</summary>
-                    <translation lang="en">At the heart of Provence, rejoin the center's horses and poneys.</translation>
-                    <translation lang="de">Wir spechen Deutch</translation>
+                    <summary>Au cœur de la Provence, rejoignez les chevaux et poneys du Centre équestre de Nans-les-Pins.</summary>
                 </identity>
 
                 <contact>
-                    <name>Centre Equestre de Nans les Pins</name>
-                    <address>Carraire Delvieux Sud - 83860 Nans les Pins</address>
+                    <name>Centre Équestre de Nans-les-Pins</name>
+                    <address>Carraire Delvieux Sud - 83860 Nans-les-Pins</address>
                     <phone>06 76 12 22 25</phone>
                 </contact>
 
@@ -106,54 +106,56 @@
                     <label>ÉTABLISSEMENT PILOTE - ENSEIGNER L'ÉQUITATION PAR LE BIEN-ÊTRE ANIMAL</label>
                 </labels>
             </center_info>
-
-            <note>composant pdf viewer à venir</note>
         </service>
 
-        <service id="5" title="Laser game &amp; randonnées">
+        <service id="5" title="Laser Game &amp; Randonnées">
+            <introduction>Laser Game à poney. Une activité unique.</introduction>
+
             <header>
                 <highlight type="new">EXCEPTIONNEL ! NOUVEAU !</highlight>
-                <main_title>LASER GAMES à cheval ou à poney</main_title>
-                <subtitle>Testez une nouvelle activité équestre EQUIDRIVE : Au centre équestre de : Nans les Pins !!</subtitle>
-                <description>Equidrive vous propose desormais le laser game en selle, découvrez cette activité unique !</description>
+                <main_title>LASER GAME à cheval ou à poney</main_title>
+                <subtitle>Testez une nouvelle activité équestre EQUIDRIVE au centre équestre de Nans-les-Pins !</subtitle>
+                <description>Equidrive vous propose désormais le laser game en selle. Découvrez cette activité unique en France !</description>
             </header>
 
             <details>
                 <section name="Le concept">
-                    <paragraph>Viens découvrir cette nouvelle activité qui allie à la fois la maniabilité avec le cheval et l’adresse du tir..</paragraph>
+                    <paragraph>Viens découvrir cette nouvelle activité qui allie à la fois la maniabilité de ton poney ou cheval et l’adresse du tir.</paragraph>
                 </section>
                 <section name="Les règles du jeu">
-                    <paragraph>En carrière ou dans la foret, les règles sont simples. Basé sur un parcours aventure (type équifun), il faut tirer sur les cibles situées au milieu des obstacles du parcours.</paragraph>
-                    <paragraph>Les points sont alors comptabilisés en fonction du temps au chronomètre additionné aux points des tirs. Chaque tir réussi corresponds à des secondes en moins, dépendant de l’allure et la difficulté de la cible touchée.</paragraph>
+                    <paragraph>En carrière ou dans la forêt, les règles sont simples. Sur un parcours aventure (type équifun), tu dois tirer sur les cibles situées au milieu des obstacles.</paragraph>
+                    <paragraph>Le score est calculé en fonction du temps au chronomètre, ajusté par les points des tirs. Chaque tir réussi correspond à des secondes en moins, en fonction de l’allure et de la difficulté de la cible touchée !</paragraph>
                 </section>
                 <section name="Pour qui ?">
-                    <paragraph>Une discipline à partager en famille, entre amis du plus petit au plus grand ! Rejoignez-nous lors des journées "Défis en famille" pour des moments inoubliables en famille !</paragraph>
+                    <paragraph>Une discipline à partager en famille ou entre amis, du plus petit au plus grand ! Rejoignez-nous lors des journées "Défis en famille" pour des moments inoubliables.</paragraph>
                 </section>
                 <section name="Le cadre">
-                    <paragraph>Un parcours aventure au pieds de la Sainte-Baume, au coeur de la nature! Nos monstres vous attendent ...</paragraph>
+                    <paragraph>Un parcours aventure au pied de la Sainte-Baume, en plein cœur de la nature ! Nos monstres vous attendent...</paragraph>
                 </section>
             </details>
 
             <footer>
-                <call_to_action>Alors ?! Prêt à devenir un cavalier intergalactique ???</call_to_action>
-                <call_to_action>Envie de devenir un cavalier intergallactique? N'attendez plus !</call_to_action>
-                <call_to_action>Rejoins-nous vite !!!</call_to_action>
+                <call_to_action>Alors ?! Prêt à devenir un cavalier intergalactique ?</call_to_action>
+                <call_to_action>Envie de devenir un cavalier intergalactique ? N'attendez plus !</call_to_action>
+                <call_to_action>Rejoins-nous vite !</call_to_action>
             </footer>
         </service>
 
         <service id="6" title="Pension">
+
+            <introduction>Pension de qualité. Formules à la carte.</introduction>
             <description>
-                <paragraph>Une équipe de professionnels est à votre disposition pour accueillir vos chevaux dans les meilleures conditions et leur apporter les soins nécessaires.</paragraph>
-                <paragraph>À Equinans, vous disposez de prestations de pension « à la carte ».</paragraph>
+                <paragraph>Offrez à votre cheval un cadre exceptionnel et des soins de qualité. Notre équipe de professionnels est à votre disposition pour accueillir votre compagnon dans les meilleures conditions.</paragraph>
+                <paragraph>Parce que chaque cheval est unique, Equinans vous propose des prestations de pension « à la carte », adaptées à vos besoins et aux siens.</paragraph>
             </description>
 
             <sub_section title="Nos Installations">
                 <item name="Écurie">
-                    <detail>2000m2 comprenant :</detail>
-                    <sub_detail>30 boxs de 16m2 (4mx4m)</sub_detail>
-                    <sub_detail>12 boxs de 12 m2 (3mx4m)</sub_detail>
+                    <detail>2000m² comprenant :</detail>
+                    <sub_detail>30 boxes de 16m² (4mx4m)</sub_detail>
+                    <sub_detail>12 boxes de 12 m² (3mx4m)</sub_detail>
                 </item>
-                <item name="Carrières">Trois carrières avec arrosage automatique, dont 2 éclairées.</item>
+                <item name="Carrières">Trois carrières avec arrosage automatique, dont deux éclairées.</item>
                 <item name="Rond de longe" />
                 <item name="Manège" />
                 <item name="Parcours de cross" />
@@ -163,7 +165,7 @@
             <sub_section title="Prestations et Soins">
                 <item name="Sorties">Les chevaux et poneys sont sortis tous les jours de beau temps.</item>
                 <item name="Alimentation">
-                    <detail>Quatre repas par jour, constitués de 3 repas de granulés et 1 repas de foin.</detail>
+                    <detail>Quatre repas par jour, constitués de trois repas de granulés et d'un repas de foin.</detail>
                     <sub_detail>Compléments à la demande.</sub_detail>
                 </item>
                 <item name="Services (selon la prestation choisie)">
@@ -177,9 +179,9 @@
             </sub_section>
 
             <sub_section title="Tarifs et Contact">
-                <item name="Prix">Pension et demi-pension à partir de 210€/mois.</item>
+                <item name="Prix">Découvrez nos formules de pension et demi-pension à partir de 210€/mois.</item>
                 <item name="Contact">
-                    <text>Pour tous renseignement complémentaires (merci de nous contacter).</text>
+                    <text>Pour un devis personnalisé ou pour visiter nos installations, contactez-nous.</text>
                     <link type="contact_form" />
                 </item>
             </sub_section>
