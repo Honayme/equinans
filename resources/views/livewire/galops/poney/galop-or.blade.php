@@ -283,7 +283,7 @@
                         <div class="pt-4 mt-5" style="border-top: 1px solid var(--divider-color);">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="{{ route('galop.argent') }}" class="text-decoration-none" style="color: #C0C0C0;">
+                                    <a href="{{ route('galops.poney.galop-argent') }}" class="text-decoration-none" style="color: #C0C0C0;">
                                         <i class="fa-solid fa-arrow-left me-2"></i>Galop® d'Argent
                                     </a>
                                 </div>

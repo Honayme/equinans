@@ -33,7 +33,14 @@
                             <div class="service-image">
                                 <a href="{{ route('services.show', $service->slug) }}" data-cursor-text="View">
                                     <figure class="image-anime">
-                                        <img src="{{ asset('storage/images/service-' . $iconIndex . '.jpg') }}" alt="{{ $service->title }}">
+                                        @php
+                                            // Utiliser l'image personnalisée si définie dans le contenu, sinon l'image par défaut
+                                            $customImage = $service->content['image'] ?? null;
+                                            $imagePath = $customImage
+                                                ? 'storage/' . $customImage
+                                                : 'storage/images/service-' . $iconIndex . '.jpg';
+                                        @endphp
+                                        <img src="{{ asset($imagePath) }}" alt="{{ $service->title }}">
                                     </figure>
                                 </a>
                             </div>

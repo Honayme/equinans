@@ -1,6 +1,8 @@
 <div>
     <!-- Page Header Start -->
-    <div class="page-header bg-section parallaxie">
+    <div class="page-header bg-section parallaxie"
+         style="background-image: url('{{ asset('storage/hero-section/background-equinans.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        >
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -33,7 +35,7 @@
                             <!-- About Us Image 1 Start -->
                             <div class="about-us-img-1">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-1.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/enfant-equidrive.jpg') }}" alt="">
                                 </figure>
                             </div>
                             <!-- About Us Image 1 End -->
@@ -44,14 +46,15 @@
                         <div class="about-image-box-2">
                             <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="{{ route('contact') }}"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                                <a href="{{ route('contact') }}"><img
+                                        src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
                             <!-- Contact Us Circle End -->
 
                             <!-- About Us Image 2 Start -->
                             <div class="about-us-img-2">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-2.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/enfant-seul-poney-equidrive.jpg') }}" alt="Enfant seul poney equidrive" style="object-position: center top;">
                                 </figure>
                             </div>
                             <!-- About Us Image 2 End -->
@@ -59,7 +62,7 @@
                             <!-- About Us Image 2 Start -->
                             <div class="about-us-img-3">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-3.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/equidrive-enfant-poney.jpg') }}" alt="Equidrive enfant poney">
                                 </figure>
                             </div>
                             <!-- About Us Image 2 End -->
@@ -75,9 +78,14 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">Club labellisé EQUIDRIVE® kid's</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Garantie de l'utilisation d'une pédagogie et d'un matériel <span>adaptés aux enfants</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Conçues pour faciliter l'apprentissage de l'équitation des enfants dès le plus jeune âge, ces rênes sont associées à une méthode ludique d'apprentissage déposée.</p>
-                            <p class="wow fadeInUp" data-wow-delay="0.3s">Arrêt, virage à gauche, à droite... les enfants maîtrisent très rapidement les bases du dialogue avec le poney et peuvent ainsi évoluer avec un maximum de plaisir.</p>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Garantie de l'utilisation d'une
+                                pédagogie et d'un matériel <span>adaptés aux enfants</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Conçues pour faciliter l'apprentissage de
+                                l'équitation des enfants dès le plus jeune âge, ces rênes sont associées à une méthode
+                                ludique d'apprentissage déposée.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">Arrêt, virage à gauche, à droite... les
+                                enfants maîtrisent très rapidement les bases du dialogue avec le poney et peuvent ainsi
+                                évoluer avec un maximum de plaisir.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -90,7 +98,8 @@
                                 </div>
                                 <div class="about-body-item-content">
                                     <h3>Apprentissage Ludique</h3>
-                                    <p>Les petits poissons, Pomme et Fraise sont les amis des enfants pour diriger les poneys.</p>
+                                    <p>Les petits poissons, Pomme et Fraise sont les amis des enfants pour diriger les
+                                        poneys.</p>
                                 </div>
                             </div>
                             <!-- About Us Body Item End -->
@@ -111,7 +120,8 @@
 
                         <!-- About Us Button Start -->
                         <div class="about-us-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="https://www.equidrive.com/" target="_blank" class="btn-default">En savoir plus sur EQUIDRIVE</a>
+                            <a href="https://www.equidrive.com/" target="_blank" class="btn-default">En savoir plus sur
+                                EQUIDRIVE</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -130,7 +140,8 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">Les rênes Equidrive® kid's</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Le matériel adapté <span>aux enfants !</span></h2>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Le matériel adapté
+                            <span>aux enfants !</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -138,7 +149,8 @@
                 <div class="col-lg-6">
                     <!-- Section Title Content Start -->
                     <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Les rênes Equidrive® solutionnent les problèmes courants rencontrés avec les rênes traditionnelles grâce à une conception innovante et ludique.</p>
+                        <p>Les rênes Equidrive® solutionnent les problèmes courants rencontrés avec les rênes
+                            traditionnelles grâce à une conception innovante et ludique.</p>
                     </div>
                     <!-- Section Title Content End -->
                 </div>
@@ -162,7 +174,10 @@
                                 <div id="benefit_collapse1" class="accordion-collapse collapse show"
                                      aria-labelledby="benefit_heading1" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>Avec Equidrive®, la prise en main est immédiate : le cavalier place son pouce sur le repère de position (assimilé à l'œil du poisson pour les plus jeunes). Les poignées sont alors pincées entre le pouce et l'index, geste d'apprentissage pour la future tenue des rênes.</p>
+                                        <p>Avec Equidrive®, la prise en main est immédiate : le cavalier place son pouce
+                                            sur le repère de position (assimilé à l'œil du poisson pour les plus
+                                            jeunes). Les poignées sont alors pincées entre le pouce et l'index, geste
+                                            d'apprentissage pour la future tenue des rênes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +195,9 @@
                                 <div id="benefit_collapse2" class="accordion-collapse collapse"
                                      aria-labelledby="benefit_heading2" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>Avec Equidrive®, le réglage contrôlé est équilibré grâce aux zones de couleurs et à la graduation sur les rênes. Le cavalier peut facilement repositionner ses poignées, et cela, même en cours de pratique.</p>
+                                        <p>Avec Equidrive®, le réglage contrôlé est équilibré grâce aux zones de
+                                            couleurs et à la graduation sur les rênes. Le cavalier peut facilement
+                                            repositionner ses poignées, et cela, même en cours de pratique.</p>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +215,11 @@
                                 <div id="benefit_collapse3" class="accordion-collapse collapse"
                                      aria-labelledby="benefit_heading3" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>Avec Equidrive®, les poignées rouges et vertes sont des repères pour les changements de direction (rouge à gauche et verte à droite) : pour tourner, les plus jeunes cavaliers découvriront « l'œil du poisson » et le feront nager dans la direction à prendre (apprentissage de la rêne d'ouverture).</p>
+                                        <p>Avec Equidrive®, les poignées rouges et vertes sont des repères pour les
+                                            changements de direction (rouge à gauche et verte à droite) : pour tourner,
+                                            les plus jeunes cavaliers découvriront « l'œil du poisson » et le feront
+                                            nager dans la direction à prendre (apprentissage de la rêne
+                                            d'ouverture).</p>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +237,9 @@
                                 <div id="benefit_collapse4" class="accordion-collapse collapse"
                                      aria-labelledby="benefit_heading4" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>Avec Equidrive®, la sécurité est accrue : les rênes ne glissent plus des mains lors de brutales accélérations. Le cavalier projeté en arrière va automatiquement freiner sa monture.</p>
+                                        <p>Avec Equidrive®, la sécurité est accrue : les rênes ne glissent plus des
+                                            mains lors de brutales accélérations. Le cavalier projeté en arrière va
+                                            automatiquement freiner sa monture.</p>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +257,9 @@
                                 <div id="benefit_collapse5" class="accordion-collapse collapse"
                                      aria-labelledby="benefit_heading5" data-bs-parent="#benefit_accordion">
                                     <div class="accordion-body">
-                                        <p>Avec Equidrive®, le confort du cavalier et de sa monture est assuré. Se sentant en sécurité, le cavalier va se décontracter et va ainsi progresser avec plus de souplesse et de mobilité.</p>
+                                        <p>Avec Equidrive®, le confort du cavalier et de sa monture est assuré. Se
+                                            sentant en sécurité, le cavalier va se décontracter et va ainsi progresser
+                                            avec plus de souplesse et de mobilité.</p>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +277,7 @@
                         <div class="benefits-image-box-1">
                             <div class="benefits-image">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-1.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/poney-seul-equidrive.jpg') }}" alt="Poney seul equidrive" style="object-position: center right;">
                                 </figure>
                             </div>
                         </div>
@@ -262,12 +287,13 @@
                         <div class="benefits-image-box-2">
                             <div class="benefits-image">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-2.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/equidrive/equidrive.jpg') }}" alt="Equidrive" >
                                 </figure>
                             </div>
                             <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="{{ route('contact') }}"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                                <a href="{{ route('contact') }}"><img
+                                        src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
                             <!-- Contact Us Circle End -->
                         </div>
@@ -290,7 +316,7 @@
                         <!-- Rideup Way Image Start -->
                         <div class="rideup-way-img">
                             <figure>
-                                <img src="{{ asset('storage/images/rideup-way-image.png') }}" alt="">
+                                <img src="{{ asset('storage/equidrive/equidrive-figurines/fraise-pomme.jpg') }}" alt="Fraise pomme" style="object-fit: contain; width: 100%; height: 100%; border-radius:5px; !important;">
                             </figure>
                         </div>
                         <!-- Rideup Way Image End -->
@@ -304,8 +330,11 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">Equidrive® et sa méthode</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Une pédagogie à part entière, <span>ludique et efficace</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Les Equidrive® kid's, dont les poignées sont présentées comme des petits poissons aux jeunes enfants, permettent à l'enseignant de développer un langage ludique et facilement compréhensible.</p>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Une pédagogie à part entière, <span>ludique et efficace</span>
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Les Equidrive® kid's, dont les poignées sont
+                                présentées comme des petits poissons aux jeunes enfants, permettent à l'enseignant de
+                                développer un langage ludique et facilement compréhensible.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -318,7 +347,9 @@
                                 </div>
                                 <div class="rideup-body-content">
                                     <h3>8 Figurines Pédagogiques</h3>
-                                    <p>Huit figurines aux formes enfantines sont utilisées par cette méthode. Pour l'enfant, elles sont des repères de changement de position qui vont lui permettre de communiquer avec son poney.</p>
+                                    <p>Huit figurines aux formes enfantines sont utilisées par cette méthode. Pour
+                                        l'enfant, elles sont des repères de changement de position qui vont lui
+                                        permettre de communiquer avec son poney.</p>
                                 </div>
                             </div>
                             <!-- Rideup Way Body Item End -->
@@ -330,7 +361,9 @@
                                 </div>
                                 <div class="rideup-body-content">
                                     <h3>Développement des Capacités</h3>
-                                    <p>La méthode Equidrive® accroît les capacités de l'enfant ! Latéralisation, dissociation, orientation, développement moteur et musculaire sont autant de qualités développées grâce au poney et à la méthode Equidrive®.</p>
+                                    <p>La méthode Equidrive® accroît les capacités de l'enfant ! Latéralisation,
+                                        dissociation, orientation, développement moteur et musculaire sont autant de
+                                        qualités développées grâce au poney et à la méthode Equidrive®.</p>
                                 </div>
                             </div>
                             <!-- Rideup Way Body Item End -->
@@ -350,79 +383,185 @@
     </div>
     <!-- The Rideup way Section End -->
 
-    <!-- Our Approach Section Start -->
-    <div class="our-approach bg-section">
-        <div class="container-fluid">
-            <div class="row no-gutters">
+    <!-- Our FAQs Section Start -->
+    <div class="our-faqs bg-section">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-6">
-                    <!-- Appraoch Content Start -->
-                    <div class="approach-content">
+                    <!-- FAQs Content Start -->
+                    <div class="faqs-content">
                         <!-- Section Title Start -->
-                        <div class="section-title section-title-center">
-                            <h3 class="wow fadeInUp">Contre les idées reçues !</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Les Equidrive® répondent aux <span>questions fréquentes</span></h2>
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Stop aux idées reçues !</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Equidrive® met les choses <span>au clair</span>
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Notre concept pédagogique est innovant et suscite des questions. Voici les réponses claires à vos interrogations les plus fréquentes.</p>
                         </div>
                         <!-- Section Title End -->
 
-                        <!-- Approach Body Start -->
-                        <div class="approach-body wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- Mission Vision Item Start -->
-                            <div class="mission-vision-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-mission.svg') }}" alt="">
-                                </div>
-                                <div class="mission-vision-content">
-                                    <h3>« Les enfants ne sauront plus utiliser les rênes traditionnelles. »</h3>
-                                    <p>Faux ! L'utilisation des Equidrive® reste une étape qui permet aux cavaliers d'aborder l'équitation de manière plus simple et plus ludique. La tenue des Equidrive® est la même que les rênes traditionnelles et permet un apprentissage avec un maximum de plaisir et de sécurité.</p>
-                                </div>
+                        <!-- FAQs Contact Box Start -->
+                        <div class="faqs-contact-box wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- FAQs Contact Item Start -->
+                            <div class="faqs-contact-header">
+                                <img src="{{ asset('storage/equidrive/equidrive-photo.jpg') }}" alt="Equidrive photo">
                             </div>
-                            <!-- Mission Vision Item End -->
+                            <!-- FAQs Contact Item End -->
 
-                            <!-- Mission Vision Item Start -->
-                            <div class="mission-vision-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-vision.svg') }}" alt="">
-                                </div>
-                                <div class="mission-vision-content">
-                                    <h3>« Les enfants vont s'accrocher aux poignées et faire mal à la bouche du poney. »</h3>
-                                    <p>Faux ! N'ayant pas à serrer fermement les rênes de peur qu'elles ne glissent, le cavalier libère ses articulations, gagnant ainsi en souplesse. Les plus jeunes imaginent, quant à eux, deux petits bébés poissons et manipulent avec délicatesse Pomme et Fraise.</p>
-                                </div>
-                            </div>
-                            <!-- Mission Vision Item End -->
+                            <!-- FAQs Contact List Start -->
 
-                            <!-- Mission Vision Item Start -->
-                            <div class="mission-vision-item">
-                                <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-mission.svg') }}" alt="">
-                                </div>
-                                <div class="mission-vision-content">
-                                    <h3>« Les Equidrive® s'adressent uniquement aux bébés cavaliers. »</h3>
-                                    <p>Faux ! Les Equidrive® sont des outils techniques et pédagogiques qui permettent à tous les enfants de solutionner les nombreux problèmes rencontrés avec les rênes traditionnelles. L'image des poissons ne s'adresse qu'aux petits cavaliers, pour les autres, les Equidrive® sont des poignées techniques.</p>
-                                </div>
-                            </div>
-                            <!-- Mission Vision Item End -->
+                            <!-- FAQs Contact List End -->
                         </div>
-                        <!-- Approach Body End -->
+                        <!-- FAQs Contact Box End -->
                     </div>
-                    <!-- Appraoch Content End -->
+                    <!-- FAQs Content End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- Approach Image Start -->
-                    <div class="approach-image">
-                        <figure class="image-anime">
-                            <img src="{{ asset('storage/images/approach-image.jpg') }}" alt="">
-                        </figure>
+                    <!-- FAQ Accordion Start -->
+                    <div class="faq-accordion our-faq-accordion" id="accordion">
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    « Les enfants ne sauront plus utiliser les rênes traditionnelles. »
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                                 data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Faux ! L'utilisation des Equidrive® reste une étape qui permet aux cavaliers
+                                        d'aborder l'équitation de manière plus simple et plus ludique. La tenue des
+                                        Equidrive® est la même que les rênes traditionnelles et permet un apprentissage
+                                        avec un maximum de plaisir et de sécurité.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    « Les enfants vont s'accrocher aux poignées et faire mal à la bouche du poney. »
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                 data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Faux ! N'ayant pas à serrer fermement les rênes de peur qu'elles ne glissent, le
+                                        cavalier libère ses articulations, gagnant ainsi en souplesse. Les plus jeunes
+                                        imaginent, quant à eux, deux petits bébés poissons et manipulent avec
+                                        délicatesse Pomme et Fraise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    « Les Equidrive® s'adressent uniquement aux bébés cavaliers. »
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                 data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Faux ! Les Equidrive® sont des outils techniques et pédagogiques qui permettent à
+                                        tous les enfants de solutionner les nombreux problèmes rencontrés avec les rênes
+                                        traditionnelles. L'image des poissons ne s'adresse qu'aux petits cavaliers, pour
+                                        les autres, les Equidrive® sont des poignées techniques.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Approach Image End -->
+                    <!-- FAQ Accordion End -->
                 </div>
             </div>
         </div>
     </div>
+    <!-- Our FAQs Section End -->
+
+    <!-- Our Approach Section Start -->
+{{--    <div class="our-approach bg-section">--}}
+{{--        <div class="container-fluid">--}}
+{{--            <div class="row no-gutters">--}}
+{{--                <div class="col-lg-6">--}}
+{{--                    <!-- Appraoch Content Start -->--}}
+{{--                    <div class="approach-content">--}}
+{{--                        <!-- Section Title Start -->--}}
+{{--                        <div class="section-title section-title-center">--}}
+{{--                            <h3 class="wow fadeInUp">Contre les idées reçues !</h3>--}}
+{{--                            <h2 class="text-anime-style-2" data-cursor="-opaque">Les Equidrive® répondent aux <span>questions fréquentes</span>--}}
+{{--                            </h2>--}}
+{{--                        </div>--}}
+{{--                        <!-- Section Title End -->--}}
+
+{{--                        <!-- Approach Body Start -->--}}
+{{--                        <div class="approach-body wow fadeInUp" data-wow-delay="0.2s">--}}
+{{--                            <!-- Mission Vision Item Start -->--}}
+{{--                            <div class="mission-vision-item">--}}
+{{--                                <div class="icon-box">--}}
+{{--                                    <img src="{{ asset('storage/images/icon-mission.svg') }}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="mission-vision-content">--}}
+{{--                                    <h3>« Les enfants ne sauront plus utiliser les rênes traditionnelles. »</h3>--}}
+{{--                                    <p>Faux ! L'utilisation des Equidrive® reste une étape qui permet aux cavaliers--}}
+{{--                                        d'aborder l'équitation de manière plus simple et plus ludique. La tenue des--}}
+{{--                                        Equidrive® est la même que les rênes traditionnelles et permet un apprentissage--}}
+{{--                                        avec un maximum de plaisir et de sécurité.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Mission Vision Item End -->--}}
+
+{{--                            <!-- Mission Vision Item Start -->--}}
+{{--                            <div class="mission-vision-item">--}}
+{{--                                <div class="icon-box">--}}
+{{--                                    <img src="{{ asset('storage/images/icon-vision.svg') }}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="mission-vision-content">--}}
+{{--                                    <h3>« Les enfants vont s'accrocher aux poignées et faire mal à la bouche du poney.--}}
+{{--                                        »</h3>--}}
+{{--                                    <p>Faux ! N'ayant pas à serrer fermement les rênes de peur qu'elles ne glissent, le--}}
+{{--                                        cavalier libère ses articulations, gagnant ainsi en souplesse. Les plus jeunes--}}
+{{--                                        imaginent, quant à eux, deux petits bébés poissons et manipulent avec--}}
+{{--                                        délicatesse Pomme et Fraise.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Mission Vision Item End -->--}}
+
+{{--                            <!-- Mission Vision Item Start -->--}}
+{{--                            <div class="mission-vision-item">--}}
+{{--                                <div class="icon-box">--}}
+{{--                                    <img src="{{ asset('storage/images/icon-mission.svg') }}" alt="">--}}
+{{--                                </div>--}}
+{{--                                <div class="mission-vision-content">--}}
+{{--                                    <h3>« Les Equidrive® s'adressent uniquement aux bébés cavaliers. »</h3>--}}
+{{--                                    <p>Faux ! Les Equidrive® sont des outils techniques et pédagogiques qui permettent à--}}
+{{--                                        tous les enfants de solutionner les nombreux problèmes rencontrés avec les rênes--}}
+{{--                                        traditionnelles. L'image des poissons ne s'adresse qu'aux petits cavaliers, pour--}}
+{{--                                        les autres, les Equidrive® sont des poignées techniques.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- Mission Vision Item End -->--}}
+{{--                        </div>--}}
+{{--                        <!-- Approach Body End -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Appraoch Content End -->--}}
+{{--                </div>--}}
+
+{{--                <div class="col-lg-6">--}}
+{{--                    <!-- Approach Image Start -->--}}
+{{--                    <div class="approach-image">--}}
+{{--                        <figure class="image-anime">--}}
+{{--                            <img src="{{ asset('storage/images/approach-image.jpg') }}" alt="">--}}
+{{--                        </figure>--}}
+{{--                    </div>--}}
+{{--                    <!-- Approach Image End -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- Our Approach Section End -->
 
     <!-- Our Testimonial Section Start -->
-    <livewire:partials.testimonial/> 
+{{--    <livewire:partials.testimonial/>--}}
     <!-- Our Testimonial Section End -->
 
 </div>

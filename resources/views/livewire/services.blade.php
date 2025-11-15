@@ -1,6 +1,6 @@
 <div>
     <!-- Page Header Start -->
-    <div class="page-header bg-section parallaxie">
+    <div class="page-header bg-section parallaxie" style="background-image: url('{{ asset('storage/hero-section/background-equinans.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -26,7 +26,7 @@
     <!-- Services Cards End -->
 
     <!-- What We Do Section Start -->
-    <div class="what-we-do bg-section dark-section">
+    <div id="galops" class="what-we-do bg-section dark-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -35,7 +35,7 @@
                         <!-- What Do image 1 Start -->
                         <div class="what-do-image-1">
                             <figure class="image-anime">
-                                <img src="{{ asset('storage/images/what-do-image-1.jpg') }}" alt="">
+                                <img src="{{ asset('storage/photo-poney.jpg') }}" alt="Formation Galop Poney">
                             </figure>
                         </div>
                         <!-- What Do image 1 End -->
@@ -43,7 +43,7 @@
                         <!-- What Do image 2 Start -->
                         <div class="what-do-image-2">
                             <figure class="image-anime">
-                                <img src="{{ asset('storage/images/what-do-image-2.jpg') }}" alt="">
+                                <img src="{{ asset('storage/photo-cheval.jpg') }}" alt="Formation Galop Cheval">
                             </figure>
                         </div>
                         <!-- What Do image 2 End -->
@@ -62,12 +62,9 @@
                     <div class="what-we-do-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">What we do</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Inspiring every rider to build trust,
-                                <span>skill & lifelong passion</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're saddling up for the first time or
-                                preparing for your next competition, we offer the tools, training, and encouragement you
-                                need to ride.</p>
+                            <h3 class="wow fadeInUp">Passez vos Galops®</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Passez vos Galops® avec <span>Equinans</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Fier partenaire de la Fédération Française d'Équitation (FFE), Equinans est un centre agréé pour l'organisation et la validation des examens fédéraux des Galops®. Que vous soyez cavalier à poney ou à cheval, notre équipe d'enseignants diplômés vous accompagne dans votre progression pour vous préparer et vous présenter aux différents niveaux. Profitez d'un encadrement de qualité pour certifier vos compétences et atteindre vos objectifs.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -75,64 +72,37 @@
                         <div class="what-we-do-body">
                             <!-- What We Item List Title Start -->
                             <div class="what-we-item-list-title wow fadeInUp" data-wow-delay="0.4s">
-                                <h3>What you'll find here:</h3>
+                                <h3>Choisissez votre parcours :</h3>
                             </div>
                             <!-- What We Item List Title End -->
 
                             <!-- What We Item List Start -->
                             <div class="what-we-item-list wow fadeInUp" data-wow-delay="0.6s">
                                 <!-- What We Item Start -->
-                                <div class="what-we-item">
+                                <a href="{{ route('galops.poney.galop-bronze') }}" id="galop-poney" class="what-we-item text-decoration-none">
                                     <div class="icon-box">
                                         <img src="{{ asset('storage/images/icon-what-we-item-1.svg') }}" alt="">
                                     </div>
                                     <div class="what-we-item-content">
-                                        <h3>Youth Riding Camps</h3>
-                                        <p>Our camps offer young riders a fun and educational.</p>
+                                        <h3>Galops Poney</h3>
+                                        <p>Découvrez les Galops Bronze, Argent et Or pour les jeunes cavaliers à poney.</p>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- What We Item End -->
 
                                 <!-- What We Item Start -->
-                                <div class="what-we-item">
+                                <a href="{{ route('galop.1') }}" id="galop-cheval" class="what-we-item text-decoration-none">
                                     <div class="icon-box">
                                         <img src="{{ asset('storage/images/icon-what-we-item-2.svg') }}" alt="">
                                     </div>
                                     <div class="what-we-item-content">
-                                        <h3>Family-Friendly Events</h3>
-                                        <p>Join us for exciting days filled with pony rides, interactive.</p>
+                                        <h3>Galops Cheval</h3>
+                                        <p>Progressez du Galop 1 au Galop 7 avec nos enseignants diplômés.</p>
                                     </div>
-                                </div>
-                                <!-- What We Item End -->
-
-                                <!-- What We Item Start -->
-                                <div class="what-we-item">
-                                    <div class="icon-box">
-                                        <img src="{{ asset('storage/images/icon-what-we-item-3.svg') }}" alt="">
-                                    </div>
-                                    <div class="what-we-item-content">
-                                        <h3>Experience Trainers & Instructors</h3>
-                                        <p>Our dedicated team of certified professionals brings decades of combine
-                                            experience in a wide range of disciplines.</p>
-                                    </div>
-                                </div>
+                                </a>
                                 <!-- What We Item End -->
                             </div>
                             <!-- What We Item List End -->
-
-                            <!-- Passage de Galop CTA Start -->
-                            <div class="passage-galop-cta wow fadeInUp" data-wow-delay="0.8s">
-                                <div class="alert alert-primary d-flex align-items-center" role="alert" style="background-color: #E5B566; border-color: #E5B566;">
-                                    <div class="flex-grow-1">
-                                        <h4 class="alert-heading mb-2 text-white">
-                                            <i class="fa-solid fa-trophy me-2"></i>Passage de Galop
-                                        </h4>
-                                        <p class="mb-0 text-white">Découvrez nos programmes de préparation aux Galops® de la FFE, du niveau 1 au niveau 7.</p>
-                                    </div>
-                                    <a href="{{ url('/galop-1') }}" class="btn btn-light ms-3">En savoir plus</a>
-                                </div>
-                            </div>
-                            <!-- Passage de Galop CTA End -->
                         </div>
                         <!-- What We Do Body End -->
                     </div>
@@ -144,7 +114,7 @@
     <!-- What We Do Section End -->
 
     <!-- Our Benefits Section Start -->
-    <div class="our-benefits">
+    <div id="espace-cavalier" class="our-benefits">
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-6">
@@ -332,57 +302,12 @@
 {{--            </div>--}}
 {{--        </div>--}}
 {{--    </div>--}}
-    <div class="cta-box-section bg-section dark-section parallaxie">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- CTA Box Start -->
-                    <div class="cta-box">
-                        <!-- CTA Box Content Start -->
-                        <div class="cta-box-content">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h3 class="wow fadeInUp">Plongez dans le monde magique des poneys et chevaux</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Organisez un anniversaire génial à <span>Equinans ?</span></h2>
-                            </div>
-                            <!-- Section Title End -->
 
-                            <!-- CTA Box Body Start -->
-                            <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="{{ route('contact') }}" class="btn-default btn-highlighted">Contactez-nous !</a>
-                            </div>
-                            <!-- CTA Box Body End -->
-
-                            <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">
-                                <ul style="display: block;">
-                                    <li class="mb-3" style="display: block; width: 100%;"><i class="fa-solid fa-music me-2"></i>Accueil en musique des invités</li>
-                                    <li class="mb-3" style="display: block; width: 100%;"><i class="fa-solid fa-mask me-2"></i>Déguisement (fourni par Equinans) : princesses, chevaliers...</li>
-                                    <li class="mb-3" style="display: block; width: 100%;"><i class="fa-solid fa-gamepad me-2"></i>Séance de jeux en musique</li>
-                                    <li style="display: block; width: 100%;"><i class="fa-solid fa-cake-candles me-2"></i>Goûter et cadeaux dans le parc ou le club house</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- CTA Box Content End -->
-
-                        <!-- CTA Box Image Start -->
-                        <div class="cta-box-image">
-                            <figure>
-                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="Anniversaire à Equinans">
-                            </figure>
-                        </div>
-                        <!-- CTA Box Image End -->
-                    </div>
-                    <!-- CTA Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- CTA Box Section End -->
 
     <!-- Our Testimonial Section Start -->
-    <livewire:partials.testimonial />
+{{--    <livewire:partials.testimonial />--}}
     <!-- Our Testimonial Section End -->
 
 </div>

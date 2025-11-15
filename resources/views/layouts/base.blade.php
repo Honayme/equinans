@@ -12,15 +12,16 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
+    @stack('styles')
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+</head>
 
 <body>
 @yield('body')
 
-
+@stack('modals')
 @livewireScripts
 @stack('scripts')
 </body>

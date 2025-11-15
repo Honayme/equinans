@@ -305,7 +305,7 @@
                                     </a>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <a href="{{ route('galop.argent') }}" class="text-decoration-none" style="color: #C0C0C0;">
+                                    <a href="{{ route('galops.poney.galop-argent') }}" class="text-decoration-none" style="color: #C0C0C0;">
                                         Galop® d'Argent<i class="fa-solid fa-arrow-right ms-2"></i>
                                     </a>
                                 </div>

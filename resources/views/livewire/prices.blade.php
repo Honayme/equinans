@@ -1,6 +1,6 @@
 <div>
     <!-- Page Header Start -->
-    <div class="page-header">
+    <div class="page-header bg-section parallaxie" style="background-image: url('{{ asset('storage/hero-section/background-equinans.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

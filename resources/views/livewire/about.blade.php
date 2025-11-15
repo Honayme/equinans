@@ -1,6 +1,6 @@
 <div>
     <!-- Page Header Start -->
-    <div class="page-header bg-section parallaxie">
+    <div class="page-header bg-section parallaxie" style="background-image: url('{{ asset('storage/hero-section/background-equinans.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -44,10 +44,10 @@
                             <!-- Why Choose Item Start -->
                             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-1.svg') }}" alt="">
+                                    <img src="{{ asset('storage/icon-svg/poney.svg') }}" alt="poney">
                                 </div>
                                 <div class="why-choose-item-content">
-                                    <h3>🦄 Le Poney-Club (Enfants)</h3>
+                                    <h3>Le Poney-Club (Enfants)</h3>
                                     <p><strong>Baby-Poney :</strong> Des séances de découverte et des "baptêmes poney aventure" sont proposés pour les tout-petits.</p>
                                     <p><strong>Cours et Stages :</strong> Le club suit le plan de formation officiel des Galops® Poneys.</p>
                                     <p><strong>Anniversaires :</strong> Le centre organise des fêtes d'anniversaire pour les enfants sur le thème des poneys.</p>
@@ -58,10 +58,10 @@
                             <!-- Why Choose Item Start -->
                             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-2.svg') }}" alt="">
+                                    <img src="{{ asset('storage/icon-svg/horse.svg') }}" alt="poney">
                                 </div>
                                 <div class="why-choose-item-content">
-                                    <h3>🐎 Le Centre Équestre (Ados et Adultes)</h3>
+                                    <h3>Le Centre Équestre (Ados et Adultes)</h3>
                                     <p><strong>Cours tous niveaux :</strong> Du débutant au cavalier confirmé.</p>
                                     <p><strong>Disciplines variées :</strong> CSO, Dressage, Éthologie, Voltige, Horseball et Tir à l'arc à cheval.</p>
                                     <p><strong>Compétition :</strong> Coaching et encadrement pour les cavaliers souhaitant sortir en compétition.</p>
@@ -84,10 +84,10 @@
                             <!-- Why Choose Item Start -->
                             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-3.svg') }}" alt="">
+                                    <img src="{{ asset('storage/icon-svg/forest-path.svg') }}" alt="poney">
                                 </div>
                                 <div class="why-choose-item-content">
-                                    <h3>🌲 Les Balades et Randonnées</h3>
+                                    <h3>Les Balades et Randonnées</h3>
                                     <p><strong>Balades :</strong> Des sorties d'une heure ou plus sont proposées.</p>
                                     <p><strong>Randonnées à thème :</strong> Randonnées P'tit Déj, Randonnées frisson (de nuit) et Bivouacs équestres (randonnées sur plusieurs jours avec nuit en gîte).</p>
                                 </div>
@@ -97,10 +97,10 @@
                             <!-- Why Choose Item Start -->
                             <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="icon-box">
-                                    <img src="{{ asset('storage/images/icon-why-choose-4.svg') }}" alt="">
+                                    <img src="{{ asset('storage/icon-svg/box.svg') }}" alt="poney">
                                 </div>
                                 <div class="why-choose-item-content">
-                                    <h3>🏠 Les Services aux Propriétaires</h3>
+                                    <h3>Les Services aux Propriétaires</h3>
                                     <p><strong>Pension :</strong> Le centre fonctionne aussi comme une écurie de propriétaires, proposant des pensions en box ou en paddock.</p>
                                     <p><strong>Installations :</strong> Le club est équipé d'installations complètes (manège couvert, carrière, rond de longe, paddocks).</p>
                                 </div>
@@ -284,7 +284,7 @@
     <!-- Directors Section End -->
 
     <!-- CTA Box Section Start -->
-    <div class="cta-box-section bg-section dark-section parallaxie">
+    <div class="cta-box-section bg-section dark-section parallaxie" style="background-image: url('{{ asset('storage/hero-section/background-equinans.jpg') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -296,7 +296,7 @@
                             <div class="section-title">
                                 <h3 class="wow fadeInUp">Rejoignez-nous !</h3>
                                 <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez l'équitation plaisir <span>pour petits et grands</span></h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Que vous soyez débutant ou cavalier confirmé, notre équipe passionnée est là pour vous accompagner dans votre pratique de l'équitation.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s" style="color: white !important;">Que vous soyez débutant ou cavalier confirmé, notre équipe passionnée est là pour vous accompagner dans votre pratique de l'équitation.</p>
                             </div>
                             <!-- Section Title End -->
 
@@ -317,11 +317,7 @@
                         <!-- CTA Box Content End -->
 
                         <!-- CTA Box Image Start -->
-                        <div class="cta-box-image">
-                            <figure>
-                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="">
-                            </figure>
-                        </div>
+
                         <!-- CTA Box Image End -->
                     </div>
                     <!-- CTA Box End -->

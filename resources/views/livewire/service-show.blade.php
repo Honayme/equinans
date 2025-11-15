@@ -93,17 +93,30 @@
 
                 <div class="col-lg-8">
                     <div class="service-single-content">
-                        <div class="page-single-image">
-                            <figure class="image-anime reveal">
-                                <img src="{{ asset('storage/images/service-' . $service->order . '.jpg') }}" alt="{{ $service->title }}">
-                            </figure>
-                        </div>
+                        @if($service->slug !== 'anniversaire')
+                            <div class="page-single-image">
+                                <figure class="image-anime reveal">
+                                    @php
+                                        // Utiliser l'image personnalisée si définie dans le contenu, sinon l'image par défaut
+                                        $customImage = $content['image'] ?? null;
+                                        $imagePath = $customImage
+                                            ? 'storage/' . $customImage
+                                            : 'storage/images/service-' . $service->order . '.jpg';
+                                    @endphp
+                                    <img src="{{ asset($imagePath) }}" alt="{{ $service->title }}">
+                                </figure>
+                            </div>
+                        @endif
 
                         <!-- Service Entry Start -->
                         <div class="service-entry">
                             @php
                                 $content = $service->content ?? [];
                             @endphp
+
+                            @if($service->slug === 'anniversaire')
+                                <h2>Organiser son anniversaire à <span>Équinans</span></h2>
+                            @endif
 
                             {{-- Introduction --}}
                             @if($service->introduction)
@@ -307,7 +320,14 @@
 
                                                 <div class="service-experience-image">
                                                     <figure class="image-anime reveal">
-                                                        <img src="{{ asset('storage/images/service-experience-image.jpg') }}" alt="">
+                                                        @php
+                                                            // Utiliser l'image personnalisée si définie, sinon l'image par défaut
+                                                            $experienceImage = $content['experience_image'] ?? 'images/service-experience-image.jpg';
+                                                            $experienceImagePath = strpos($experienceImage, 'images/') === 0
+                                                                ? 'storage/' . $experienceImage
+                                                                : 'storage/' . $experienceImage;
+                                                        @endphp
+                                                        <img src="{{ asset($experienceImagePath) }}" alt="">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -468,6 +488,42 @@
                                             <a href="{{ route('contact') }}" class="btn btn-warning btn-lg wow fadeInUp" data-wow-delay="0.4s" style="font-weight: 600; padding: 1.2rem 3rem; border-radius: 50px; font-size: 1.1rem; box-shadow: 0 5px 20px rgba(255,193,7,0.4);">
                                                 <i class="fa-solid fa-rocket me-2"></i> Rejoignez l'aventure !
                                             </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
+                            {{-- CTA moderne pour Anniversaire avec image --}}
+                            @if($service->slug === 'anniversaire')
+                                <div class="service-anniversaire-cta" style="margin-top: 3rem; position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.15);">
+                                    <div style="position: relative; min-height: 500px;">
+                                        {{-- Image de fond --}}
+                                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(229, 117, 102, 0.85) 0%, rgba(255, 182, 193, 0.75) 100%), url('{{ asset('storage/anniversaire-cheval.jpg') }}') center/cover; z-index: 1;"></div>
+
+                                        {{-- Contenu --}}
+                                        <div style="position: relative; z-index: 2; padding: 4rem 3rem; text-align: center; color: white;">
+                                            <h2 class="text-anime-style-2 wow fadeInUp" style="color: white; font-size: 2.5rem; margin-bottom: 2rem;">
+                                                Votre enfant est <span style="color: #FFD700;">invité à un anniversaire</span> à Equinans ?
+                                            </h2>
+
+                                            <div class="cta-text" style="margin-bottom: 2.5rem;">
+                                                <p class="wow fadeInUp" data-wow-delay="0.2s" style="font-size: 1.3rem; font-weight: 500; color: rgba(255,255,255,0.95); margin-bottom: 1rem;">
+                                                    Complétez le formulaire d'inscription obligatoire pour que nous puissions accueillir votre enfant en toute sécurité
+                                                </p>
+                                            </div>
+
+                                            <div class="row justify-content-center g-3">
+                                                <div class="col-md-6 col-lg-5">
+                                                    <a href="{{ route('invitation.anniversaire') }}" class="btn btn-warning btn-lg w-100 wow fadeInUp" data-wow-delay="0.3s" style="font-weight: 600; padding: 1.2rem 2rem; border-radius: 50px; box-shadow: 0 5px 20px rgba(255,193,7,0.4);">
+                                                        <i class="fa-solid fa-clipboard-list me-2"></i> Formulaire d'invitation
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 col-lg-5">
+                                                    <a href="{{ route('contact') }}" class="btn btn-light btn-lg w-100 wow fadeInUp" data-wow-delay="0.4s" style="font-weight: 600; padding: 1.2rem 2rem; border-radius: 50px;">
+                                                        <i class="fa-solid fa-cake-candles me-2"></i> Organiser un anniversaire
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

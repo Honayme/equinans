@@ -42,6 +42,12 @@ import 'magnific-popup/dist/jquery.magnific-popup.js';
 import WOW from 'wow.js';
 window.WOW = WOW;
 
+// PDF.js - Loaded via npm (v2.x comme LinetteFolio)
+import * as pdfjsLib from 'pdfjs-dist';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.js?url';
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+window.pdfjsLib = pdfjsLib;
+
 // Load jQuery-dependent plugins and initialize
 (async function() {
     // Waypoints - Loaded via npm (requires jQuery to be global first)

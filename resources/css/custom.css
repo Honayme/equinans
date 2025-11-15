@@ -51,7 +51,7 @@
 	--secondary-color			: #DBECFF;
 	--bg-color					: #F6F9F1;
 	--text-color				: #70737A;
-	--accent-color				: #EDA92A;
+	--accent-color				: #ECA72B;
 	--accent-secondary-color	: #CEF5A4;
 	--white-color				: #FFFFFF;
 	--divider-color				: #0616191A;
@@ -1992,6 +1992,7 @@ header.main-header .container{
     background-position: left center;
     background-size: 20px auto;
     padding-left: 30px;
+    z-index: 2;
 }
 
 .cta-box-image{
@@ -2221,8 +2222,8 @@ header.main-header .container{
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px 20px;
-	background-color: var(--bg-color);
-	padding: 20px 30px;
+	/*background-color: var(--bg-color);*/
+	/*padding: 20px 30px;*/
 }
 
 .faqs-contact-header .satisfy-client-image img{

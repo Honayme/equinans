@@ -263,12 +263,12 @@
                         <div class="pt-4 mt-5" style="border-top: 1px solid var(--divider-color);">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="{{ route('galops.index') }}" class="text-decoration-none" style="color: var(--primary-color);">
-                                        <i class="fa-solid fa-arrow-left me-2"></i>Tous les Galops
+                                    <a href="{{ route('services') }}" class="text-decoration-none" style="color: var(--primary-color);">
+                                        <i class="fa-solid fa-arrow-left me-2"></i>Retour aux services
                                     </a>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <a href="{{ route('poney.argent') }}" class="text-decoration-none" style="color: #C0C0C0;">
+                                    <a href="{{ route('galops.poney.poney-argent') }}" class="text-decoration-none" style="color: #C0C0C0;">
                                         Poney d'Argent<i class="fa-solid fa-arrow-right ms-2"></i>
                                     </a>
                                 </div>

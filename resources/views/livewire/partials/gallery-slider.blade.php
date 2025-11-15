@@ -14,7 +14,7 @@
                 <div class="col-lg-6">
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="{{ route('home') }}#gallery" class="btn-default">Voir la Galerie</a>
+                        <a href="{{ route('gallery') }}" class="btn-default">Voir la Galerie</a>
                     </div>
                     <!-- Section Button End -->
                 </div>

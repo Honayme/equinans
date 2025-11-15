@@ -75,7 +75,7 @@
                             <!-- About Us Image 1 Start -->
                             <div class="about-us-img-1">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-1.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/images_gallery/gallery-04.jpg') }}" alt="">
                                 </figure>
                             </div>
                             <!-- About Us Image 1 End -->
@@ -93,7 +93,7 @@
                             <!-- About Us Image 2 Start -->
                             <div class="about-us-img-2">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-2.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/images_gallery/gallery-06.jpg') }}" alt="">
                                 </figure>
                             </div>
                             <!-- About Us Image 2 End -->
@@ -101,7 +101,7 @@
                             <!-- About Us Image 3 Start -->
                             <div class="about-us-img-3">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/about-us-img-3.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/images_gallery/gallery-07.jpg') }}" alt="" style="object-position: center top;">
                                 </figure>
                             </div>
                             <!-- About Us Image 3 End -->
@@ -363,65 +363,28 @@
     <!-- Our Gallery Section End -->
 
     <!-- Documents et Programmes Section Start -->
-    <div class="our-documents bg-section">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">Nos Programmes</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Découvrez nos formations <span>et documents officiels</span></h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
+    <div class="container py-5">
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="document-card wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="document-icon">
-                            <i class="fa-solid fa-horse fa-3x"></i>
-                        </div>
-                        <h3>Programme Galops 1 à 7</h3>
-                        <p>Découvrez le programme complet des Galops de cavalier, du niveau débutant jusqu'au Galop 7.</p>
-                        <div class="mt-3">
-                            <livewire:pdf-viewer
-                                :pdfPath="'pdf/Galops-1+7.pdf'"
-                                buttonText="Consulter le programme"
-                                title="Programme Galops 1 à 7" />
-                        </div>
-                    </div>
-                </div>
+        <h1 class="mb-5">📄 Documents du Centre Équestre</h1>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="document-card wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="document-icon">
-                            <i class="fa-solid fa-book fa-3x"></i>
-                        </div>
-                        <h3>Programme Officiel Synthétique</h3>
-                        <p>Le programme officiel des Galops cavalier en version synthétique et facile à consulter.</p>
-                        <div class="mt-3">
-                            <livewire:pdf-viewer
-                                :pdfPath="'pdf/PROGRAMME_OFFICIEL_GALOPS_CAVALIER_1a7_SYNTHETIQUE.pdf'"
-                                buttonText="Voir le document"
-                                title="Programme Officiel Synthétique" />
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="document-card wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="document-icon">
-                            <i class="fa-solid fa-file-lines fa-3x"></i>
-                        </div>
-                        <h3>Règlement Intérieur</h3>
-                        <p>Consultez le règlement intérieur du centre équestre pour connaître les règles et consignes de sécurité.</p>
-                        <div class="mt-3">
-                            <livewire:pdf-viewer
-                                :pdfPath="'pdf/réglement intérieur 2018.pdf'"
-                                buttonText="Lire le règlement"
-                                title="Règlement Intérieur 2018" />
-                        </div>
+            {{-- Document 1 --}}
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="bi bi-file-earmark-text fs-1 text-primary mb-3"></i>
+                        <h5 class="card-title">Règlement Intérieur</h5>
+                        <p class="card-text text-muted">
+                            Règles et consignes de sécurité du centre équestre.
+                        </p>
+
+                        @livewire('pdf-viewer', [
+                            'pdfUrl' => Storage::url('pdf/ete-2025.pdf'),
+                            'titre' => 'Règlement Intérieur',
+                            'buttonText' => 'Consulter',
+                            'buttonClass' => 'btn btn-primary w-100'
+                        ])
                     </div>
                 </div>
             </div>

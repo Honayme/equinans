@@ -278,12 +278,12 @@
                         <div class="pt-4 mt-5" style="border-top: 1px solid var(--divider-color);">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="{{ route('galop.bronze') }}" class="text-decoration-none" style="color: #CD7F32;">
+                                    <a href="{{ route('galops.poney.galop-bronze') }}" class="text-decoration-none" style="color: #CD7F32;">
                                         <i class="fa-solid fa-arrow-left me-2"></i>Galop® de Bronze
                                     </a>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <a href="{{ route('galop.or') }}" class="text-decoration-none" style="color: #FFD700;">
+                                    <a href="{{ route('galops.poney.galop-or') }}" class="text-decoration-none" style="color: #FFD700;">
                                         Galop® d'Or<i class="fa-solid fa-arrow-right ms-2"></i>
                                     </a>
                                 </div>

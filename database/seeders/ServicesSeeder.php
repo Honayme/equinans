@@ -20,7 +20,7 @@ class ServicesSeeder extends Seeder
             return;
         }
 
-        $xml = simplexml_load_file($xmlPath);
+        $xml = simplexml_load_string(file_get_contents($xmlPath));
 
         if (!$xml) {
             $this->command->error("Impossible de parser le fichier XML.");

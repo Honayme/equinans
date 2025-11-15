@@ -22,6 +22,8 @@ use App\Livewire\Galops\Cheval\Galop4;
 use App\Livewire\Galops\Cheval\Galop5;
 use App\Livewire\Galops\Cheval\Galop6;
 use App\Livewire\Galops\Cheval\Galop7;
+use App\Livewire\Gallery;
+use App\Livewire\InvitationAnniversaire;
 
 
 Route::get('/', Home::class)->name('home');
@@ -31,6 +33,8 @@ Route::get('/activites-services', Services::class)->name('services');
 Route::get('/activites-services/{slug}', ServiceShow::class)->name('services.show');
 Route::get('/tarifs', Prices::class)->name('prices');
 Route::get('/nous-contacter', Contact::class)->name('contact');
+Route::get('/album-photo', Gallery::class)->name('gallery');
+Route::get('/invitation-anniversaire', InvitationAnniversaire::class)->name('invitation.anniversaire');
 
 // Pages légales
 Route::get('/reglement-interieur', LegalPageShow::class)
@@ -50,7 +54,8 @@ Route::get('/galop-6', Galop6::class)->name('galop.6');
 Route::get('/galop-7', Galop7::class)->name('galop.7');
 
 
-Route::prefix('galops/poney')->name('galops.poney.')->group(function () {
+// Routes Galops Poney (URLs simplifiées)
+Route::name('galops.poney.')->group(function () {
     Route::get('/galop-bronze', GalopBronze::class)->name('galop-bronze');
     Route::get('/galop-argent', GalopArgent::class)->name('galop-argent');
     Route::get('/galop-or', GalopOr::class)->name('galop-or');
