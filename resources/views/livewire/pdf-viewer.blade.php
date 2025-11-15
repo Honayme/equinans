@@ -342,7 +342,7 @@
             flex: 1;
             overflow: auto;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             padding: 2rem;
             background: #1a1a1a;
@@ -351,7 +351,7 @@
 
         .pdf-canvas-wrapper {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             min-height: 100%;
             min-width: 100%;

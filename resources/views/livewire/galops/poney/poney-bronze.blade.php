@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-2" data-cursor="-opaque">Galop® <span>Bronze</span></h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque">Poney de <span>Bronze</span></h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{ route('home') }}">Accueil</a></li>
