@@ -12,14 +12,29 @@
                 <li><a href="{{ route('galop.7') }}" @if(request()->routeIs('galop.7')) class="active" @endif>Galop® 7</a></li>
             </ul>
         </div>
-{{--        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">--}}
-{{--            <div class="sidebar-info-box">--}}
-{{--                <div class="icon-box mb-3">--}}
-{{--                    {!! $icone !!}--}}
-{{--                </div>--}}
-{{--                <h4 class="mb-3">{{ $titre }}</h4>--}}
-{{--                <p>{{ $description }}</p>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+
+        @php
+            // Déterminer le PDF du galop selon la route actuelle
+            $routeName = request()->route()->getName();
+            $galopNumber = str_replace('galop.', '', $routeName);
+            $pdfUrl = asset('storage/galop-memo/cheval/galop-' . $galopNumber . '.pdf');
+            $galopTitle = 'Galop® ' . $galopNumber;
+        @endphp
+
+        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
+            <div class="sidebar-info-box">
+                <div class="icon-box mb-3">
+                    <i class="fa-solid fa-file-pdf" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                </div>
+                <h4 class="mb-3">Mémo {{ $galopTitle }}</h4>
+                <p class="mb-3">Consultez le mémo récapitulatif de ce galop</p>
+                @livewire('pdf-viewer', [
+                    'pdfUrl' => $pdfUrl,
+                    'titre' => 'Mémo ' . $galopTitle,
+                    'buttonText' => 'Voir le mémo',
+                    'buttonClass' => 'btn btn-primary w-100'
+                ])
+            </div>
+        </div>
     </div>
 </div>
