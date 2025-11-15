@@ -118,7 +118,7 @@
                         :disabled="pageNum <= 1 || pageRendering"
                         class="btn btn-dark btn-sm"
                         title="Page précédente">
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-left"></i>
                     </button>
 
                     <button class="btn btn-dark btn-sm" disabled>
@@ -130,7 +130,7 @@
                         :disabled="pageNum >= numPages || pageRendering"
                         class="btn btn-dark btn-sm"
                         title="Page suivante">
-                        <i class="bi bi-chevron-right"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
 
@@ -141,7 +141,7 @@
                         :disabled="scale <= minScale || pageRendering"
                         class="btn btn-dark btn-sm"
                         title="Zoom arrière">
-                        <i class="bi bi-zoom-out"></i>
+                        <i class="fa-solid fa-magnifying-glass-minus"></i>
                     </button>
 
                     <button class="btn btn-dark btn-sm" disabled>
@@ -153,7 +153,7 @@
                         :disabled="scale >= maxScale || pageRendering"
                         class="btn btn-dark btn-sm"
                         title="Zoom avant">
-                        <i class="bi bi-zoom-in"></i>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
                     </button>
 
                     <button
@@ -161,7 +161,7 @@
                         :disabled="pageRendering"
                         class="btn btn-dark btn-sm"
                         title="Réinitialiser">
-                        <i class="bi bi-arrow-clockwise"></i>
+                        <i class="fa-solid fa-arrows-rotate"></i>
                     </button>
                 </div>
 
@@ -172,21 +172,21 @@
                         download
                         class="btn btn-dark btn-sm"
                         title="Télécharger">
-                        <i class="bi bi-download"></i>
+                        <i class="fa-solid fa-download"></i>
                     </a>
 
                     <button
                         @click="printPdf()"
                         class="btn btn-dark btn-sm"
                         title="Imprimer">
-                        <i class="bi bi-printer"></i>
+                        <i class="fa-solid fa-print"></i>
                     </button>
 
                     <button
                         @click="toggleFullscreen()"
                         class="btn btn-dark btn-sm"
                         title="Plein écran">
-                        <i class="bi bi-arrows-fullscreen"></i>
+                        <i class="fa-solid fa-expand"></i>
                     </button>
                 </div>
 
@@ -371,6 +371,32 @@
             flex-shrink: 0;
         }
 
+        .pdf-footer .btn-group {
+            gap: 0.5rem;
+        }
+
+        .pdf-footer .btn-group .btn {
+            min-width: 40px;
+            min-height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            border: 1px solid #555;
+            color: #fff;
+        }
+
+        .pdf-footer .btn-group .btn:hover:not(:disabled) {
+            background: #444;
+            border-color: #666;
+            color: #fff;
+        }
+
+        .pdf-footer .btn-group .btn i {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
         .pdf-loading {
             position: absolute;
             top: 50%;
@@ -419,8 +445,18 @@
                 padding: 0.75rem 1rem;
             }
 
+            .pdf-footer .d-flex {
+                gap: 0.5rem;
+            }
+
             .pdf-footer .btn-group {
-                margin: 0.25rem;
+                margin: 0.25rem 0;
+            }
+
+            .pdf-footer .btn-group .btn {
+                min-width: 36px;
+                min-height: 36px;
+                font-size: 1rem;
             }
 
             .pdf-content {
@@ -517,7 +553,7 @@
             numPages: 0,
             pageNum: 1,
             pageRendering: false,
-            scale: 1.5,
+            scale: 1.25,
             minScale: 0.5,
             maxScale: 3.0,
             error: null,
@@ -573,7 +609,7 @@
                 this.numPages = 0;
                 this.pageNum = 1;
                 this.pageRendering = false;
-                this.scale = 1.5;
+                this.scale = 1.25;
                 this.error = null;
                 this._unwatchResize?.();
             },
@@ -660,12 +696,18 @@
                 if (this.pageNum <= 1 || this.pageRendering) return;
                 this.pageNum--;
                 this.renderPage(this.pageNum);
+                // Scroll to top après changement de page
+                const container = this.$refs.pdfContainer;
+                if (container) container.scrollTop = 0;
             },
 
             nextPage() {
                 if (this.pageNum >= this.numPages || this.pageRendering) return;
                 this.pageNum++;
                 this.renderPage(this.pageNum);
+                // Scroll to top après changement de page
+                const container = this.$refs.pdfContainer;
+                if (container) container.scrollTop = 0;
             },
 
             zoomIn() {
@@ -683,7 +725,7 @@
             },
 
             resetZoom() {
-                this.scale = 1.5;
+                this.scale = 1.25;
                 console.log('Reset zoom to:', this.scale);
                 this.renderPage(this.pageNum);
             },
