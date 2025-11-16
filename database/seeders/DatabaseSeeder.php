@@ -13,11 +13,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
+        // Créer un utilisateur de test
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Admin User',
+            'email' => 'admin@equinans.fr',
+        ]);
+
+        // Lancer tous les seeders dans le bon ordre
+        $this->call([
+            GeneralSettingsSeeder::class,
+            ServicesSeeder::class,
+            AnniversaireServiceSeeder::class,
+            TestimonialSeeder::class,
+            LegalPagesSeeder::class,
+            GalleryImagesSeeder::class,
         ]);
     }
 }
