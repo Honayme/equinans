@@ -1,0 +1,81 @@
+{
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-BfBXV7Mm.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-BVHPE7da.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-8GirhLYJ.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility-DnhYSyY-.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
+  },
+  "node_modules/pdfjs-dist/build/pdf.worker.js": {
+    "file": "assets/pdf.worker-JgWQ90x2.js",
+    "src": "node_modules/pdfjs-dist/build/pdf.worker.js"
+  },
+  "node_modules/waypoints/lib/jquery.waypoints.js": {
+    "file": "assets/jquery.waypoints-VwvEwqWm.js",
+    "name": "jquery.waypoints",
+    "src": "node_modules/waypoints/lib/jquery.waypoints.js",
+    "isDynamicEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-D2Onh08Z.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/images/arrow-white.svg": {
+    "file": "assets/arrow-white-B893VOUK.svg",
+    "src": "resources/images/arrow-white.svg"
+  },
+  "resources/images/cta-box-bg.jpg": {
+    "file": "assets/cta-box-bg-ChcLjxMy.jpg",
+    "src": "resources/images/cta-box-bg.jpg"
+  },
+  "resources/images/hero-image.jpg": {
+    "file": "assets/hero-image-BwAkNfzl.jpg",
+    "src": "resources/images/hero-image.jpg"
+  },
+  "resources/images/icon-check.svg": {
+    "file": "assets/icon-check-BoDUPd-r.svg",
+    "src": "resources/images/icon-check.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-IyrJ5vIL.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/waypoints/lib/jquery.waypoints.js",
+      "resources/js/jquery.counterup.min.js",
+      "resources/js/function.js"
+    ],
+    "assets": [
+      "assets/pdf.worker-JgWQ90x2.js"
+    ]
+  },
+  "resources/js/function.js": {
+    "file": "assets/function-COTau223.js",
+    "name": "function",
+    "src": "resources/js/function.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/jquery.counterup.min.js": {
+    "file": "assets/jquery.counterup.min-DXF6WQjw.js",
+    "name": "jquery.counterup.min",
+    "src": "resources/js/jquery.counterup.min.js",
+    "isDynamicEntry": true
+  }
+}
