@@ -94,7 +94,8 @@
                                 <div class="col-md-6">
                                     <div class="p-4 rounded h-100" style="background: linear-gradient(135deg, #F5F5F5 0%, #E8E8E8 100%); border: 2px solid var(--primary-color);">
                                         <div class="d-flex align-items-start">
-                                            <i class="fa-solid fa-shoe-prints me-3 mt-1" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+
+                                            <i class="fa-solid fa-person-walking me-2" style="color: var(--primary-color); font-size: 1.5rem;"></i>
                                             <div>
                                                 <h5 class="mb-3"><span class="fs-5 me-2" style="color: var(--primary-color);">◊</span>À pied</h5>
                                                 <p class="mb-0" style="color: var(--text-color);">Mener son cheval ou son poney sur des courbes serrées au pas, le faire reculer droit et déplacer ses épaules et ses hanches sur plusieurs pas.</p>

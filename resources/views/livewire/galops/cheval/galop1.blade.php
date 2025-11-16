@@ -281,7 +281,7 @@
                         <div class="mb-5">
                             <div class="mb-4 p-3 rounded" style="background-color: var(--secondary-color);">
                                 <h3 class="mb-0" style="color: var(--primary-color); font-family: var(--accent-font); font-size: 1.75rem;">
-                                    <i class="fa-solid fa-walking me-2"></i>Pratique équestre à pied
+                                    <i class="fa-solid fa-person-walking me-2"></i>Pratique équestre à pied
                                 </h3>
                             </div>
                             <div class="row g-3">

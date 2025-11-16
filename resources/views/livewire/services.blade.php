@@ -43,14 +43,14 @@
                         <!-- What Do image 2 Start -->
                         <div class="what-do-image-2">
                             <figure class="image-anime">
-                                <img src="{{ asset('storage/photo-cheval.jpg') }}" alt="Formation Galop Cheval">
+                                <img src="{{ asset('storage/photo-cheval.jpg') }}" alt="Formation Galop Cheval" >
                             </figure>
                         </div>
                         <!-- What Do image 2 End -->
 
                         <!-- Contact Us Circle Start -->
                         <div class="contact-us-circle">
-                            <a href="contact.html"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
+                            <a href="{{ route('contact') }}" style="border: none !important"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                         </div>
                         <!-- Contact Us Circle End -->
                     </div>

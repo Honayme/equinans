@@ -24,11 +24,15 @@ use App\Livewire\Galops\Cheval\Galop6;
 use App\Livewire\Galops\Cheval\Galop7;
 use App\Livewire\Gallery;
 use App\Livewire\InvitationAnniversaire;
+use App\Livewire\OurSchedules;
+use App\Livewire\Schedules\Programmes;
+use App\Livewire\Schedules\CoursEtStages;
+use App\Livewire\Schedules\Randonnees;
 
 
 Route::get('/', Home::class)->name('home');
 Route::get('/le-centre-equestre', About::class)->name('about');
-Route::get('/methode-pedagogique', TeachingMethod::class)->name('teaching');
+Route::get('/equidrive-ekilike', TeachingMethod::class)->name('teaching');
 Route::get('/activites-services', Services::class)->name('services');
 Route::get('/activites-services/{slug}', ServiceShow::class)->name('services.show');
 Route::get('/tarifs', Prices::class)->name('prices');
@@ -62,4 +66,12 @@ Route::name('galops.poney.')->group(function () {
     Route::get('/poney-bronze', PoneyBronze::class)->name('poney-bronze');
     Route::get('/poney-argent', PoneyArgent::class)->name('poney-argent');
     Route::get('/poney-or', PoneyOr::class)->name('poney-or');
+});
+
+// Routes Programmes & Horaires
+Route::get('/nos-programmes', OurSchedules::class)->name('schedules');
+Route::prefix('nos-programmes')->name('schedules.')->group(function () {
+    Route::get('/programmes', Programmes::class)->name('programmes');
+    Route::get('/cours-et-stages', CoursEtStages::class)->name('cours-stages');
+    Route::get('/randonnees', Randonnees::class)->name('randonnees');
 });
