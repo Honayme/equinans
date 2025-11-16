@@ -97,6 +97,31 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 4 : Espace Cavalier -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item-header">
+                            <div class="service-item-title">
+                                <p>04</p>
+                                <h3><a href="{{ route('schedules.espace-cavalier') }}">Espace Cavalier</a></h3>
+                            </div>
+                            <div class="icon-box">
+                                <img src="{{ asset('storage/images/icon-service-4.svg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="service-item-content">
+                            <p>Découvrez nos espaces dédiés aux cavaliers, pour chevaux et poneys, avec tous les parcours et activités adaptés.</p>
+                        </div>
+                        <div class="service-image">
+                            <a href="{{ route('schedules.espace-cavalier') }}" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="{{ asset('storage/images/service-4.jpg') }}" alt="Espace Cavalier">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

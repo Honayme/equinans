@@ -16,23 +16,19 @@
                             </div>
                         </div>
                         <!-- Footer Logo End -->
-
-                        <!-- About Footer Content Start -->
-                        <div class="about-footer-content">
-                            <p>Whether you're trotting for the first time or mastering advanced techniques.</p>
-                        </div>
                         <!-- About Footer Content End -->
 
-                        <!-- Footer Newsletter Box Start -->
-                        <div class="footer-newsletter-form">
-                            <form id="newslettersForm" action="#" method="POST">
-                                <div class="form-group">
-                                    <input type="email" name="mail" class="form-control" id="mail" placeholder="Enter Your Email Address *" required>
-                                    <button type="submit" class="newsletter-btn"><i class="fa-regular fa-paper-plane"></i></button>
-                                </div>
-                            </form>
+                        <!-- Footer Google Map Start -->
+                        <div class="footer-google-map rounded-3 border border-3 border-warning shadow-lg overflow-hidden">
+                            <iframe
+                                src="https://maps.google.com/maps?q={{ urlencode(settings()->address) }}&output=embed"
+                                class="w-100"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
-                        <!-- Footer Newsletter Box End -->
+                        <!-- Footer Google Map End -->
                     </div>
                     <!-- About Footer End -->
                 </div>
@@ -46,24 +42,24 @@
                             <ul>
                                 <li><a href="{{ route('home') }}">Accueil</a></li>
                                 <li><a href="{{ route('about') }}">Le centre équestre</a></li>
-                                <li><a href="{{ route('teaching') }}">Méthode pédagogique</a></li>
                                 <li><a href="{{ route('services') }}">Activités & Services</a></li>
+                                <li><a href="{{ route('schedules') }}">Nos Programmes</a></li>
                                 <li><a href="{{ route('prices') }}">Tarifs</a></li>
-                                <li><a href="{{ route('contact') }}">Nous Contacter</a></li>
                                 <li><a href="{{ route('legal.reglement') }}">Règlement intérieur</a></li>
-                                <li><a href="{{ route('legal.informations') }}">Informations légales</a></li>
+                                <li><a href="{{ route('legal.informations') }}">Informations Légales</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
 
                         <!-- Footer Links Start -->
                         <div class="footer-links service-links">
-                            <h3>Services</h3>
+                            <h3>Nos Activités</h3>
                             <ul>
-                                <li><a href="service-single.html">Horse Riding Lessons</a></li>
-                                <li><a href="service-single.html">Horse Training Services</a></li>
-                                <li><a href="service-single.html">Grooming & Horse Care</a></li>
-                                <li><a href="service-single.html">Beginner Riding Program</a></li>
+                                <li><a href="{{ route('services.show', 'lecole-poney-des-2-ans') }}">L'École Poney</a></li>
+                                <li><a href="{{ route('services.show', 'lecole-cheval') }}">L'École Cheval</a></li>
+                                <li><a href="{{ route('services.show', 'laser-game-randonnees') }}">Laser Game</a></li>
+                                <li><a href="{{ route('services.show', 'tir-a-larc') }}">Tir à l'arc</a></li>
+                                <li><a href="{{ route('services.show', 'pension') }}">Pension</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

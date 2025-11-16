@@ -363,33 +363,33 @@
     <!-- Our Gallery Section End -->
 
     <!-- Documents et Programmes Section Start -->
-    <div class="container py-5">
+{{--    <div class="container py-5">--}}
 
-        <h1 class="mb-5">📄 Documents du Centre Équestre</h1>
+{{--        <h1 class="mb-5">📄 Documents du Centre Équestre</h1>--}}
 
-        <div class="row">
+{{--        <div class="row">--}}
 
-            {{-- Document 1 --}}
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <i class="bi bi-file-earmark-text fs-1 text-primary mb-3"></i>
-                        <h5 class="card-title">Règlement Intérieur</h5>
-                        <p class="card-text text-muted">
-                            Règles et consignes de sécurité du centre équestre.
-                        </p>
+{{--            --}}{{-- Document 1 --}}
+{{--            <div class="col-md-6 col-lg-4">--}}
+{{--                <div class="card h-100">--}}
+{{--                    <div class="card-body">--}}
+{{--                        <i class="bi bi-file-earmark-text fs-1 text-primary mb-3"></i>--}}
+{{--                        <h5 class="card-title">Règlement Intérieur</h5>--}}
+{{--                        <p class="card-text text-muted">--}}
+{{--                            Règles et consignes de sécurité du centre équestre.--}}
+{{--                        </p>--}}
 
-                        @livewire('pdf-viewer', [
-                            'pdfUrl' => Storage::url('pdf/ete-2025.pdf'),
-                            'titre' => 'Règlement Intérieur',
-                            'buttonText' => 'Consulter',
-                            'buttonClass' => 'btn btn-primary w-100'
-                        ])
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                        @livewire('pdf-viewer', [--}}
+{{--                            'pdfUrl' => Storage::url('pdf/ete-2025.pdf'),--}}
+{{--                            'titre' => 'Règlement Intérieur',--}}
+{{--                            'buttonText' => 'Consulter',--}}
+{{--                            'buttonClass' => 'btn btn-primary w-100'--}}
+{{--                        ])--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- Documents et Programmes Section End -->
 
 {{--    TODO Mettre photo de groupes avec deux témoignages version demo3--}}

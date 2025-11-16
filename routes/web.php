@@ -74,4 +74,5 @@ Route::prefix('nos-programmes')->name('schedules.')->group(function () {
     Route::get('/programmes', Programmes::class)->name('programmes');
     Route::get('/cours-et-stages', CoursEtStages::class)->name('cours-stages');
     Route::get('/randonnees', Randonnees::class)->name('randonnees');
+    Route::get('/espace-cavalier', \App\Livewire\Schedules\EspaceCavalier::class)->name('espace-cavalier');
 });

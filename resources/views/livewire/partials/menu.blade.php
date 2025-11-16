@@ -31,7 +31,15 @@
         overflow: hidden; /* Pour que le contenu respecte les bordures arrondies */
     }
 
-    .nav-item.mega-menu:hover > .mega-dropdown {
+    /* DÉSACTIVÉ : Le hover CSS créait une zone invisible géante à cause de position: static */
+    /* .nav-item.mega-menu:hover > .mega-dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    } */
+
+    /* Nouveau système : contrôle via Alpine.js pour éviter la zone de hover gigantesque */
+    .nav-item.mega-menu .mega-dropdown.show {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
@@ -47,26 +55,11 @@
         pointer-events: auto;
     }
 
-    /* Grid 25% image / 75% liens (1/4 et 3/4) */
+    /* Grid sans image - Juste le contenu des liens */
     .mega-dropdown-grid {
-        display: grid;
-        grid-template-columns: 1fr 3fr; /* 25% image, 75% liens */
-        min-height: 400px;
         max-width: 1320px;
         margin: 0 auto;
         width: 100%;
-    }
-
-    /* Colonne Image (gauche) - Collée au bord, sans padding */
-    .mega-column-image {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 0; /* Pas de padding, image collée au bord */
-    }
-
-    /* Colonne Liens (droite) - 3 colonnes */
-    .mega-column-links {
         padding: 30px 35px;
         background: var(--white-color);
     }
@@ -75,7 +68,14 @@
     .links-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
-        gap: 20px; /* Espacement entre les colonnes */
+        gap: 30px; /* Espacement entre les colonnes */
+    }
+
+    /* Sous-colonnes pour les galops (2 colonnes) */
+    .galop-subgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
     .link-column {
@@ -116,8 +116,8 @@
         border-bottom: 2px solid var(--accent-color);
     }
 
-    .mega-column-links ul,
-    .mega-column-links .dropdowndeservice {
+    .mega-dropdown-grid ul,
+    .mega-dropdown-grid .dropdowndeservice {
         list-style: none !important;
         padding: 0 !important;
         margin: 0 0 25px 0 !important;
@@ -125,16 +125,16 @@
         visibility: visible !important;
     }
 
-    .mega-column-links ul li,
-    .mega-column-links .dropdowndeservice li {
+    .mega-dropdown-grid ul li,
+    .mega-dropdown-grid .dropdowndeservice li {
         margin-bottom: 0 !important;
         display: list-item !important;
         visibility: visible !important;
         color: #333 !important;
     }
 
-    .mega-column-links ul li a,
-    .mega-column-links .dropdowndeservice li a {
+    .mega-dropdown-grid ul li a,
+    .mega-dropdown-grid .dropdowndeservice li a {
         display: block !important;
         padding: 10px 15px !important;
         color: #333 !important;
@@ -151,8 +151,8 @@
         color: #333 !important;
     }
 
-    .mega-column-links ul li a:hover,
-    .mega-column-links .dropdowndeservice li a:hover {
+    .mega-dropdown-grid ul li a:hover,
+    .mega-dropdown-grid .dropdowndeservice li a:hover {
         background-color: var(--secondary-color) !important;
         color: var(--primary-color) !important;
         padding-left: 25px !important;
@@ -219,64 +219,78 @@
                                 </li>
 
                                 <!-- MEGA MENU : Activités & Galops -->
-                                <li class="nav-item mega-menu">
-                                    <a class="nav-link" href="{{ route('services') }}">Activités & Galops</a>
+                                <li class="nav-item mega-menu" x-data="{ megaMenuOpen: false }">
+                                    <a class="nav-link"
+                                       href="{{ route('services') }}"
+                                       @mouseenter="megaMenuOpen = true"
+                                       @mouseleave="megaMenuOpen = false">
+                                        Activités & Galops
+                                    </a>
 
                                     <!-- Mega Dropdown -->
-                                    <div class="mega-dropdown">
+                                    <div class="mega-dropdown"
+                                         :class="{ 'show': megaMenuOpen }"
+                                         @mouseenter="megaMenuOpen = true"
+                                         @mouseleave="megaMenuOpen = false">
                                         <div class="mega-dropdown-grid">
-                                            <!-- Colonne Gauche : Image -->
-                                            <div class="mega-column-image" style="background-image: url('{{ asset('storage/images/about-us-img-1.jpg') }}');">
-                                                <!-- Image en background CSS -->
-                                            </div>
+                                            <div class="links-grid">
+                                                <!-- COLONNE 1 : Activités Principales -->
+                                                <div class="link-column">
+                                                    <h4>Nos Activités</h4>
+                                                    <ul class="dropdowndeservice">
+                                                        <li><a href="{{ route('services.show', 'lecole-poney-des-2-ans') }}">L'École Poney (dès 2 ans)</a></li>
+                                                        <li><a href="{{ route('services.show', 'lecole-cheval') }}">L'École Cheval</a></li>
+                                                        <li><a href="{{ route('services.show', 'competition-et-coaching') }}">Coaching & Compétition</a></li>
+                                                        <li><a href="{{ route('services.show', 'stages-activites') }}">Stages & Activités</a></li>
+                                                    </ul>
+                                                </div>
 
-                                            <!-- Colonne Droite : 3 colonnes de liens -->
-                                            <div class="mega-column-links">
-                                                <div class="links-grid">
-                                                    <!-- COLONNE 1 : Activités Principales -->
-                                                    <div class="link-column">
-                                                        <h4>Nos Activités</h4>
-                                                        <ul class="dropdowndeservice">
-                                                            <li><a href="{{ route('services.show', 'lecole-poney-des-2-ans') }}">L'École Poney (dès 2 ans)</a></li>
-                                                            <li><a href="{{ route('services.show', 'lecole-cheval') }}">L'École Cheval</a></li>
-                                                            <li><a href="{{ route('services.show', 'competition-et-coaching') }}">Compétition & Coaching</a></li>
-                                                            <li><a href="{{ route('services.show', 'stages-activites') }}">Stages & Activités</a></li>
-                                                        </ul>
-                                                    </div>
+                                                <!-- COLONNE 2 : Autres Activités -->
+                                                <div class="link-column">
+                                                    <h4>Autres Activités</h4>
+                                                    <ul class="dropdowndeservice">
+                                                        <li><a href="{{ route('services.show', 'laser-game-randonnees') }}">Laser Game & Randonnées</a></li>
+                                                        <li><a href="{{ route('services.show', 'tir-a-larc') }}">Tir à l'arc</a></li>
+                                                        <li><a href="{{ route('services.show', 'pension') }}">Pension</a></li>
+                                                        <li><a href="{{ route('services.show', 'anniversaire') }}">Fêter son anniversaire</a></li>
+                                                    </ul>
+                                                </div>
 
-                                                    <!-- COLONNE 2 : Autres Activités -->
-                                                    <div class="link-column">
-                                                        <h4>Autres Activités</h4>
-                                                        <ul class="dropdowndeservice">
-                                                            <li><a href="{{ route('services.show', 'laser-game-randonnees') }}">Laser Game & Randonnées</a></li>
-                                                            <li><a href="{{ route('services.show', 'pension') }}">Pension</a></li>
-                                                            <li><a href="{{ route('services.show', 'anniversaire') }}">Fêter son anniversaire</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <!-- COLONNE 3 : Formations Galops -->
-                                                    <div class="link-column">
-                                                        <h4>Formations Galops</h4>
+                                                <!-- COLONNE 3 : Formations Galops Chevaux (2 sous-colonnes) -->
+                                                <div class="link-column">
+                                                    <h4>Galops Chevaux</h4>
+                                                    <div class="galop-subgrid">
+                                                        <!-- Sous-colonne 1 : Galops 1-4 -->
                                                         <ul class="dropdowndeservice">
                                                             <li><a href="{{ route('galop.1') }}">Galop 1</a></li>
                                                             <li><a href="{{ route('galop.2') }}">Galop 2</a></li>
                                                             <li><a href="{{ route('galop.3') }}">Galop 3</a></li>
                                                             <li><a href="{{ route('galop.4') }}">Galop 4</a></li>
+                                                        </ul>
+                                                        <!-- Sous-colonne 2 : Galops 5-7 -->
+                                                        <ul class="dropdowndeservice">
                                                             <li><a href="{{ route('galop.5') }}">Galop 5</a></li>
                                                             <li><a href="{{ route('galop.6') }}">Galop 6</a></li>
                                                             <li><a href="{{ route('galop.7') }}">Galop 7</a></li>
                                                         </ul>
                                                     </div>
+                                                </div>
 
-                                                    <div class="link-column">
-                                                        <h4>Galops Poney</h4>
+                                                <!-- COLONNE 4 : Galops Poney (2 sous-colonnes) -->
+                                                <div class="link-column">
+                                                    <h4>Galops Poney</h4>
+                                                    <div class="galop-subgrid">
+                                                        <!-- Sous-colonne 1 : Galops Bronze/Argent/Or -->
                                                         <ul class="dropdowndeservice">
-                                                            <li><a href="{{ route('galops.poney.galop-bronze') }}" class="active">Galop Bronze</a></li>
-                                                            <li><a href="{{ route('galops.poney.galop-argent') }}" class="active">Galop Argent</a></li>
-                                                            <li><a href="{{ route('galops.poney.galop-or') }}" class="active">Galop Or</a></li>
-                                                            <li><a href="{{ route('galops.poney.poney-bronze') }}" class="active">Poney Bronze</a></li>
-                                                            <li><a href="{{ route('galops.poney.poney-argent') }}" class="active">Poney Argent</a></li>
-                                                            <li><a href="{{ route('galops.poney.poney-or') }}" class="active">Poney Or</a></li>
+                                                            <li><a href="{{ route('galops.poney.galop-bronze') }}">Galop Bronze</a></li>
+                                                            <li><a href="{{ route('galops.poney.galop-argent') }}">Galop Argent</a></li>
+                                                            <li><a href="{{ route('galops.poney.galop-or') }}">Galop Or</a></li>
+                                                        </ul>
+                                                        <!-- Sous-colonne 2 : Poneys Bronze/Argent/Or -->
+                                                        <ul class="dropdowndeservice">
+                                                            <li><a href="{{ route('galops.poney.poney-bronze') }}">Poney Bronze</a></li>
+                                                            <li><a href="{{ route('galops.poney.poney-argent') }}">Poney Argent</a></li>
+                                                            <li><a href="{{ route('galops.poney.poney-or') }}">Poney Or</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -286,10 +300,11 @@
                                 </li>
 
                                 <li class="nav-item submenu">
-                                    <a class="nav-link" href="{{ route('schedules') }}">Nos Programmes</a>
+                                    <a class="nav-link" href="{{ route('schedules') }}">Programmes & Parcours</a>
                                     <ul>
-                                        <li><a href="{{ route('schedules.programmes') }}">Programmes</a></li>
-                                        <li><a href="{{ route('schedules.cours-stages') }}">Cours et Stages</a></li>
+                                        <li class="mb-2"><a href="{{ route('schedules.espace-cavalier') }}">Espace Cavalier</a></li>
+                                        <li class="mb-2"><a href="{{ route('schedules.programmes') }}">Programmes</a></li>
+                                        <li class="mb-2"><a href="{{ route('schedules.cours-stages') }}">Cours et Stages</a></li>
                                         <li><a href="{{ route('schedules.randonnees') }}">Randonnées</a></li>
                                     </ul>
                                 </li>
@@ -358,6 +373,7 @@
                                 <li><a href="{{ route('services.show', 'competition-et-coaching') }}" @click="mobileMenuOpen = false">Compétition & Coaching</a></li>
                                 <li><a href="{{ route('services.show', 'stages-activites') }}" @click="mobileMenuOpen = false">Stages & Activités</a></li>
                                 <li><a href="{{ route('services.show', 'laser-game-randonnees') }}" @click="mobileMenuOpen = false">Laser Game</a></li>
+                                <li><a href="{{ route('services.show', 'tir-a-larc') }}" @click="mobileMenuOpen = false">Tir à l'arc</a></li>
                                 <li><a href="{{ route('services.show', 'pension') }}" @click="mobileMenuOpen = false">Pension</a></li>
                                 <li><a href="{{ route('services.show', 'anniversaire') }}" @click="mobileMenuOpen = false">Anniversaire</a></li>
 

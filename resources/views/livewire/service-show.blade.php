@@ -108,6 +108,18 @@
                             </div>
                         @endif
 
+                        {{-- PDF Viewer pour Compétition & Coaching --}}
+                        @if($service->slug === 'competition-et-coaching')
+                            <div class="wow fadeInUp" data-wow-delay="0.2s" style="margin-top: 2rem;">
+                                @livewire('pdf-viewer', [
+                                    'pdfUrl' => asset('storage/programmes/Parcours.pdf'),
+                                    'titre' => 'Parcours de Compétition',
+                                    'buttonClass' => 'btn btn-primary',
+                                    'downloadText' => 'Télécharger le PDF'
+                                ])
+                            </div>
+                        @endif
+
                         <!-- Service Entry Start -->
                         <div class="service-entry">
                             @php

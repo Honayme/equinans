@@ -236,18 +236,17 @@
         .pdf-thumbnail-wrapper {
             position: relative;
             background: #f8f9fa;
-            height: 350px;
+            min-height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
         }
 
-        /* Canvas miniature */
+        /* Canvas miniature - prend toute la largeur disponible */
         .pdf-thumbnail {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+            width: 100%;
+            height: auto;
             display: block;
         }
 
@@ -437,7 +436,7 @@
 
         @media (max-width: 768px) {
             .pdf-thumbnail-wrapper {
-                height: 250px;
+                min-height: 300px;
             }
 
             .pdf-header,
@@ -503,7 +502,10 @@
 
                     const page = await pdf.getPage(1);
                     const viewport = page.getViewport({ scale: 1 });
-                    const scale = 300 / viewport.width;
+
+                    // Utiliser la largeur du conteneur parent pour calculer le scale
+                    const containerWidth = canvas.parentElement?.offsetWidth || 600;
+                    const scale = containerWidth / viewport.width;
                     const scaledViewport = page.getViewport({ scale: scale });
 
                     canvas.width = Math.round(scaledViewport.width);

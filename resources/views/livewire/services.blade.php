@@ -114,200 +114,107 @@
     <!-- What We Do Section End -->
 
     <!-- Our Benefits Section Start -->
-    <div id="espace-cavalier" class="our-benefits">
+    <div id="programmes-hub" class="our-benefits">
         <div class="container">
             <div class="row section-row align-items-center">
                 <div class="col-lg-6">
-                    <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Club Benefits</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Exceptional benefits that set our <span>horse club apart</span>
+                        <h3 class="wow fadeInUp">L'AVENTURE VOUS ATTEND</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Vivez votre passion avec nos <span>programmes 2025</span>
                         </h2>
                     </div>
-                    <!-- Section Title End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
                     <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Enjoy hands-on training, gentle horses, and an environment designed to help you relax, grow, and
-                            fall in love with riding - whether it's your first time or your fiftieth.</p>
+                        <p>Que vous soyez en quête d'évasion, désireux de vous perfectionner ou à la recherche de nouveaux défis, notre saison 2025 est faite pour vous. Explorez nos activités conçues avec passion pour toute la famille.</p>
                     </div>
-                    <!-- Section Title Content End -->
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <!-- Our Benefits Content Start -->
                     <div class="our-benefit-content">
-                        <!-- FAQ Accordion Start -->
-                        <div class="faq-accordion" id="benefit_accordion">
-                            <!-- FAQ Item Start -->
-                            <div class="accordion-item wow fadeInUp">
-                                <h2 class="accordion-header" id="benefit_heading1">
+                        <div class="faq-accordion" id="program_accordion"> <div class="accordion-item wow fadeInUp">
+                                <h2 class="accordion-header" id="program_heading1">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#benefit_collapse1" aria-expanded="true"
-                                            aria-controls="benefit_collapse1">
-                                        Personalized Rider Development
+                                            data-bs-target="#program_collapse1" aria-expanded="true"
+                                            aria-controls="program_collapse1">
+                                        Randonnées & Évasion
                                     </button>
                                 </h2>
-                                <div id="benefit_collapse1" class="accordion-collapse collapse show"
-                                     aria-labelledby="benefit_heading1" data-bs-parent="#benefit_accordion">
+                                <div id="program_collapse1" class="accordion-collapse collapse show"
+                                     aria-labelledby="program_heading1" data-bs-parent="#program_accordion">
                                     <div class="accordion-body">
-                                        <p>Each rider receives individual attention to grow their confidence, refine their
-                                            technique, and reach their full potential.</p>
+                                        <p>Évadez-vous le temps d'une journée ou plus ! Nos nouvelles randonnées de l'été 2025 vous emmènent à travers des paysages magnifiques, pour un moment de pur plaisir et de connexion avec la nature.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                                <h2 class="accordion-header" id="benefit_heading2">
+                                <h2 class="accordion-header" id="program_heading2">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#benefit_collapse2" aria-expanded="false"
-                                            aria-controls="benefit_collapse2">
-                                        Well-Trained & Gentle Horses
+                                            data-bs-target="#program_collapse2" aria-expanded="false"
+                                            aria-controls="program_collapse2">
+                                        Stages & Perfectionnement
                                     </button>
                                 </h2>
-                                <div id="benefit_collapse2" class="accordion-collapse collapse"
-                                     aria-labelledby="benefit_heading2" data-bs-parent="#benefit_accordion">
+                                <div id="program_collapse2" class="accordion-collapse collapse"
+                                     aria-labelledby="program_heading2" data-bs-parent="#program_accordion">
                                     <div class="accordion-body">
-                                        <p>We track key performance indicators(KPIs) such as website, conversion,
-                                            click-through rates (CTR), ROI.</p>
+                                        <p>Du débutant au cavalier confirmé, nos stages (cheval et poney) sont pensés pour votre progression. Encadrés par nos moniteurs diplômés, venez vous perfectionner dans une ambiance conviviale et bienveillante.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- FAQ Item End -->
-
-                            <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                <h2 class="accordion-header" id="benefit_heading3">
+                                <h2 class="accordion-header" id="program_heading3">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#benefit_collapse3" aria-expanded="false"
-                                            aria-controls="benefit_collapse3">
-                                        Peaceful Countryside Setting
+                                            data-bs-target="#program_collapse3" aria-expanded="false"
+                                            aria-controls="program_collapse3">
+                                        Nouvel Espace Cavalier
                                     </button>
                                 </h2>
-                                <div id="benefit_collapse3" class="accordion-collapse collapse"
-                                     aria-labelledby="benefit_heading3" data-bs-parent="#benefit_accordion">
+                                <div id="program_collapse3" class="accordion-collapse collapse"
+                                     aria-labelledby="program_heading3" data-bs-parent="#program_accordion">
                                     <div class="accordion-body">
-                                        <p>We track key performance indicators(KPIs) such as website, conversion,
-                                            click-through rates (CTR), ROI.</p>
+                                        <p>Une nouvelle ressource en ligne ! Accédez à votre espace pour consulter et télécharger des parcours et reprises (cheval et poney) pour vous entraîner et préparer vos prochaines séances.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- FAQ Item End -->
                         </div>
-                        <!-- FAQ Accordion End -->
-
-                        <!-- Our Benefits Button Start -->
                         <div class="our-benefit-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Contact Us Today!</a>
+                            <a href="{{ route('schedules') }}" class="btn-default">Voir tous les programmes</a>
                         </div>
-                        <!-- Our Benefits Button End -->
                     </div>
-                    <!-- Our Benefits Content End -->
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- Benefits images Start -->
                     <div class="benefits-images">
-                        <!-- Benefits image Box Start -->
                         <div class="benefits-image-box-1">
                             <div class="benefits-image">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-1.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/images_gallery/gallery-40.jpg') }}" alt="Randonnée équestre">
                                 </figure>
                             </div>
 
-                            <!-- Benefits image Counter Start -->
                             <div class="benefits-image-counter">
-                                <h2><span class="counter">98</span>%</h2>
-                                <p>Events, Shows & Rides Hosted</p>
+                                <h2><span class="counter">100</span>%</h2> <p>Passion & Plaisir Partagé</p>
                             </div>
-                            <!-- Benefits image Counter End -->
                         </div>
-                        <!-- Benefits image Box End -->
-
-                        <!-- Benefits image Box Start -->
                         <div class="benefits-image-box-2">
                             <div class="benefits-image">
                                 <figure class="image-anime reveal">
-                                    <img src="{{ asset('storage/images/benefits-image-2.jpg') }}" alt="">
+                                    <img src="{{ asset('storage/images_gallery/gallery-31.jpg') }}" alt="Randonnée équestre">
                                 </figure>
                             </div>
-                            <!-- Contact Us Circle Start -->
                             <div class="contact-us-circle">
-                                <a href="contact.html"><img src="images/contact-us-circle.svg" alt=""></a>
+                                <a href="{{ route('contact') }}" style="border: none !important"><img src="{{ asset('storage/images/contact-us-circle.svg') }}" alt=""></a>
                             </div>
-                            <!-- Contact Us Circle End -->
                         </div>
-                        <!-- Benefits image Box End -->
                     </div>
-                    <!-- What We Do images End -->
                 </div>
             </div>
         </div>
     </div>
     <!-- Our Benefits Section End -->
-
-    <!-- CTA Box Section Start -->
-{{--    <div class="cta-box-section bg-section dark-section parallaxie">--}}
-{{--        <div class="container-fluid">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-lg-12">--}}
-{{--                    <!-- CTA Box Start -->--}}
-{{--                    <div class="cta-box">--}}
-{{--                        <!-- CTA Box Content Start -->--}}
-{{--                        <div class="cta-box-content">--}}
-{{--                            <!-- Section Title Start -->--}}
-{{--                            <div class="section-title">--}}
-{{--                                <h3 class="wow fadeInUp">Ready to Ride? Contact Us Today!</h3>--}}
-{{--                                <h2 class="text-anime-style-2" data-cursor="-opaque">Connect with us and experience <span>personalized guidance</span>--}}
-{{--                                </h2>--}}
-{{--                                <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're a first-time rider or a--}}
-{{--                                    seasoned equestrian, our dedicated team is here to provide personalized guidance--}}
-{{--                                    tailored to your goals.</p>--}}
-{{--                            </div>--}}
-{{--                            <!-- Section Title End -->--}}
-
-{{--                            <!-- CTA Box Body Start -->--}}
-{{--                            <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.4s">--}}
-{{--                                <a href="contact.html" class="btn-default btn-highlighted">Contact us today</a>--}}
-{{--                            </div>--}}
-{{--                            <!-- CTA Box Body End -->--}}
-
-{{--                            <div class="cta-box-list wow fadeInUp" data-wow-delay="0.6s">--}}
-{{--                                <ul>--}}
-{{--                                    <li>Expert Riding Lessons</li>--}}
-{{--                                    <li>Trail Riding Adventures</li>--}}
-{{--                                    <li>Community & Events</li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <!-- CTA Box Content End -->--}}
-
-{{--                        <!-- CTA Box Image Start -->--}}
-{{--                        <div class="cta-box-image">--}}
-{{--                            <figure>--}}
-{{--                                <img src="{{ asset('storage/images/cta-box-image.png') }}" alt="">--}}
-{{--                            </figure>--}}
-{{--                        </div>--}}
-{{--                        <!-- CTA Box Image End -->--}}
-{{--                    </div>--}}
-{{--                    <!-- CTA Box End -->--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-
-    <!-- CTA Box Section End -->
-
-    <!-- Our Testimonial Section Start -->
-{{--    <livewire:partials.testimonial />--}}
-    <!-- Our Testimonial Section End -->
 
 </div>
